@@ -1,0 +1,1059 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/animate.min.css">
+        <link rel="stylesheet" href="vendors/introjs.min.css">
+        <link rel="stylesheet" href="vendors/grid.css">
+        
+        <title>Expenso -Dasboard</title>
+        
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Lato', sans-serif;
+                word-spacing: 1px;
+                letter-spacing: 0.5px;
+                
+            }
+
+            b {
+                font-weight: 400;
+                color: #82b541;
+            }
+
+            body {
+                background: rgba(232, 218, 195, 0.45);
+                color: #5b4421;
+                overflow-y: hidden;
+            }
+            
+            .expenso {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            nav {
+                width: 15%;
+                height: 100%;
+                text-align: center;
+                background: #453d3f;
+            }
+            
+            nav h2 {
+                font-size: 40px;
+                margin: 20px auto;
+            }
+            
+            nav img {
+                height: 110px;
+                width: 110px;
+                border-radius: 50%;
+                margin: 20px auto;
+            }
+            
+            nav h3 {
+                font-size: 20px;
+                padding-top: 20px;
+                margin: 0 auto 25px auto;
+                text-transform: capitalize;
+            }
+            
+            nav .profile {
+                background: linear-gradient( 135deg, #FFFBF6 0%, #CEC0B8 100%);
+                border: 2px solid;
+                
+            }
+            
+            nav .option {
+                margin: 20px auto; 
+            }
+            
+            nav .option li {
+                margin: 10px auto; 
+                width: 100%;
+                height: 45px;
+                display: flex;
+                padding-top: 10px;
+                color: #999ca5;
+                background: #53494b;
+                
+            }
+            
+            .option li .icons {
+                width: 20%;
+                height: 100%;
+                text-align: right;
+                font-size: 25px;
+                
+            }
+            .option li a {
+                width: 70%;
+                display: block;
+                height: 100%;
+                font-size: 15px;
+               text-decoration: none;
+                text-transform: uppercase;
+                 color: #999ca5;
+                padding-top: 5px;
+            }
+            
+            .option li:hover {
+                background: #1e202d;
+            }
+            
+            .option li:hover .icons {
+                color: #49b5ac;
+            }
+            
+            .option li:hover a {
+                color: #bfc2c7;
+            }
+            
+            .option li:active .icons {
+                color: #c02626;
+            }
+            
+            .dash {
+                width: 85%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                
+                
+            }
+
+            .dash .do {
+                height: 100%;
+                width: 55%;
+            }
+            
+            .dash .cash, .dash .chart {
+                width: 100%;
+            }
+
+            .dash .cash {
+                height: 60%;
+            }
+
+            .dash .chart {
+                height: 40% ;
+            }
+            
+            .dash .passbook {
+                height: 100%;
+                width: 45%;
+
+            }
+            
+            
+            .cash {
+                padding: 0 30px;
+                margin-top: -40px;
+            }
+            
+            .cash select {
+                letter-spacing: 0;
+
+            }
+
+            .cash h3 {
+                    font-size: 23px;
+
+            }
+
+            .cash h3 i {
+                color: rgba(69,61,63,0.45);
+                margin-left: 10px;
+                font-size: 22px;
+                font-style: normal;
+            }
+            
+            
+            
+           .cash .row {
+                width: 80%;
+               margin: 20px auto;
+           
+           }
+
+           #bank {
+               margin-left: 140px;
+           }
+            .cash .row input {
+                height: 30px;
+                width: 85%;
+                font-size: 15px;
+                padding-left: 10px;
+                border: 0;
+                border-bottom: 2px solid #453d3f;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 2px;
+            }
+            
+            .cash .row select {
+                background: transparent;
+                border: 0;
+                font-size: 15px;
+                margin-left: -10px;
+            }
+            
+            .cash .row .m-l input {
+                margin-left: 28px;
+            }
+            
+            .cash .row button {
+                height: 27px;
+                width: 67px;
+                border-radius: 50px;
+                background: transparent;
+                margin-top: 3px;
+                margin-left: 85%;
+                border: 0;
+                color: #5b4421;
+                font-size: 13px;
+                border-left: 2px solid #5b4421;
+                border-top: 2px solid #5b4421;
+                
+            }
+            
+            .cash .row button:hover {
+                border: 0;
+                border-right: 2px solid #5b4421;
+                border-bottom: 2px solid #5b4421;
+            }
+            
+           
+            .passbook {
+                padding: 20px;    
+            }
+            
+             .passbook h2 {
+                text-align: center;
+                margin: 15px auto;
+                font-size: 35px;
+            }
+            
+            .passbook h2:after {
+                display: block; 
+                font-family: 'FontAwesome';
+                content: '\f1ee'; 
+                font-size: 25px;
+                color: rgba(69,61,63,0.45);
+            }
+
+            .passbook table {
+                width: 87%;
+                margin: 30px auto;
+                text-align: center;
+                border-collapse: separate;
+                border-spacing: 0 .5em;
+                border: 3px transparent solid;
+                border-radius: 5px;
+            }
+
+            thead tr {
+                height: 55px;
+            }
+
+            .passbook table .one {
+                width: 15%;
+                border-right: 1px solid #5b4421;
+            }
+
+            .passbook table .two {
+                width: 75%;
+            }
+
+            .passbook table .three {
+                width: 25%;
+            }
+
+           .one {
+               position: relative;
+               overflow: hidden;
+
+           }
+
+            .hide {
+                position: absolute;
+                z-index: 222;
+                padding-top: 2px;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                height: 100%;
+                top: 0px;
+                transform: translateX(-120px);
+                transition: all .5s ease-in-out;
+                font-size: 25px;
+
+            }
+
+            .hide:hover i {
+                cursor: pointer;
+            }
+
+            .hide .ic1 {
+                color: #ff222d;
+            }
+
+            .hide .ic2 {
+                color: #1cebff;
+            }
+
+            tr:hover .hide {
+                transform: translateX(0px);
+                display: block;
+            }
+
+
+            .passbook tbody {
+                box-shadow: 5px 6px 5px #cdc0ac;
+
+            }
+
+
+             tbody tr {
+                height: 37px;
+                margin-bottom: 10px;
+                color: #f4f4f4;
+            }
+
+           tbody  .true {
+                background: #67bf26;
+            }
+
+            tbody .false {
+                background: #da1647;
+            }
+
+            .btns {
+                width: 85%;
+                margin: 0 auto;
+            }
+
+            .btns button {
+                background-color: transparent;
+                border: 0;
+                width: 32%;
+                height: 34px;
+                margin-left: 35%;
+                font-size: 13px;
+                border-radius: 50px;
+                background-color: #F8D800;
+                color: #5b4421;
+            }
+
+
+
+
+
+           thead {
+                background-image: linear-gradient( 135deg, #FDEB71 0%, #F8D800 100%);
+            }
+
+
+            /*SETTiINGS*/
+            
+            
+            
+           .cont-2 {
+                border: 2px solid #fff;
+                background-image: linear-gradient( 135deg, #FFFBF6 0%, #CEC0B8 100%);
+                margin: 0 auto;
+                height: auto;
+                width: 50%;
+                position: relative;
+                top: 20%;
+                color: #5b4421;
+            }
+            
+           .cont-2 h2{
+                text-align: center;
+                font-size: 40px;
+                margin: 10px auto;
+                font-family: 'Proza Libre', sans-serif;
+            }
+
+           .cont-2 h2:after {
+               display: block; 
+                font-family: 'FontAwesome';
+                content: '\f085'; 
+                font-size: 25px;
+                color: rgba(69,61,63,0.45);
+                
+        }
+            
+            input:focus {
+                outline: none;
+            }
+                    
+            select:focus {
+                outline: none;
+            }
+            
+            .cont-2 .form {
+                width: 60%;
+                margin: 20px auto;
+               
+            }
+            
+            .form label {
+                font-size: 20px;
+            }
+            
+            .form input, .form select {
+                width: 90%;
+                margin: 0 auto;
+                height: 33px;
+                font-size: 16px;
+                padding-left: 15px;
+                background-color: #f8f5ee;
+                border: 0;
+                border-bottom: 1px solid #5b4421;
+            }
+            
+            .form #sub {
+                background: linear-gradient(to left, #251e19, #b29f94);
+                width: 120px;
+                height: 37px;
+                color: #fff;
+                font-size: 14px;
+                border: 1px solid;
+                border-radius: 50px;
+                margin-left: 40%;
+                margin-top: 30px;
+            }
+            
+            button:focus {
+                outline: none;
+            }
+            
+            .form #sub:hover {
+                background: linear-gradient( to right, #251e19, #b29f94);
+            }
+
+            /* Passbook Full  */
+
+            #passbookf .cont-2 {
+                margin: -70px auto;
+            }
+
+            .passf h2:after {
+                display: block;
+                font-family: 'FontAwesome';
+                content: '\f1ee';
+            }
+
+            .passf table {
+                text-align: center;
+                border-collapse: separate;
+                border-spacing: 0 .45em;
+                width: 95.5%;
+                margin: 0 auto;
+            }
+
+            .passf .one {
+                width: 10%;
+                border-right: 1px solid #5b4421;
+            }
+
+            .passf .two {
+                width: 20%;
+            }
+
+            .passf .three {
+                width: 20%;
+            }
+
+            .passf .four {
+                width: 40%;
+            }
+
+            .passf .five {
+                width: 10%;
+            }
+
+            .table {
+                height: 500px;
+                overflow-y: auto;
+                overflow-x: hidden ;
+                position: relative;
+            }
+
+            .table .change {
+                position: absolute;
+                top: 30%;
+                left: 1800px;
+                background-color: rgba(255, 255, 255, 0.63);
+                width: 95.5%;
+                height: 150px;
+                transition: left .5s;
+
+            }
+
+
+
+
+
+            .search {
+                margin-left: 62%;
+                width: 300px;
+            }
+
+            .search input {
+                width: 75%;
+                height: 23px;
+                background: rgba(255,255,255,0.6);
+                border: 0;
+                padding-left: 20px;
+                margin-left: 10px;
+                font-size: 13px;
+            }
+
+            .search button {
+                height: 23px;
+                width: 23px;
+                background: rgba(255,255,255,0.6);
+                border: 0;
+            }
+
+            .one buttton {
+                height: 30px;
+                width: 50px;
+                background: rgba(0,0,0,0.7);
+            }
+
+
+            /* Pendings */
+
+            #pendingf .cont-2 {
+                margin: -70px auto;
+            }
+
+            .pend h2:after {
+
+                display: block;
+                font-family: 'FontAwesome';
+                content: '\f0d6';
+
+            }
+
+            .pend table {
+                text-align: center;
+                border-collapse: separate;
+                border-spacing: 0 .45em;
+                width: 95.5%;
+                margin: 0 auto;
+            }
+
+
+            .pend .table .one {
+                width: 10%;
+                border-right: 1px solid #5b4421;
+            }
+
+            .pend .table .two {
+                width: 40%
+            }
+
+            .pend .table .three {
+                width: 20%;
+            }
+
+            .pend .table four {
+                width: 30%;
+            }
+
+            .pend .table tbody tr {
+                background-color: #ec407a;
+            }
+
+            .picture{
+                margin: 0 auto;
+                width: 60%;
+                font-size: 17px;
+            }
+
+            .picture input[type = file] {
+                width: 50%;
+                background-color: #fff;
+            }
+
+            .chart {
+                padding-top: 28px;
+            }
+
+            .chart h2 {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 30px;
+
+            }
+
+            .chart h2:after {
+                display: block;
+                font-family: 'FontAwesome';
+                content: '\f06c';
+                font-size: 23px;
+                color: rgba(69,61,63,0.45);
+            }
+
+
+            #bank {
+                margin-top: 20px;
+            }
+
+
+            #full-pend {
+                margin-top: -50px;
+                height: 32px;
+                width: 110px;
+                border: 0;
+                border-radius: 50px;
+                background-color: #F8D800;
+                color: #5b4421;
+                font-size: 13px;
+                margin-left: 60px;
+
+            }
+
+            #full-pend:hover {
+                background-color: rgba(91, 69, 38, 0.7);
+                color: #fff;
+            }
+
+            .save {
+                border: 1px solid;
+                width: 60%;
+                margin: 30px auto;
+                font-size: 18px;
+
+            }
+
+            .save div {
+                margin: 10px;
+                text-align: center;
+            }
+
+            #b1 ,#b2 {
+                color : #67bf26;
+            }
+
+            footer {
+                width: 100%;
+                border: 1px solid #453d3f;
+                position: absolute;
+                top: 95.2%;
+                height: 40px;
+                background-color: #453d3f;
+                text-align: right;
+                font-size: 25px;
+                padding-top: 3px;
+                padding-right: 30px;
+                color : #FFF;
+            }
+
+            footer span {
+                color : #c02626;
+                font-size: 20px;
+                margin-right: 5px;
+            }
+
+            #done-pend {
+                margin-top: 25px;
+            }
+
+            #full-pend {
+                margin-left: 10%;
+            }
+
+
+
+        </style>
+        <style>
+             #btn-close-modal,#btn2-close-modal,
+             #btn3-close-modal{
+                padding-top: 90px;
+                cursor:pointer;
+                color:#fff;
+                font-size: 40px;
+                position: fixed;
+                z-index: 999;
+                 left: 85%;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <section class="expenso">
+            <nav>
+                <ul class="profile">
+                    <li class="upload"><img src="img/face-1.jpg"></li>
+                    <li class="proname"></li>
+                </ul>
+                
+                <ul class="option">
+                    <li><div class="icons"><i class="ion-ios-analytics"></i></div></i><a href="/app.html">Dashboard</a></li>
+                    <li data-step="5" data-intro="Click to see Settings" data-position="right"><div class="icons"><i class="ion-ios-cog-outline"></i></div></i><a id="link2" href="#settings">Settings</a></li>
+                    <li data-step="6" data-intro="Click to Contact Us" data-position="right"><div class="icons"><i class="ion-ios-telephone"></i></div></i><a target="_blank" href="/#contact">Contact</a></li>
+                    <li><div class="icons"><i class="ion-help"></i></div></i><a href="javascript:void(0);" onclick="javascript:introJs().start();">Help</a></li>
+                    <li data-step="7" data-intro="Click to logout" data-position="right" ><div class="icons"><i class="ion-power"></i></div><a id="logout" href="/logout">Log-Out</a></li>
+                </ul>
+            
+            
+            </nav> <!-- Side Navbar -->
+            <section class="dash">
+                <div class="do">
+
+                    <div class="chart" data-step="3" data-intro="Some thing" data-position="top">
+                        <h2>Savings</h2>
+                        <div class="save">
+
+                            <div>
+                                Bank 1 - Balance : <span id="b1">0/-</span>
+                            </div>
+
+                            <div >
+                                Bank 2 - Balance : <span id="b2">0/-</span>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+                <div class="cash" >
+                    <h3 id="bills">Your Bills :<i></i></h3>
+
+                    <form id="t-bill" data-step="1" data-intro="Input the details of your transaction and Click on DONE">
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <input type="text" name="name" id="desp" placeholder="Description" required>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <select id="sign">
+                                <option>+</option>
+                                <option>-</option>
+                            </select>
+                            <input type="number" name="name" id="amt" placeholder="Amount" required>
+                        </div>
+                        <select id="bank">
+                            <option>Bank 1</option>
+                            <option>Bank 2</option>
+                        </select>
+                        <button id="done-bills">Done</button>
+                    </div>
+                    </form>  <!-- Transaction Bills form -->
+
+                    <form id="p-bill" data-step="2" data-intro="Input the details of your Pending bills and Click on ADD">
+                        <h3>Pending Bills <i class="ion-cash"></i> </h3>
+                        <div class="row">
+                            <div class="col span-1-of-2">
+                                <input type="text" name="name" id="per" placeholder="Particulars" required>
+                            </div>
+                            <div class="col span-1-of-2 m-l">
+                                <input type="number" name="name" id="amnt" placeholder="Amount" required>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col span-1-of-2">
+                                <label style="margin-left:130px;" >Last Date </label>
+                            </div>
+                            <div class="col span-1-of-2 m-l">
+                                <input type="Date" name="name" id="ddate" placeholder="Due Date" required>
+                            </div>
+                            <button  id="done-pend">Add</button>
+                        </div>
+                    </form>
+                    <button  href="#pendingf" id="full-pend">Pending Bills </button>
+                    <!-- Pending Bills form -->
+                </div>
+
+                
+
+                </div>
+                
+                <div class="passbook" data-step="4" data-position="left" data-intro="See you Last 10 transaction and hover on them to delete them">
+                    <h2>Passbook</h2>
+                    <table cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td class="one"><h3>S no.</h3></td>
+                            <td class="two"><h3>Description</h3></td>
+                            <td class="three"><h3>Amount</h3></td>
+                        </tr>
+                        </thead>
+                        <tbody id="pass-print">
+
+                        <tr>
+                            <td class="one">1.</td>
+                            <td class="two">NO Transactions Made</td>
+                            <td class="three">:'(</td>
+                        </tr>
+
+
+                        </tbody>
+
+                    </table> <!-- Passbook Table -->
+
+                    <div class="btns">
+                       <button href="#passbookf" id="full-pass">View Full Passbook</button>
+                    </div>
+                
+                </div>
+            </section>  <!--Dash Board -->
+        </section>
+        
+        <div id="settings">
+            <div id="btn-close-modal" class="close-settings">
+                <i class="ion-close-round"></i>
+            </div>                
+            <div class="modal-content cont-2">
+                <h2>Settings</h2>
+                <form class="picture" action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Picture Please</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="file" name="upfile"  required>
+                            <input type="submit" />
+
+                        </div>
+                    </div>
+                </form>
+                <form id="fm">
+                <div class="form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" value="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Phone</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="tel" name="tel" id="tel" placeholder="Phone no" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">DOB</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Bills</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select id="bill">
+                                <option>₹ Rupee</option>
+                                <option>$ Dollar</option>
+                                <option>¥ Yen</option>
+                                <option>€ Euro</option>
+                                <option>₩ Won</option>
+                            </select>
+                        </div>
+                    </div> 
+                    <button id="sub" type="submit" href="#">Save Changes</button>
+
+                </div></form>
+            </div>
+        </div> <!-- Settings Pop-up -->
+
+        <div id="passbookf">
+            <div id="btn2-close-modal" class="close-passbookf">
+                <i class="ion-close-round"></i>
+            </div>
+
+            <div class="modal-content cont-2 passf">
+                <h2>Passbook</h2>
+                <div class="search">
+                    <input type="text" id="srch" placeholder="Search"><button id="find"><i class="ion-ios-search-strong"></i> </button>
+                </div>
+                <div class="table">
+                    <table  cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td class="one"><h3>S no.</h3></td>
+                            <td class="two"><h3>Date</h3></td>
+                            <td class="three"><h3>Bank</h3></td>
+                            <td class="four"><h3>Description</h3></td>
+                            <td class="five"><h3>Amount</h3></td>
+                        </tr>
+                        </thead>
+                        <tbody id="pf-p">
+                        <tr>
+                            <td class="one"><h3>0.</h3></td>
+                            <td class="two"><h3> :/</h3></td>
+                            <td class="three"><h3> :(</h3></td>
+                            <td class="four"><h3>No Transaction Made</h3></td>
+                            <td class="five"><h3>:'(</h3></td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="change">
+                        <form id="change-bill">
+                        <div class="row">
+                            <div class="col span-1-of-2">
+                                <input type="text" name="name" id="cdesp" placeholder="Description" required>
+                            </div>
+                            <div class="col span-1-of-2">
+                                <select id="csign">
+                                    <option>+</option>
+                                    <option>-</option>
+                                </select>
+                                <input type="number" name="name" id="camt" placeholder="Amount" required>
+                            </div>
+                            <select id="cbank">
+                                <option>Bank 1</option>
+                                <option>Bank 2</option>
+                            </select>
+                            <button id="cdone-bills">Done</button>
+                        </div>
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pendingf">
+            <div id="btn3-close-modal" class="close-pendingf">
+                <i class="ion-close-round"></i>
+            </div>
+
+            <div class="modal-content cont-2 pend">
+                <h2>Pending</h2>
+                <div class="search">
+                    <input type="text" id="srchf" placeholder="Search"><button id="findf"><i class="ion-ios-search-strong"></i> </button>
+                </div>
+                <div class="table">
+                    <table  cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td class="one"><h3>S no.</h3></td>
+                            <td class="two"><h3>Description</h3></td>
+                            <td class="three"><h3>Amount</h3></td>
+                            <td class="four"><h3>Due Date</h3></td>
+                        </tr>
+                        </thead>
+                        <tbody id="pef-p">
+                        <tr>
+                            <td class="one"><h3>0.</h3></td>
+                            <td class="two"><h3> No Pending Bills</h3></td>
+                            <td class="three"><h3> :)</h3></td>
+                            <td class="four"><h3>:D</h3></td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="change">
+                    <form id="changep-bill">
+                        <div class="row">
+                            <div class="col span-1-of-2">
+                                <input type="text"  id="cper" placeholder="Particulars" required>
+                            </div>
+                            <div class="col span-1-of-2 m-l">
+                                <input type="number"  id="camnt" placeholder="Amount" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-2">
+                                <label>Last Date </label>
+                            </div>
+                            <div class="col span-1-of-2 m-l">
+                                <input type="Date"  id="cddate" placeholder="Due Date" required>
+                            </div>
+                            <button id="cdone-pend">Add</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <span>&copy;</span><b>€</b>xpenso
+        </footer>
+
+     
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="vendors/animatedModal.min.js"></script>
+        <script src="vendors/intro.min.js"></script>
+
+
+        <script src="js/some1.js"></script>
+        <script>
+            checkPoint();
+
+
+            function checkPoint() {
+                if(window.name === ""){
+                    window.location.href="/login";
+
+                }
+            }
+        </script>
+
+        <script>
+            
+            $("#link2").animatedModal({
+                modalTarget:'settings',
+                animatedIn:'fadeInDown',
+                animatedOut:'fadeOutDown',
+                color:'rgba(0,0,0,0.8)'
+            });
+
+            $("#full-pass").animatedModal({
+                modalTarget:'passbookf',
+                animatedIn:'fadeInDown',
+                animatedOut:'fadeOutDown',
+                color:'rgba(0,0,0,0.8)'
+            });
+
+            $("#full-pend").animatedModal({
+                modalTarget:'pendingf',
+                animatedIn:'fadeInDown',
+                animatedOut:'fadeOutDown',
+                color:'rgba(0,0,0,0.8)'
+            });
+
+
+            
+            
+        
+        </script>
+    </body>
+</html>
+
+
+
+
+
