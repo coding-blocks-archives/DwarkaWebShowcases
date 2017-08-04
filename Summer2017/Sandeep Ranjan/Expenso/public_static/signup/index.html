@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
+    <title>Title</title>
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url('back.jpeg');
+            background-attachment: fixed;
+            background-position: top;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .sign {
+            border: 1px solid #fff;
+            width: 40%;
+            height: 500px;
+            margin: 10% auto;
+
+        }
+
+        .sign h1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 300;
+            color: #fff;
+        }
+
+        b {
+            font-weight: 400;
+            color: #82b541;
+        }
+
+        .sign #form {
+            width: 60%;
+            height: 50%;
+            margin: 0 auto;
+
+            padding-top: 40px;
+            padding-left: 25px;
+        }
+
+        #form input:focus {
+            outline :none;
+        }
+
+        #form input {
+            width: 93%;
+            height: 30px;
+            margin-bottom: 10px;
+            border: 0;
+            padding-left: 15px;
+            background-color: rgb(225, 225, 225);
+            color: #000;
+        }
+
+        #err {
+            color: #ccc;
+            text-align: center;
+            font-weight: 100;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="sign">
+        <h1><b>€</b>xpenso SignUp</h1>
+    <form id="form" action="/send" method="post">
+    <input id="name" name="name" type="text" placeholder="Name" required> <br>
+    <input id="user" name="email" type="email" placeholder="Email" required> <br>
+    <input id="pass" name="password" type="password" placeholder="Passwrod" minlength=8 required><br>
+    <button id="btn">done</button>
+    </form>
+        <h4 id="err"></h4>
+    </div>
+
+<script src="../js/jquery.js"></script>
+<script>
+        $(document).ready(function () {
+
+            $('#form').submit(function (e) {
+                e.preventDefault();
+
+                $.post({
+                    url : '/send',
+                    data : {"name" : $('#name').val(), "email" : $('#user').val(), "password" : $('#pass').val()},
+                    success : function (data) {
+                        $('#err').text(data);
+                        $('#name').val('');
+                        $('#user').val('');
+                        $('#pass').val('');
+                    }
+                });
+
+            })
+
+        })
+</script>
+</body>
+</html>

@@ -1,0 +1,1100 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
+   
+        <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="vendors/animate.min.css"/>
+		<link rel="stylesheet" href="css/media.css">		
+        <link rel="stylesheet" href="vendors/grid.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Expenso</title>
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                letter-spacing: 0.5px;
+                word-spacing: 1px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+            }
+            
+            b {
+                font-weight: 400;
+                color: #82b541;
+            }
+
+            .work-step {
+                margin-bottom: 50px;
+            }
+
+            .yes {
+                width: 30%;
+                margin-left: 130px;
+                margin-top: 100px;
+            }
+
+            .work-step p {
+                font-size: 30px;
+            }
+
+            .work-step div {
+                color: #82b541;
+                display: inline-block;
+                border: 2px solid #82b541;
+                border-radius: 50%;
+                width:40px;
+                height: 40px;
+                text-align: center;
+                padding: 5px;
+                float: left;
+                font-size: 150%;
+                margin-right:25px;
+            }
+            
+            header {
+                height: 100vh;
+                background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('header.jpeg');
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            
+            nav{
+                display: flex;
+                flex-wrap: wrap;
+                height: 90px;
+                box-shadow: 0 0 1px #121112;
+                width: 100%;
+                background: #fff;
+            }
+            
+            nav >h1 {
+                font-size: 50px;
+                width: 20%;
+                padding: 13px;
+                padding-left: 40px;
+                color: #121112;
+            }
+            
+            .sticky {
+                position: fixed; 
+                top: 0 ; 
+                left: 0; 
+                width: 100%; 
+                background-color: rgba(255, 255, 255, 0.99); 
+                box-shadow: 0 2px 2px #efefef; /* x , y, blur, color */
+                z-index: 9999; /* defines the stacking of the element so it is always at the top*/
+            }
+            
+            
+             button {
+                width: 10%;
+                height: 50px;
+                background: #82b541;
+                border: 0;
+                border-radius: 4px;
+                margin-top: 20px;
+                color: #fff;
+                font-weight: 300;
+                font-size: 15px;
+                transition: all 0.5s ;
+            }
+            
+            button:focus {
+                outline: none;
+            }
+            
+             button:hover {
+                background: #78a043;
+            }
+            
+            nav ul {
+                width: 68%;
+                list-style-type: none;
+            }
+            
+            nav ul li {
+                display: inline-block;
+                width: auto;
+                height: 50px;
+                margin-top: 15px;
+                padding: 10px;
+                padding-top: 20px;
+                
+            }
+            
+            nav >i {
+                display: none;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                font-size: 19px;
+                color: #9e9f9e;
+                font-weight: 300;
+                transition: all 0.5s ease-in-out;
+            }
+            
+            nav ul li a:hover {
+                color:  #121112;
+                
+            }
+            
+            
+            
+            .textbox {
+                position: relative;
+                top: 20%;
+                left: 10%;
+                width: 60%;
+                font-size: 37px;
+                color: #fff;
+            }
+            
+            
+            .textbox h1 {
+                font-weight: 400;
+            }
+            
+            .textbox > button {
+                width: 17%;
+            }
+            
+            .textbox .btn-play {
+                background: transparent;
+                border: 1px solid;
+            }
+            
+            .textbox .btn-play:hover {
+                background: #0678be;
+            }
+            
+            .textbox .btn-play .ion-ios-play{
+                font-size: 17px;
+                padding-right: 10px;
+            }
+            
+            
+            header .down {
+                height: 65px;
+                width: 65px;
+                border-radius: 50%;
+                border: 2px solid;
+                color: #82b541;
+                background: #fff;
+                text-align: center;
+                padding-top: 15px;
+                font-size: 35px;
+                margin: 450px auto 0 auto;
+                transition: all 0.5s ease-in-out;
+                animation: plus 2s infinite;
+                
+                
+                
+            }
+            
+            header .down:hover {
+                animation-play-state: paused;
+                background: #82b541;
+                color: #fff;
+                
+            }
+            
+            @keyframes plus {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(130, 181, 65, 0.77), 0 0 0 0 rgba(130, 181, 65, 0.77);
+                }
+                40% {
+                    box-shadow: 0 0 0 20px rgba(130, 181, 65, 0), 0 0 0 0 rgba(130, 181, 65, 0.77);
+                }
+                80% {
+                    box-shadow: 0 0 0 20px rgba(130, 181, 65, 0), 0 0 0 15px rgba(130, 181, 65, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(130, 181, 65, 0.77), 0 0 0 15px rgba(130, 181, 65, 0);
+                }
+            }   
+            
+            .desp {
+                margin-top: 10vh;
+                height: auto;
+                
+            }
+            
+            section h2 {
+                text-align: center;
+                font-size: 40px;
+                margin-top: 45px;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+                
+            }
+            
+            section h2:after {
+                content: ' ';
+                display: block; 
+                height: 2px;
+                width: 150px;
+                background-color: #82b541; 
+                margin: 0 auto; 
+                margin-top: 10px;
+            }
+            
+            .long-copy {
+                line-height: 145%; 
+                width: 70%; 
+                margin-left: 15%; 
+                text-align: center;
+            }
+            
+            .desp .row {
+                width: 80%;
+                margin: 30px auto 50px auto;
+            }
+            
+            .row .box {
+                height: 330px;
+                text-align: center;
+                overflow: hidden;
+                transition: all 1s ease-in-out;
+                
+            }
+            
+            .box h3 {
+                margin: 13px 0 15px 0;
+                font-size: 20px;
+                padding-top: 10px;
+                background: #82b541; 
+                height: 40px;
+                color: #fff;
+                transition: all 1s ease-in-out;
+            }
+            
+            .box p {
+                margin-top: 62px;
+                background: rgba(255, 255, 255, 0.63);
+                transition: all 1s ease-in-out;
+                font-size: 17px;
+            }
+            
+            .box:hover  {
+                
+            }
+            
+            .box:hover h3 {
+                border-bottom: 1px solid #82b541;
+                letter-spacing: 1px;
+            }
+            
+            .box:hover p {
+                transform: translateY(-52px);
+            }
+            
+            .box:hover i {
+                font-size: 150px;
+            }
+            
+            .row i {
+                font-size: 200px;
+                transition: all 1s ease-in-out;
+            }
+            
+            .prod {
+                border: 1px solid transparent;
+                background-color: #000;
+                color: #fff;
+                
+            }
+                
+            .test {
+                width: 100%;
+                height: auto;
+            }  
+            
+            .test .testiomanils {
+                width: 80%;
+                height: auto;
+                margin: 40px auto 70px auto;
+            }
+            
+            .testiomanils blockquote {
+                padding: 2px; 
+                font-style: italic; 
+                line-height: 145%; 
+                font-size: 20px;
+                margin-top: 40px; 
+                position: relative; 
+            }
+
+             .testiomanils blockquote:before{
+                content: "\201C"; 
+                font-size: 400%; 
+                display: block; 
+                position: absolute; 
+                top: -5px; 
+                left: -3px; 
+            }
+            
+            .testiomanils > div {
+                height: 300px;
+                width: auto;
+            }
+            
+            .testiomanils cite {
+                font-size: 90%; 
+                display: block; 
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .testiomanils cite img {
+                height: 55px; 
+                margin: 0 auto;
+                border-radius: 50%; 
+                margin-top: 10px;
+            }
+            
+            
+            .contact {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                border-top: 1px solid #272727;
+            }
+            
+            .contact h3 {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 25px;
+            }
+            
+            .contact .send {
+                width: 70%;
+                padding: 20px;
+            }
+            
+            .contact .info {
+                width: 30%;
+            }
+            
+            .contact .send .c-1 {
+                width: 100%;
+                padding: 10px;
+                
+            }
+            
+            .c-1 select {
+                width: 40%;
+                margin-left: 40px;
+                padding-left: 20px;
+                font-size: 20px;
+                background: transparent;
+                border: 0;
+                border-radius: 0;
+                border-bottom: 1px solid #6d885d;
+                
+            }
+            
+            .contact .c-1 input {
+                width: 40%;
+                height: 40px;
+                border: 0;
+                border-bottom: 1px solid #6d885d;
+                margin-left: 40px;
+                padding-left: 20px;
+                font-size: 20px;
+            }
+            
+            .c-1 textarea {
+                padding: 10px;
+                width: 80%;
+                height: 100px;
+                font-size: 15px;
+                margin: 10px 50px;
+                border: 0;
+                border-bottom: 1px solid #6d885d;
+            }
+            
+            .c-1 #send {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                font-size: 20px;
+            }
+            
+            .contact .info {
+                background: #272727;
+                color: #cecece;
+                padding: 30px;
+                padding-left: 60px;
+            }
+            
+            .contact .info i {
+                font-size: 35px;
+                margin-right: 20px;
+                color: #5c9936;
+            }
+            
+            .info h3 {
+                margin-bottom: 20px;
+            }
+            
+            .info h4 {
+                margin-left: 20px;
+                margin-bottom: 30px;
+            }
+            
+            .info .cont {
+                margin-left: 20px;
+            }
+            
+            input:focus, select:focus, textarea:focus {
+                outline: none;
+            }
+            
+            footer {
+                background-color: #272727;
+                height: auto;
+            }
+            
+            footer .foot-1 {
+                width: 50%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            .foot-1 .f-1 {
+                width: 40%;
+                margin: 10px auto;
+                padding-left: 35px;
+            }
+            
+            .foot-1 .f-1 .icons {
+                display: inline-block;
+                width: 15%;
+                text-align: center;
+                background-color: #5c9936;
+                height: 37px;
+                border-radius: 50%;
+                color: #272727;
+                font-size: 23px;
+                padding-top: 7px;
+                transition: all .5s ease-in-out;
+                
+            }
+            
+            .foot-1 .f-1 .icons:hover {
+                color: #cecece;
+            }
+            
+            
+            .foot-1 .f-2 {
+                width: 40%;
+                margin: 15px auto;
+            }
+            
+            .foot-1 .f-2 ul li {
+                width: 25%;
+            }
+            
+            .foot-1 .f-2 ul li a{
+                font-size: 13px;
+                letter-spacing: 2px;
+                color: #cecece;
+            }
+            
+            .foot-1 .f-3  {
+                width: 30%;
+                margin: 0 auto;
+            }
+            
+             .foot-1 .f-3 ul li {
+                width: 33.33%;
+                 text-align: center;
+                
+            }
+            
+            .foot-1 .f-3 ul li a {
+                font-size: 12px;
+                letter-spacing: 1px;
+                color: #777777
+            }
+            
+            .foot-1 ul {
+                list-style: none;
+                width: 100%;
+            }
+            
+            .foot-1 ul li {
+                display: inline-block;
+                text-transform: uppercase;
+            }
+            
+            .foot-1 ul li a {
+                display: inline-block;
+                text-transform: uppercase;
+                text-decoration: none;
+                
+            }
+            
+            .foot-2 {
+                background: #5b9638;
+                padding-top: 10px;
+            }
+            
+            .foot-2 h4 {
+                text-align: center;
+                color: #fff;
+                font-weight: 100;
+                letter-spacing: 2px;
+                word-spacing: 1px;
+                
+            }
+            
+            .foot-2 h5 {
+                text-align: center;
+                color: #fff;
+                font-weight: 100;
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+            .foot-2 b {
+                color: #fff;
+            }
+            
+            
+            
+            
+            
+            
+            
+        </style>
+        <style>
+                @media screen and (max-width: 768px) {
+                    header {
+                        height: 100vh;
+                    }
+                                        
+                    nav > h1 {
+                        width: 35%;
+                    }
+                    
+                    nav > ul {
+                        width: 43%;
+                    }
+                    
+                    button {
+                        width: 20%;
+                    }
+                    
+                    .textbox {
+                        width: 90%;
+                    }
+                    
+                    .textbox h1 {
+                        font-size: 60px;
+                    }
+                    
+                    .textbox h3{
+                        font-size: 35px;
+                    }
+                    
+                    header .down {
+                       height: 50px;
+                       width: 50px;
+                       margin: 35% auto 0 auto !important;
+                       font-size: 20px;
+                   }
+                    
+                    .desp .row {
+                        width: 99%;
+                    }
+                    
+                    .row h3 {
+                        font-size: 18px;
+                    }
+                    
+                    .row .box p {
+                        margin-top: 90px;
+                        font-size: 15px;
+                    }
+                    .row .box i {
+                        font-size: 180px;
+                    }
+                    
+                    .row .box:hover i  {
+                        font-size: 100px;
+                    }
+                    
+                    
+            }
+               @media screen and (max-width: 425px){
+        
+                   header {
+                       background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('header-s.jpeg');
+                   }
+
+                   .yes {
+                       margin-left: 20px;
+                       width: 90%;
+                   }
+                   
+                nav {
+                    height: auto;
+                    width: 100%;
+                    position: relative;
+                }
+                
+                nav h1 {
+                    width: 85%;
+                    order: 2;
+                    font-size: 40px;
+                    padding-top: 13px;
+                }
+                
+                   nav ul  {
+                       order: 3; 
+                       width: 100%;
+                       top: 73px;
+                       left: 0;
+                       position: absolute;
+                       background: #fff;
+                       z-index: 999;
+                       
+                      
+                   }
+                   
+                   .full{
+                       overflow-y: hidden;
+                   }
+                   
+                   nav >i {
+                       width: 15%;
+                       display: block;
+                       padding: 15px;
+                       padding-top: 17px;
+                       font-size: 35px;
+                       order 1;
+                   }
+                   
+                   nav > i:hover {
+                       
+                   }
+                   
+                   .hei{
+                       height: 100vh;
+                   }
+                  
+                   
+                   .show {
+                       display: block;
+                       width: 100%;
+                       border-bottom: 1px solid #d8d7d7;
+                       padding-bottom: 5px;
+                       background: #fff;
+                       
+                   }
+                   
+                    nav ul li {
+                       display: none; 
+                       
+                   }
+                   
+                   nav button {
+                       display: none;
+                   }
+                   
+                   
+                   .textbox {
+                       top: 10%;
+                       left: 0;
+                       font-size: 27px !important;
+                       width: 100%;
+                        text-align: center;
+                    
+                   }
+                   
+                   .textbox h1 {
+                       width: 100%;
+                   }
+                   
+                   .textbox h3 {
+                       margin-top: 30px;
+                       font-size: 23px;
+                   }
+                   
+                   header .down {
+                       height: 50px;
+                       width: 50px;
+                       margin: 56% auto 0 auto !important;
+                       font-size: 20px;
+                   }
+                   
+                   .textbox button {
+                       width: 40%;
+                       margin: 60px auto 0 auto;
+                       height: 40px;
+                   }
+                   
+                   .textbox .btn-play {
+                        display: none;
+                   }
+                    
+                    section h2 {
+                        font-size: 30px;
+                    }
+                    
+                    
+                    .testiomanils blockquote {
+                        font-size: 17px;
+                    }
+                   
+                   .form .contact {
+                       width: 100%;
+                       border: 0;
+                   }
+                   
+                   .contact .send {
+                       width: 100%;
+                   }
+                   
+                   .contact .send .c-1 {
+                       padding: 0;
+                   }
+                   
+                   .contact .send input {
+                       width: 80%;
+                       margin-top: 10px;
+                       margin-bottom: 7px;
+                       font-size: 17px;
+                   }
+                   
+                   .contact .send select {
+                       width: 80%;
+                       margin-top: 20px;
+                       margin-bottom: 20px;
+                   }
+                   
+                   .contact textarea {
+                       width: 80%;
+                       margin-left: 40px;
+                       margin-right: -10px;
+                   }
+                   
+                   .contact .info {
+                       width: 100%;
+                       border-bottom: 1px solid black;
+                   }
+                   
+                   .contact .info .cont {
+                       margin: 0;
+                   }
+                   
+                   .contact .c-1 {
+                       height: auto;
+                   }
+                   
+                   
+                   
+                   
+                    
+                    footer .foot-1 {
+                        width: 100%;
+                    }
+                    
+                    footer .foot-1 .f-1 {
+                     padding-left: 27%;
+                    }
+                    
+                    footer .foot-1 .f-1 .icons {
+                        height: 30px;
+                        width: 30px;
+                        font-size: 15px;
+                        
+                    }
+                    
+                    .foot-1 .f-2 {
+                        font-size: 7px;
+                    }
+                    
+                    .foot-1 .f-3 {
+                        width: 100%;
+                    }
+                    
+                    .foot-1 .f-3 ul {
+                        width: 60%;
+                        margin: 0 auto;
+                    }
+                    
+                    footer .foot-1 .f-1 {
+                        width: 100%;
+                    }
+                    
+                    footer .foot-1 .f-2 {
+                        width: 70%;
+                    }
+
+
+
+                   
+                   
+                    
+                    
+                    
+            }
+            
+
+            
+        </style>
+        
+        <style>
+            .typed-cursor{          opacity: 1;       animation: typedjsBlink 0.7s infinite; }
+                @-webkit-keyframes typedjsBlink{
+                    0% { opacity: 1; }
+                    50% { opacity: 0.0; }
+                    100% { opacity: 1; } }
+            
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1><b>€</b>xpenso</h1>
+                <i id="ico" class="ion-navicon-round"></i>
+                <ul>
+                    <li><a class="click" href="#about">About</a></li><li>
+                    <a class="click" href="#product">Product</a></li><li>
+                    <a  class="click" href="#contact">Contact</a></li>
+                </ul>
+                <button onclick="location.href = './login';" >Get Started</button>
+            </nav>
+            <div class="textbox">
+                <h1>Welcome to <span><b>€</b>xpenso</span></h1>
+                <h3>We
+                    <span class="typed-cursor" id="typed-strings">
+                        <p>manage your Expenses.</p>
+                        <p>help with your daily expense.</p>
+                        <p>save an offline passbook.</p>
+                    </span>
+                    <span id="typed"></span>
+                </h3>
+                <button class="btn-play"><i class="ion-ios-play"></i>Play video</button>
+                <button >Get Started</button>
+            </div>
+            <div  href="#about" class="down click"><i class="ion-chevron-down"></i></div>
+            
+        </header>
+        
+        <section class="desp" id="about">
+            <h2>Manage. Save. Grow.</h2>
+            
+            <p class="long-copy">
+                    Hello, we're <b>€</b>xpenso, your new offline bank  service. We know you're always busy. No time for going to back to print you passbook . So let us take care of that, we're really good at it, we Promise!
+                </p>
+            
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <h3>Spends Tracker</h3>
+                    <i class="ion-ios-speedometer-outline"></i>
+                    
+                    <p>
+                        Track all your spendings automatically from your phone. Anytime Anywhere!
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <h3>All A/c in one Place</h3>
+                    <i class="ion-card"></i>
+                    
+                    <p>
+                        Track all your bank accounts details and its passbook at one place.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <h3>Bill Reminder</h3>
+                    <i class="ion-ios-bell-outline"></i>
+                    
+                    <p>
+                        Get automatic Reminders. So you never pay your bills late ever again.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <h3>Safe &amp; Secure</h3>
+                    <i class="ion-ios-locked-outline"></i>
+                    
+                    <p>
+                        Bank grade security. Non of your <b>€</b>xpenso accounts details get leaked.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="prod" id="product">
+            <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            <div class="row">
+                <div style="overflow:hidden" class=" col span-1-of-2">
+                    <img src="img/mac.jpg">
+                </div>
+                <div class=" yes col span-1-of-2">
+
+                    <div class="work-step">
+                        <div>1</div>
+                        <p>Get Started Free of Cost </p>
+                    </div>
+                    <div class="work-step">
+                        <div>2</div>
+                        <p>Click on Get Started and SignUp
+                        </p>
+                    </div>
+                    <div class="work-step">
+                        <div>3</div>
+                        <p>Log in and you are Good to go</p>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        
+        </section>
+        
+        <section class="test" id="testi">
+            <h2>Our Dear Customers</h2>
+          
+            <div class="testiomanils">
+                <div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-1.jpg">- Jeannie M. Johnson</cite>
+                </div>
+                <div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-2.jpg">- Robert Armstrong</cite>
+                </div>
+                <div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-3.jpg">- Frances S. Harrington</cite>
+                </div><div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-4.jpg">- Justin A. Harrison</cite>
+                </div><div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-5.jpeg">- Erin W. Tilley</cite>
+                </div><div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-6.jpg">- Justin A. Harrison</cite>
+                </div><div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-7.png">- Flora D. Smith</cite>
+                </div><div>
+                    <blockquote>
+                        There are many variations of passages of <b>€</b>xpenso available, but the majority have suffered alteration in some form, by injected humour.
+                    </blockquote>
+                    <cite><img src="img/face-8.jpg">- Alberto Duncan</cite>
+                </div>
+                
+                
+           </div>
+            
+        </section>
+        
+        <section class="form" id="contact">
+            <div class="contact">
+                <div class="send">
+                    <h3>Drop us a Message</h3>
+                        <div class="c-1">
+                            <input type="text" id="name" placeholder="Your Name *" required>
+                            <input type="email" id="email" placeholder="Email Address *" required>
+                        </div>
+                        <div class="c-1">
+                            <input type="tel" id="tel" placeholder="Contact Number *" required>
+                            <select id="query">
+                                  <option  selected>Select Query</option>
+                                  <option value="query1">Query 1</option>
+                                  <option value="query2">Query 2</option>
+                                  <option value="query3">Query 3</option>
+                            </select>
+                        </div>
+                        <div class="c-1">
+                            <textarea id="msg" name="msg" placeholder="Please Detail your Query"></textarea>
+                            <button id="send"><i class="ion-paper-airplane"></i></button>
+                        </div>
+                </div>
+                <div class="info">
+                    <h3>Contact Information</h3>
+                    <div class="cont">
+                        <i class="ion-location"></i> <h4>345 Some Place <br>  Some Radom Country -110293</h4>
+                        <i class="ion-ios-telephone"></i><h4> (431) 349-320-938, (232) 453-234-323 <br> (435) 232-423-542</h4>
+                        <i class="ion-ios-email"></i><h4> contact_us@expenso.com <br> mail@expenso.com</h4>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div class="foot-1">
+                <div class="f-1">
+                    <div class="icons"><i class="ion-social-facebook"></i></div>
+                    <div class="icons"><i class="ion-social-twitter"></i></div>
+                    <div class="icons"><i class="ion-social-youtube"></i></div>
+                    <div class="icons"><i class="ion-social-instagram"></i></div>
+                    <div class="icons"><i class="ion-social-linkedin"></i></div>
+                </div>
+                <div class="f-2">
+                    <ul>
+                        <li><a href="#">Home</a></li><li>
+                        <a href="#">Menu</a></li><li>
+                        <a href="#">Story</a></li><li>
+                        <a href="#">Location</a></li>
+                    </ul>
+                </div>
+                <div class="f-3">
+                    <ul>
+                        <li><a href="#">Blog</a></li><li>
+                        <a href="#">FAQ</a></li><li>
+                        <a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-2">
+                <h4>We are here cause we Care <i class="ion-heart"> <b>€</b>xpenso</i></h4>
+                <h5>All Rights Reserverd | &copy; <b>€</b>xpenso </h5>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="vendors/typed.js"></script>
+        <script type="text/javascript" src="vendors/slick/slick.min.js"></script>
+        <script src="vendors/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+           
+			
+        </script>
+    </body>
+</html>

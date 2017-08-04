@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+
+    <title>Expenso -Login</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+        }
+
+        b {
+            font-weight: 400;
+            color: #82b541;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url('back.jpeg');
+            background-attachment: fixed;
+            background-position: top;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            font-size:  60px;
+            font-weight: 300;
+            color : #fff;
+        }
+
+        .container {
+
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 80px auto;
+            height: 390px;
+        }
+
+        .log {
+            background-color: rgba(0, 0, 0, 0.45);
+            width: 50%;
+            color :#fff;
+            transition: all 0.5s;
+        }
+
+        #form {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+         h2 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 35px;
+             font-weight: 400;
+        }
+
+        .log h2:after {
+
+            display: block;
+            font-family: 'FontAwesome';
+            content: '\f023';
+            font-size: 20px;
+
+        }
+
+         h4 {
+            text-align: center;
+            margin-top: -10px;
+            text-transform: capitalize;
+            color : #fd1c04;
+            font-size: 15px;
+        }
+
+        .log input {
+            width: 60%;
+            margin-left: 100px;
+            margin-bottom: 6px;
+            height: 30px;
+            padding-left: 15px;
+            font-size: 15px;
+        }
+
+        .log .sub {
+            margin-left: 140px;
+            height: 28px;
+            width: 80px;
+            font-size: 13px;
+            border: 0;
+            background-color: #15bacd;
+            color: #fff;
+            margin-top: 7px;
+            border-radius: 50px;
+        }
+
+        .sub:hover  {
+            background-color: #4eca2f;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+
+
+        .log a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #e91b24;;
+        }
+
+         #forget {
+             display: none;
+             margin-top: 60px;
+        }
+
+        .log a:hover {
+            text-decoration: underline;
+        }
+
+        .sign {
+            width: 49%;
+            opacity: 0.3;
+        }
+
+        #for {
+            margin-left: 115px;
+        }
+
+        #k{
+            margin-left: 243px;
+            width: 76px;
+            height: 27px;
+            margin-top: 7px;
+            border-radius: 50px;
+            border: 0px;
+            background-color: #15bacd;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        #k:hover {
+            background-color: #4eca2f;
+        }
+
+        #forget h4 {
+            margin-top: 13px;
+
+        }
+
+        .sign {
+            color: #fff;
+            transition: all 0.5s;
+        }
+
+
+        .sign h2:after {
+
+            display: block;
+            font-family: 'FontAwesome';
+            content: '\f040';
+            font-size: 20px;
+
+        }
+
+        #form1 {
+            width: 60%;
+            margin: 30px auto;
+        }
+
+        .sign input {
+            width: 85%;
+            margin-bottom: 6px;
+            height: 30px;
+            padding-left: 15px;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        #btn {
+            margin-left: 130px;
+            width: 76px;
+            height: 30px;
+            border-radius: 50px;
+            border: 0;
+            background-color: #1b85e2;
+            color : #fff;
+        }
+
+        #btn:hover  {
+            background-color: #0fff31;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <h1><b>€</b>xpenso</h1>
+    <div class="container">
+        <div class="log">
+             <h2>Login</h2>
+            <form id="form" action="/login" method="post">
+
+                <input id="email" name="email" type="email" placeholder="Email" required><br>
+                <input type="password" id="pass" name="password"  placeholder="Password" required><br>
+                <button class="sub">Login</button>
+                <a href="#" id="get" >Forget Password</a>
+
+            </form>
+
+
+            <h4 id="valid"></h4>
+
+            <div id="forget">
+
+                <input id="for" type="email" placeholder="Plese enter Your Email"> <br> <button id="k">Send</button>
+                <h4 id="val"></h4>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="sign">
+            <h2>SignUp</h2>
+            <form id="form1" action="/send" method="post">
+                <input id="name" name="name" type="text" placeholder="Name" required> <br>
+                <input id="user" name="email" type="email" placeholder="Email" required> <br>
+                <input id="pas" name="password" type="password" placeholder="Passwrod" minlength=8 required><br>
+                <button id="btn">Done</button>
+            </form>
+            <h4 id="err"></h4>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+<script src="../js/jquery.js"></script>
+<script src="../js/some1.js">
+
+
+</script>
+<script>
+
+
+    $("#k").click(function () {
+        console.log($('#for').val());
+        $('#val').html('Pls wait..!!');
+        $.post({
+            url :'/forget',
+            data: { email: $('#for').val()},
+            success : function (data) {
+
+                    $('#val').html(data);
+            }
+        });
+
+    });
+
+
+    $("#get").click(function (e) {
+        e.preventDefault();
+
+        console.log('x');
+
+        $('#forget').css("display","block");
+
+
+
+    });
+
+
+    $('#form1').submit(function (e) {
+        e.preventDefault();
+
+        $.post({
+            url : '/send',
+            data : {"name" : $('#name').val(), "email" : $('#user').val(), "password" : $('#pas').val()},
+            success : function (data) {
+                $('#err').text(data);
+                $('#name').val('');
+                $('#user').val('');
+                $('#pas').val('');
+            }
+        });
+
+    });
+
+    $('.sign').mouseover(function(){
+
+
+
+        $('.log').css("opacity","0.3");
+        $('.sign').css("opacity","1");
+        $('.log').css("background-color","transparent");
+        $('.sign').css("background-color","rgba(0, 0, 0, 0.45)");
+
+    });
+
+    $('.log').mouseover(function () {
+        $('.sign').css("opacity","0.3");
+        $('.log').css("opacity","1");
+        $('.sign').css("background-color","transparent");
+        $('.log').css("background-color","rgba(0, 0, 0, 0.45)");
+    });
+
+
+
+</script>
+</body>
+</html>
