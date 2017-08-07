@@ -1,0 +1,425 @@
+#image
+{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#loginBtn
+{
+    width:15%;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left: 10%;
+}
+
+#subParent, #uPosts
+{
+    width:75%;
+}
+
+.modal
+{
+    max-height: 320px;
+}
+
+.row
+{
+    margin-bottom: 0;
+}
+
+#parent
+{
+    display: flex;
+}
+
+#uProfile
+{
+    width: 25%;
+}
+
+
+.header
+{
+    z-index: 300;
+    background-color: black;
+}
+
+.mlogo
+{
+    font-weight: 600;
+    display: inline-block;
+    margin: 20px;
+    padding: 5px 10px;
+    font-size:1.5em;
+    line-height: 1.5px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+#userPicOnNav
+{
+    height:30px;
+    float: right;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.signOut
+{
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size:1em;
+    float: right;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+#menu_btn
+{
+    width:300px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+
+#displaythis
+{
+    display: none;
+    margin: 40px 20px;
+    z-index: 100000;
+}
+
+
+#postContent, #postTitle
+{
+    padding: 10px;
+    margin-top: 10px;
+    width:80%;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+#home_feed
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin:30px;
+    justify-content: center;
+}
+
+.myCardClass
+{
+    box-shadow: 0 0 2px #888888;
+    padding: 10px;
+    width:20%;
+    margin: 25px;
+}
+
+.myCardTitle
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+.myCardImage
+{
+    max-height: 200px;
+    max-width: 90%;
+    cursor: pointer;
+}
+
+.heartIt
+{
+
+    margin-top: 3px;
+    text-align: center;
+    cursor: pointer;
+    padding: 3px;
+
+}
+
+.myCardClass:hover
+{
+    z-index:200;
+    box-shadow: 0 0 5px #888888;
+}
+
+.close
+{
+    float: right;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.modalContainer
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    height: 70vh;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+
+}
+
+.myModal
+{
+    width: 70%;
+    position: absolute;
+    top:5vh;
+    left:15%;
+    padding:10px;
+    background-color: #f5f5f5;
+    z-index: 700;
+    box-shadow: 0 0 30px #888888;
+    margin-bottom: 90px;
+    display: none;
+}
+
+.modalTitle
+{
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    font-size: 2em;
+    padding: 15px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.modalImage
+{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 90%;
+    margin:40px  auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modalContent
+{
+    margin-bottom: 30px;
+    line-height: 1.5;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    border-left: 1px solid black;
+    padding-left: 5px;
+    word-wrap: break-word;
+}
+
+.modalUserImage
+{
+    width:70%;
+    margin-bottom: 30px;
+}
+
+.modalUserName
+{
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+.myButton
+{
+    margin: 5px;
+    border: none;
+    /*border-radius: 18px;*/
+    border:1px solid black;
+    display: inline-block;
+    height: 36px;
+    /*font-size: 1rem;*/
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    background-color: #d8d2d6;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    outline: 0;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.myButton:hover
+{
+    background-color: #c4c2c3;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mySearch
+{
+    width:20%;
+    border-width: 0;
+    height:32px;
+    padding:2px 8px;
+}
+.mySearch:focus
+{
+    border-width:0;
+    border-style: none;
+    font-size: 15px;
+}
+
+input:focus
+{
+    border-width: 0;
+}
+
+
+
+.userInfoDiv
+{
+    background-image:url(Red.png);
+    height:400px;
+    margin: 40px;
+    box-shadow: 0 0 10px #888888;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.userProfileImage
+{
+    width:40%;
+    height: 400px;
+    display: table;
+    text-align: center;
+}
+
+.userProfileImage img
+{
+    height:250px;
+    max-width: 95%;
+}
+
+.userDetails
+{
+    width: 60%;
+}
+
+.userPostCard
+{
+    display: flex;
+    height: 300px;
+    width: 75%;
+    margin: 50px auto;
+    border-color: #1B2030;
+    border-width:1px;
+    border-radius: 10px;
+    border-style:solid;
+    cursor: pointer;
+}
+
+.userPostCard:hover
+{
+    background-color: whitesmoke;
+}
+
+
+.userPostImageContainer
+{
+    width: 40%;
+    display: table;
+    /*background-color: deeppink;*/
+    height: 300px;
+}
+
+.userPostTitleContainer
+{
+    width: 60%;
+    /*background-color: #1B2030;*/
+    height: 300px;
+    display: table;
+}
+
+.userPostImage
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.userPostTitle
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+    font-size: 45px;
+}
+
+.userPostHr
+{
+    height: 200px;
+    margin: auto 0;
+}
+
+#contactForm
+{
+    width:50%;
+}
+
+
+
+@media screen and (max-width: 992px)
+{
+    #userProfile
+    {
+        display: none;
+    }
+
+    #subParent, #uPosts, #uProfile, #contactForm
+    {
+        width: 100%;
+    }
+
+    #loginBtn
+    {
+        width: 70%;
+    }
+}
+
+
+
+
+
+/*Autocomplete CSS*/
+
+﻿body { font-family: sans-serif; font-size: 14px; line-height: 1.6em; margin: 0; padding: 0; }
+.container { width: 800px; margin: 0 auto; }
+
+.autocomplete-suggestions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-no-suggestion { padding: 2px 5px;}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: bold; color: #000; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+
+/*input { font-size: 28px; padding: 10px; border: 1px solid #CCC; display: block; margin: 20px 0; }*/
+
+
+
+/**/

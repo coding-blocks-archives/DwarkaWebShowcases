@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Damexula</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+
+    <script src="jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="jquery.autocomplete.min.js"></script>
+    <script src="userLoggedIn.js"></script>
+    <script src="jsFile.js"></script>
+
+</head>
+
+
+<header class="header">
+    <a class="mlogo" style="cursor: pointer;">BLOGIFY</a>
+    <input type="text" class="mySearch" placeholder="Search a user">
+
+    <a><img id="userPicOnNav" style="float: right"></a>
+    <a class="signOut">Sign Out</a>
+</header>
+
+<div>
+    <center>
+    <button id="menu_btn" style="background-color: white; color: black;" class="myButton">Add a new post</button>
+    </center>
+    <div style="background-image: url(Turquoise.png); height: 350px;"  id="displaythis">
+
+        <div style="clear: both; height: 20px;">
+            <span style="color: white; float: right; margin: 5px; cursor: pointer;" id="closePostBox" >X</span>
+        </div>
+        <br>
+        <div style="display: flex">
+            <div style="width: 30%; display: table; height: 300px; margin: auto 2.5%; ">
+                <span style="display: table-cell; vertical-align: middle;">
+                    <center>
+                    <img id="addImageIcon"
+                         style="width: 50%; display: table-cell; vertical-align: middle; cursor: pointer; " onclick="uploadImage()">
+                    </center>
+                </span>
+            </div>
+
+            <div style="width: 60%; margin: auto 2.5%;">
+                <center>
+                    <form id="postForm">
+                    <input type="text" id="postTitle" placeholder="Post Title"> <br>
+                    <textarea rows="6" id="postContent" placeholder="Post content"></textarea><br>
+                    <input type="file" name="pic" id="imageUpload" accept="image/*" style="display: none;">
+                    </form>
+                    <button class="myButton" id="postBtn" >Post</button>
+                    <br>
+                    <span id="error_message" style="text-align: center;  color: whitesmoke;"></span>
+                </center>
+
+            </div>
+
+        </div>
+
+        <center>
+
+        </center>
+
+    </div>
+
+</div>
+
+<div id="home_feed"></div>
+
+
+
+<div class="myModal">
+    <span class="close" style="cursor: pointer;">&times;</span>
+    <div style="display: table; text-align: center; width: 100%;">
+        <img class="modalImage" >
+    </div>
+
+    <div class ="modalTitle"></div>
+    <div class="infoBox" style="display: flex; flex-wrap: wrap; line-height: 1.5;" >
+        <div class="modalUser" style="width: 25%; display: table; text-align: center;">
+            <img class="modalUserImage" onclick="fetchProfile(id)" style="cursor: pointer;" >
+            <div class="modalUserName" onclick="fetchProfile(id)" style="cursor: pointer;"></div>
+            <div class="modalLikes"></div>
+        </div>
+        <div class="modalContent"></div>
+    </div>
+
+</div>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyA8nn0pWs7IRqEqHvFmBdgvgYrmYZrw4Do",
+        authDomain: "webfire-99c02.firebaseapp.com",
+        databaseURL: "https://webfire-99c02.firebaseio.com",
+        projectId: "webfire-99c02",
+        storageBucket: "webfire-99c02.appspot.com",
+        messagingSenderId: "1000608967632"
+    };
+    firebase.initializeApp(config);
+</script>
+
+
+
+
+</body>
+</html>

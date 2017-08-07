@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport"  content="width=device-width, initial-scale=1">
+
+
+<!--=============== scripts ================-->
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="jsFile.js"></script>
+    <script src="logInOrNot.js"></script>
+
+<!--================== CSS ================-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link  href="style.css" rel="stylesheet">
+
+
+    <title>My Blog</title>
+</head>
+
+
+
+
+<body>
+
+<!--============  Pre-loader : displayed while checking if user is logged in =============-->
+
+<div id="pageLoader">
+<center>
+<div class="preloader-wrapper  active" style="top: 45vh;">
+    <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+        <div class="circle"></div>
+    </div><div class="circle-clipper right">
+        <div class="circle"></div>
+    </div>
+    </div>
+
+    <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+        <div class="circle"></div>
+    </div><div class="circle-clipper right">
+        <div class="circle"></div>
+    </div>
+    </div>
+
+    <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+        <div class="circle"></div>
+    </div><div class="circle-clipper right">
+        <div class="circle"></div>
+    </div>
+    </div>
+
+    <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div><div class="gap-patch">
+        <div class="circle"></div>
+    </div><div class="circle-clipper right">
+        <div class="circle"></div>
+    </div>
+    </div>
+</div>
+</center>
+</div>
+
+<!--===========================================================-->
+
+
+
+<!--============ If user is not logged in, show this ==============-->
+
+<div   id="notLoggedIn"  style="display: none">
+
+
+    <header class="header">
+        <a class="mlogo" onclick="goToHome()" style="cursor: pointer;">BLOGIFY</a>
+    </header>
+
+
+    <div  style="height: 90vh; background-image: url(Silver.png); margin-top: 1px;">
+        <img id="loginBtn" src="google%20sign%20in.png" style="cursor: pointer;">
+    </div>
+
+
+    <!--for that carousel to display perks of your website-->
+    <div style="background-color: whitesmoke; " >
+
+
+
+    </div>
+
+
+    <!--contact me section-->
+    <div style="height: 400px; display: table; width: 100%; ">
+
+
+
+
+        <center>
+        <form id="contactForm" >
+            <h3 class="contactForInput" style="text-align:center; width: 80%; margin: 10px; padding: 20px;">CONTACT US</h3>
+
+            <input  class="contactForInput" placeholder="Name" style="width: 80%; margin: 5px 10px;  padding: 20px; border: none; border-bottom: 1px solid lightgray;"><br>
+            <input class="contactForInput" type="email" placeholder="E-mail" style="width: 80%; margin: 5px 10px;  padding: 20px; border: none; border-bottom: 1px solid lightgray;"><br>
+            <textarea class="contactForInput" rows="5" placeholder="Message" style="width: 80%;  margin: 5px 10px;  padding: 20px; border: none; border-bottom: 1px solid lightgray;"></textarea><br>
+            <button class="myButton" id="sendMsg" style="border: none;">Send</button>
+
+        </form>
+        </center>
+
+    </div>
+
+
+</div>
+
+<!--=============================================================-->
+
+
+<script>
+    // Initialize Firebase
+  initializeFirebase();
+</script>
+
+</body>
+</html>
