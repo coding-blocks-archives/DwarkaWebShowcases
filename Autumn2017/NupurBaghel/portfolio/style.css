@@ -1,0 +1,81 @@
+.fullpage{
+	margin-top: 5px;
+	background-image: url("mainbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.aboutme{
+	background: linear-gradient(#DAD299, #B0DAB9);
+	border-radius: 5%;
+	position: relative;
+	width: 60%;
+	margin: 10px auto;
+	text-align: center;
+}
+.name{
+	font-size: 50px;
+}
+#nupur{
+	border-radius: 50%;
+	height: 20%;
+	width: 20%;
+}
+.desc{
+	text-align: center;
+	font-size: 40px;
+}
+.head{
+	width:100%;
+	margin:0 auto;
+	margin-top: 10px;
+
+}
+.header{
+	text-align: center;
+	margin-top: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	background: linear-gradient(to bottom, #f4e842, #dbff7a);
+}
+ul>li{
+	
+	display: inline-block;
+	font-size: 30px;
+	width: 50%;
+}
+li:hover{
+	background-color: grey;
+}
+
+table{
+width: 90%;
+font-size:50px;
+margin-left: 5%;
+margin-right: 5%;
+}
+tr{
+height: 150px;
+}
+th{
+	width:50%;
+}
+td{
+	width:50%;
+}
+.content1{
+	display: inline-block;
+	font-size: 30px;
+}
+.content2{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.heading{
+	background: linear-gradient(to bottom, #f4e842, #dbff7a);
+	font-size: 40px;
+	text-align: center;
+}
