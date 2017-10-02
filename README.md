@@ -11,10 +11,13 @@
  - **[Sandeep Ranjan](https://github.com/srsandy/DwarkaWebShowcases/tree/master/Summer2017/Sandeep%20Ranjan/Expenso)**
  - Avani Verma 
        - **[Blogify](http://blogify-version4.bitballoon.com/)**
-- Paavini Nanda
-    - **[Resume](lifeguard-runouts-78461.bitballoon.com)**
-- Tanuj
-	- **[Portfolio](carpenter-stretchers-20738.bitballoon.com)**
+ - Paavini Nanda
+    - **[Resume](http://lifeguard-runouts-78461.bitballoon.com)**
+ - Nupur Baghel
+ 	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
+ 	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
+ - Tanuj
+	  - **[Portfolio](carpenter-stretchers-20738.bitballoon.com)**
        
        
        
