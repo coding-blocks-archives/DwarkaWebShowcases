@@ -12,13 +12,19 @@
  - Avani Verma 
        - **[Blogify](http://blogify-version4.bitballoon.com/)**
  - Paavini Nanda
-    - **[Resume](http://lifeguard-runouts-78461.bitballoon.com)**
+    - **[Portfolio](http://lifeguard-runouts-78461.bitballoon.com/)**
+    - **[ToDoList](http://reporter-goat-24368.bitballoon.com/)**
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
- - Kawal Preet 
+<<<<<<< HEAD
+ 
+=======
+ - Tanuj
+	  - **[Portfolio](http://carpenter-stretchers-20738.bitballoon.com/)**
+>>>>>>> 2148a475c713fa97e4651ed74a25c27cde556c0a
+       - Kawal Preet 
 	  - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
 
-       
        
        
