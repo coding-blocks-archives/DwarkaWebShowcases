@@ -12,11 +12,34 @@
  - Avani Verma 
        - **[Blogify](http://blogify-version4.bitballoon.com/)**
  - Paavini Nanda
-    - **[Resume](http://lifeguard-runouts-78461.bitballoon.com)**
+    - **[Portfolio](http://lifeguard-runouts-78461.bitballoon.com/)**
+    - **[ToDoList](http://reporter-goat-24368.bitballoon.com/)**
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
+ -Amartya Biswas
+	  - **[Todolist](http://fireman-florence-78507.bitballoon.com/)**
+ 	  - **[PortFolio](http://advisor-complexes-28855.bitballoon.com/)**
+	  - **[Animation](http://miller-alice-38748.bitballoon.com/)**
+- Rajat Sharma
+    - **[Todolist](http://to-do-list-by-rajat.bitballoon.com)**
 
+- Ankit Dua
+	- **[ToDoList] (http://poacher-amplitude-73481.bitballoon.com/) **
+
+ - Tanuj
+	  - **[Portfolio](http://upholsterer-beaver-25857.bitballoon.com/)**
+
+- Kawal Preet 
+	  - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
+    
+- Parul
+    - **[TodoList](https://sentry-porcupine-65848.bitballoon.com)**
+
+
+<<<<<<< HEAD
 
        
+=======
+>>>>>>> d5dbe5bf9f01ed54882d3cc8102e3f5eece565ed
        

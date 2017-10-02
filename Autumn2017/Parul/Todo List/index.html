@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO</title>
+    <style>
+        .header{
+            background-color: #baaea4;
+            text-align: center;
+            color: white;
+        }
+        .todo{
+            display: flex;
+            align-content: center;
+            height: 100px;
+            justify-content: center;
+/*            background-color: antiquewhite;*/
+        }
+        #task{
+            width: 1000px;
+            height: 30px;
+        }
+        #add{
+            width:100px;
+            height: 30px;
+            color: black;
+/*            background-color: aliceblue;*/
+        }
+        ::placeholder{
+            font-size: 20px;
+            color:grey;
+        }
+        
+        ul li{
+            border: 1px solid black;
+            background-color: #c1beaf;
+            width: 1000px;
+            height: 30px;
+            
+            font-size: 20px;
+            list-style: none;
+/*            text-decoration: none;*/
+        }
+        ul li span{
+            padding-top: 2px;
+            cursor: pointer;
+        }
+        ul li button{
+            position: absolute;
+            left: 980px;
+            height: 30px;
+            width: 50px;
+            border: none;
+            background-color: #c1beaf;
+            color: brown;
+            font-size: 20px;
+/*            background-color: brown;*/
+            cursor: pointer;
+        }
+        ul li{
+            border: 1px solid black;
+        }
+       
+    </style>
+</head>
+<body>
+   <div class="header">
+     <h2>TODO LIST</h2>
+      <div class="todo">
+            <input id="task" placeholder="Title">
+            <button type="button" id="add" >ADD</button> 
+      </div>
+      
+   </div> 
+   <ul id="list">
+<!--       <li><span>&#x2717;</span></li>-->
+   </ul>
+   <script src="Todo2.js"></script>
+</body>
+</html>
