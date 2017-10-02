@@ -17,13 +17,18 @@
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
-<<<<<<< HEAD
- 
-=======
+
  - Tanuj
 	  - **[Portfolio](http://carpenter-stretchers-20738.bitballoon.com/)**
->>>>>>> 2148a475c713fa97e4651ed74a25c27cde556c0a
-       - Kawal Preet 
+
+
+- Ankit Dua
+	- **[ToDoList] (http://poacher-amplitude-73481.bitballoon.com/) **
+
+ - Tanuj
+	  - **[Portfolio](http://carpenter-stretchers-20738.bitballoon.com/)**
+
+- Kawal Preet 
 	  - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
 
        
