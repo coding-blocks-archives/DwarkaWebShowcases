@@ -1,0 +1,54 @@
+.jumbotron{
+	margin-top: 1%;
+}
+
+.update{
+	width: 84%;
+	padding: .75rem .75rem;
+    margin-bottom: 2px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#task{
+	width: 84%;
+	padding: .75rem .75rem;
+    margin-bottom: 2px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#add{
+	width: 15%;
+	padding: .75rem .75rem;
+    margin-bottom: 2px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.fa{
+	font-size: 1rem !important;
+    font-weight: 400 !important;
+}
+
+.list-group-item{
+	margin-top: 5px;
+} 
+.list-inline-item{
+	width: ;
+}
+
+@media only screen and (max-width: 535px){
+	#task{
+		width: 100%;
+	}
+	#add{
+		padding: .65rem .65rem;
+		width: 100%;
+	}
+}
+
+}
+
+/*.delete , .markdone {
+	display: inline-block ;
+	width: 20%;
+}
+*/
