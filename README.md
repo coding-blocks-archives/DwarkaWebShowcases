@@ -20,11 +20,18 @@
 - Rajat Sharma
     - **[Todolist](http://to-do-list-by-rajat.bitballoon.com)**
 
+ - Tanuj
+	  - **[Portfolio](http://carpenter-stretchers-20738.bitballoon.com/)**
+
+
 - Ankit Dua
 	- **[ToDoList] (http://poacher-amplitude-73481.bitballoon.com/) **
 
  - Tanuj
 	  - **[Portfolio](http://carpenter-stretchers-20738.bitballoon.com/)**
+
+- Kawal Preet 
+	  - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
 
        
        

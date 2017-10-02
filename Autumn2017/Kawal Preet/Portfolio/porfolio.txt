@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Portfolio</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="portfolio.css">
+	</head>
+	<body>
+		<section>
+			<header class="parent">
+			</header>
+			<div>
+			</div>
+			<footer>	
+			</footer>
+		</section>
+	</body>
+</html>
