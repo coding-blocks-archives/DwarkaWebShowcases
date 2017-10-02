@@ -14,7 +14,8 @@
 
 - Paavini Nanda
     - **[Resume](lifeguard-runouts-78461.bitballoon.com)**
-       - Ankit Soni
+
+- Ankit Soni
     - **[TodoList](http://painter-claire-51454.bitballoon.com/)**
 
  - Paavini Nanda
@@ -23,8 +24,13 @@
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
+ -Amartya Biswas
+	  - **[Todolist](http://fireman-florence-78507.bitballoon.com/)**
+ 	  - **[PortFolio](http://advisor-complexes-28855.bitballoon.com/)**
+	  - **[Animation](http://miller-alice-38748.bitballoon.com/)**
 - Rajat Sharma
     - **[Todolist](http://to-do-list-by-rajat.bitballoon.com)**
+
 
 
  - Tanuj
@@ -34,8 +40,7 @@
 
 
 
-=======
->>>>>>> 4bfe9106bf33e874905cf705cc6314ce9ce561f4
+
 - Ankit Dua
 	- **[ToDoList] (http://poacher-amplitude-73481.bitballoon.com/) **
 
@@ -44,6 +49,10 @@
 
 - Kawal Preet 
 	  - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
+    
+- Parul
+    - **[TodoList](https://sentry-porcupine-65848.bitballoon.com)**
+
 
 
        
