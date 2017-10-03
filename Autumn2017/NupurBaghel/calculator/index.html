@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+	<div class="jumbotron ">
+		<h1>Scientific calculator</h1>
+		<p>Implement simple operations!</p>
+		<div class="prow">
+		<div class="row">
+			<div class="entrycontainer">
+				<input id="entry" type="text" disabled>
+				<button id="clear" type="text">AC</button>
+			</div>
+		</div>
+		<hr class="small">
+		<div class="row col-lg-12">
+			<div class="row nums">
+				<button  type="button" id="1" class="numbers">1</button>
+				<button  type="button" id="2" class="numbers">2</button>
+				<button  type="button" id="3" class="numbers">3</button>
+				<button  type="button" id="4" class="numbers">4</button>
+				<button  type="button" id="5" class="numbers">5</button>
+				<button  type="button" id="6" class="numbers">6</button>
+				<button  type="button" id="7" class="numbers">7</button>
+				<button  type="button" id="8" class="numbers">8</button>
+				<button  type="button" id="9" class="numbers">9</button>
+				<button  type="button" id="equals" class="numbers">=</button>
+				<button  type="button" id="0" class="numbers">0</button>
+				<button  type="button" id="decimal" class="numbers">.</button>
+			</div>
+			<!-- div nums ends -->
+			<div class="row arithms">
+				<button  type="button" id="add" class="arithmetic">+</button>
+				<button  type="button" id="minus" class="arithmetic">-</button>
+				<button  type="button" id="multiply" class="arithmetic">*</button>
+				<button  type="button" id="divide" class="arithmetic">/</button>
+			</div>
+			<div class="row arithms extr">
+				<button  type="button" id="sqrt" class="extras">
+					<span style="white-space: nowrap; font-size:larger;">&radic;</span>
+						<span style="text-decoration:overline;">&nbsp;x&nbsp;</span>
+				</button>
+				<button  type="button" id="square" class="extras">x<sup>2</sup></button>
+				<button  type="button" id="e" class="extras">e</button>
+				<button  type="button" id="pi" class="extras">&Pi;</button>
+			</div>
+			<!-- div arithms ends -->
+			<div class="row trignos">
+				<button  type="button" id="sin" class="trigno"> sin </button>
+				<button  type="button" id="sinh" class="trigno"> sinh </button>
+				<button  type="button" id="cos" class="trigno"> cos </button>
+				<button  type="button" id="cosh" class="trigno"> cosh </button>
+				<button  type="button" id="tan" class="trigno"> tan </button>
+				<button  type="button" id="tanh" class="trigno"> tanh </button>
+				<button  type="button" id="log10" class="trigno"> log10 </button>
+				<button  type="button" id="log" class="trigno"> log </button>
+			</div>
+			<!-- div trignos ends -->
+		</div>
+		<!-- div row ends -->
+		</div>
+		<!-- parent div row ends -->
+	</div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="calcnew.js"></script>
+</body>
+</html>
