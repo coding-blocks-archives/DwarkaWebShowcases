@@ -1,0 +1,76 @@
+.prow{
+	width: 636px;
+}
+/*input boxes*/
+#clear{
+	width: 10%;
+	margin: auto;
+	padding: 0;
+}
+
+#entry{
+	width: 87%;
+	margin: auto;
+}
+
+.entrycontainer{
+	width: 75%;
+	margin: auto;
+	flex: auto;
+}
+
+/*major buttons*/
+.numbers{
+	width: 32%;
+}
+
+.arithmetic,.extras{
+	width: 98%;
+}
+
+.trigno{
+	width: 49%;
+}
+
+.numbers, .arithmetic, .extras, .trigno{
+	margin: auto;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	-webkit-appearance: none;
+  	-webkit-border-radius: 0;
+}
+.nums, .arithms ,.trignos{
+	flex: auto;
+	margin-right:1px;
+	margin-left:1px;
+}
+.nums{
+	width: 30%;
+}
+.arithms{
+	width: 5%;
+}
+.trignos{
+	width: 20%;
+}
+.row{
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 670px){
+	.prow{
+		width: 100%;
+	}
+	.nums,.trignos{
+		width: 70%;
+	}
+	.arithms{
+		width: 25%;
+	}
+	#clear{
+		width: 20%;
+	}
+	#entry{
+		width: 77%;
+	}
+}
