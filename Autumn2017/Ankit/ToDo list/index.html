@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>ToDo list</title>
+	<script type="text/javascript" >
+   var taskarray = JSON.parse(localStorage.getItem('data'))||[];
+    
+    window.onload = function () 
+{
+
+    var taskvalue = document.getElementById('task');
+    var btn = document.getElementById('add');
+    var list = document.getElementById('list');
+    display();
+    btn.onclick = function () 
+    {
+        var task = {
+                    "taskvalue":taskvalue.value,
+                    "done":false,
+                    "displayy" : true,
+                    };
+        taskarray.push(task);
+        localStorage.setItem('data',JSON.stringify(taskarray));
+        display();
+    };
+
+    function display() 
+    {
+        var data ="";
+        for(var i=0;i<taskarray.length;i++)
+        {
+            if(taskarray[i].done === true && taskarray[i].displayy===true)
+            {
+                data += '<li id='+ i +' onclick="check(this)" style="text-decoration: line-through; color: red;">' + taskarray[i].taskvalue + '<span id="close" class='+ i + ' onclick="closee(this)" >\u00D7</span> '+ '</li>';
+            }
+            else if(taskarray[i].done === false && taskarray[i].displayy===true)
+            {
+                data += '<li id='+ i +' onclick="check(this)" >' + taskarray[i].taskvalue  + '<span id="close" class='+ i + ' onclick="closee(this)" >\u00D7</span> '+ '</li>';
+            }
+         taskvalue.value="";   
+        } 
+        list.innerHTML = data;
+
+    }
+
+
+}
+
+function check(el)
+{
+        if(taskarray[el.id].done === true)
+        {
+            el.style.textDecoration = 'none';
+            el.style.color = 'black';
+        }
+        else
+        {
+            el.style.textDecoration = 'line-through';
+            el.style.color = 'red'; 
+
+        }
+        taskarray[el.id].done = !taskarray[el.id].done;
+        localStorage.setItem('data' ,JSON.stringify(taskarray));
+}
+
+
+function closee(ee)
+{   
+    console.log(taskarray);
+    taskarray[ee.className].displayy = ! taskarray[ee.className].displayy;
+    var div = ee.parentElement;
+    div.style.display = "none";
+    localStorage.setItem('data' ,JSON.stringify(taskarray));
+} 
+  </script>
+	
+	
+	<style type="text/css">
+		body {
+ 	 		margin: 0;
+		}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+   background : #a1fc9c;
+}
+
+#close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+#close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.header {
+  background-color: black;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+#add {
+  margin: 0px;
+  padding: 9px;
+  width: 20%;
+
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add:hover {
+  background-color: #bbb;
+}
+	</style>
+
+
+</head>
+<body>
+	<div id="myDIV" class="header">
+	<h1 style="margin:5px">ToDo List</h1>
+	<input type="text" id="task" placeholder="Add Title...">
+	<button type="button" id="add">ADD</button>
+	</div>
+	<ul id = "list"></ul>
+</body>
+</html>

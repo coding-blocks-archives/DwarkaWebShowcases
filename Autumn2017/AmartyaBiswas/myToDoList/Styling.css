@@ -1,0 +1,43 @@
+#long input{
+    font-family: "Times New Roman" ;
+    background: beige;
+    letter-spacing: 2px;
+    height: 50px;
+    width:80%;
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding-left: 10px;
+
+
+    border: dotted;
+    border-color: cyan;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.text{
+    display: flex;
+    font-family: "Times New Roman" ;
+    letter-spacing: 2px;
+    height: 50px;
+    width:60%;
+    font-size: 38px;
+
+}
+
+.checker{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+}
+
+.fa.fa-ban{
+    position: fixed;
+    font-size: 45px;
+    float: left;
+    margin-left: 300px;
+    margin-top: -47px;
+}
