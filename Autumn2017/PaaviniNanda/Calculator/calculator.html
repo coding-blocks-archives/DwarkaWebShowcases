@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display flexx">
+            <div class="screenn textStyling" id="screen">
+
+            </div>
+            <div id="clear" class="btn btn-light cButton textStyling" onclick="clearr()">
+                C
+            </div>
+        </div>
+        <div class="buttons flexx">
+            <div class="left">
+                <div class="basicMathsFunctions">
+                    <div class="flexx">
+                        <div id="+" class="btn btn-light textStyling" onclick="disp(this)">+</div>
+                        <div id="-" class="btn btn-light textStyling" onclick="disp(this)">-</div>
+                        <div id="*" class="btn btn-light textStyling" onclick="disp(this)">*</div>
+                    </div>
+                    <div class="flexx">
+                        <div id="/" class="btn btn-light textStyling" onclick="disp(this)">/</div>
+                        <div id="%" class="btn btn-light textStyling" onclick="disp(this)">%</div>
+                        <div id="^" class="btn btn-light textStyling" onclick="disp(this)">^</div>
+                    </div>
+                </div>
+                <div class="trigonometricFunctions">
+                    <div class="flexx">
+                        <div id="sin" class="btn btn-light textStyling" onclick="disp(this)">sin</div>
+                        <div id="cos" class="btn btn-light textStyling" onclick="disp(this)">cos</div>
+                        <div id="tan" class="btn btn-light textStyling" onclick="disp(this)">tan</div>
+                    </div>
+                    <div class="flexx">
+                        <div id="ln" class="btn btn-light textStyling" onclick="disp(this)">ln</div>
+                        <div id="log" class="btn btn-light textStyling" onclick="disp(this)">log</div>
+                        <div id="√" class="btn btn-light textStyling" onclick="disp(this)">√</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="numbers">
+                    <div class="flexx">
+                        <div id="1" class="btn btn-light textStyling" onclick="disp(this)">1</div>
+                        <div id="2" class="btn btn-light textStyling" onclick="disp(this)">2</div>
+                        <div id="3" class="btn btn-light textStyling" onclick="disp(this)">3</div>
+                    </div>
+                    <div class="flexx">
+                        <div id="4" class="btn btn-light textStyling" onclick="disp(this)">4</div>
+                        <div id="5" class="btn btn-light textStyling" onclick="disp(this)">5</div>
+                        <div id="6" class="btn btn-light textStyling" onclick="disp(this)">6</div>
+                    </div>
+                    <div class="flexx">
+                        <div id="7" class="btn btn-light textStyling" onclick="disp(this)">7</div>
+                        <div id="8" class="btn btn-light textStyling" onclick="disp(this)">8</div>
+                        <div id="9" class="btn btn-light textStyling" onclick="disp(this)">9</div>
+                    </div>
+                    <div class="flexx">
+                        <div id="0" class="btn btn-light zero textStyling" onclick="disp(this)">0</div>
+                        <div id="=" class="btn btn-light textStyling" onclick="calc()">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="calculator.js"></script>
+
+</body>
+</html>

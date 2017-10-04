@@ -1,0 +1,45 @@
+.flexx{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+
+    margin:0 auto;
+    margin-top: 20px;
+}
+
+.btn{
+    width:60px;
+
+}
+
+.textStyling{
+    height:80px;
+    border: groove;
+    font-size: x-large;
+    padding-top: 18px;
+}
+
+.display,.buttons{
+    width:360px;
+    margin:0 auto;
+}
+
+.screenn{
+    width: 300px;
+    background-color:lightgrey;
+}
+
+.cButton{
+    width:60px;
+}
+
+.zero{
+    width: 120px;
+}
+
+.btn-light:hover{
+    border-color: inherit;
+    cursor: pointer;
+}
