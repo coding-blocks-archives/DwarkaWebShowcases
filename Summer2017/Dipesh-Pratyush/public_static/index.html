@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="spotify.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR BEGIN -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- NAVBAR HEADER  -->
+            <div class="navbar-header">
+                <a href="/index.html"  class="navbar-brand"><img src="Spotify_footer.png" alt="logo" style="height: 220%; margin-top: -10px; display: inline;"></a>
+            </div>
+
+            <!-- NAVBAR OPTIONS -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">SignUp</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+    <div id="box1">
+        <h1>Welcome Search Your Music</h1>
+        <form action="/main.html" method="get" class="navbar-form">
+            <div class="form-group">
+                <input type="text" name="song" class="form-control" id="searchQuery" placeholder="Search" style="font-size: 20px; width: 500px;">
+            </div>
+            <!-- <a href="http://localhost:5000/main.html" class ="btn btn-default" id="searchButton" style="margin-left: -63px; border: none; border-radius: 20px;"><i class="fa fa-search" aria-hidden="true" style="font-size: 20px;"></i></a> -->
+            <input type="submit" value=&#9906; style="transform: rotate(-45deg); color: black; background-color: transparent; border: none; position: relative; left: -60px; top: 2px; font-size: 30px; outline: none;">
+
+    
+        </form>
+        <div style="position: relative; top: 45vh; left: -20px; margin: 0 auto; display: block; text-align: center; cursor: pointer;">
+            <!-- <img src="loginfb.png" alt="loginfb"s style="width: 250px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+            <a href="/main.html" class="btn btn-default" style="width: 250px; height: 38px; font-size: 18px;">Go to Music Player</a>
+        </div>
+
+    </div>
+    <div id="box2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12" style="padding: 0;">
+                    <div class="carousel slide" id="myslider" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myslider" data-slide-to="0" class="active"></li>
+                            <li data-target="#myslider" data-slide-to="1"></li>
+                            <li data-target="#myslider" data-slide-to="2"></li>
+                            <li data-target="#myslider" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="premium-img1.jpg" style="width: 100%; height: 750px;">
+                                <div class="carousel-caption">
+                                    <h2>Listen Anywhere</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="premium-img2.jpg" style="width: 100%; height: 750px;">
+                                <div class="carousel-caption">
+                                    <h2>Unlimited ad free Music</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="premium-img3.png" style="width: 100%; height: 750px;">
+                                <div class="carousel-caption">
+                                    <h2>Drag and Drop to Upload</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="premium-img4.jpg" style="width: 100%; height: 750px;">
+                                <div class="carousel-caption">
+                                    <h2>Premium Sounds Better</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#myslider" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myslider" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-default navbar-bottom" style="height: 150px;">
+            <div class="container">
+                <!-- FOOTER HEADER  -->
+                <div class="navbar-header">
+                    <a href="/index.html"  class="navbar-brand"><img src="Spotify_footer.png" alt="logo" style="height: 270%; margin-top: 20px; display: inline; "></a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a style="margin-top: 50px;">Copyright (c) 2017 Spotify All Rights Reserved.</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(".carousel").carousel({
+            interval: 2500,
+            pause: false,
+            wrap: true,
+            keyboard: true
+        });
+    </script>
+</body>
+</html>

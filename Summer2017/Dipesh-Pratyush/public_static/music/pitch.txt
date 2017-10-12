@@ -1,0 +1,27 @@
+audio player:
+	backend:
+	table-1:
+
+		id  poster-img-src  song  favourite	author	singer  publisher  source  genre 
+	table-2:
+		playlist-name	songsinplaylist//todo search if multiple entries allowed in one if not make diff table for each playlist and 			keep table 2 for a list of playlists
+	table:3(playlist names if required)
+
+backend fn:
+	upload your songs
+	queue of songs 
+functionalities :
+	drag drop for upload
+	music player on the bottom on the screen
+	custom functionalities for audio player
+ui:	
+	add to playlist
+	favourites 
+	look at saavn
+	soudcloud 
+	itunes
+	
+
+customize audio-controls:https://webdesign.tutsplus.com/tutorials/create-a-customized-html5-audio-player--webdesign-7081
+
+

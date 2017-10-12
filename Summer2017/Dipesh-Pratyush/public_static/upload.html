@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="dropzone.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <style>
+            #uploadForm{
+                position: absolute;
+                top:3vh;
+                height:90vh;
+                width:100%;
+                /*background-image: url("cloud-upload.png");*/
+                background-position: bottom;
+                vertical-align: middle;
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                border: 2px dashed black;
+            }
+
+            #uploadForm:hover #cloud{
+                -webkit-animation-name: spaceboots;
+            	-webkit-animation-duration: 0.8s;
+            	-webkit-transform-origin:50% 50%;
+            	-webkit-animation-iteration-count: infinite;
+            	-webkit-animation-timing-function: linear;
+            }
+
+            @-webkit-keyframes spaceboots {
+            	0% { -webkit-transform: translate(8px, 4px) rotate(0deg); }
+            	10% { -webkit-transform: translate(-4px, -8px) rotate(-1deg); }
+            	20% { -webkit-transform: translate(-12px, 0px) rotate(1deg); }
+            	30% { -webkit-transform: translate(0px, 12px) rotate(0deg); }
+            	40% { -webkit-transform: translate(4px, -4px) rotate(1deg); }
+            	50% { -webkit-transform: translate(-4px, 9px) rotate(-1deg); }
+            	60% { -webkit-transform: translate(-12px, 4px) rotate(0deg); }
+            	70% { -webkit-transform: translate(8px, 4px) rotate(-1deg); }
+            	80% { -webkit-transform: translate(-4px, -4px) rotate(1deg); }
+            	90% { -webkit-transform: translate(8px, 8px) rotate(0deg); }
+            	100% { -webkit-transform: translate(4px, -8px) rotate(-1deg); }
+            }
+        </style>
+    </head>
+
+    <body>
+        <form ref="uploadForm" id="uploadForm" action="/upload"  type="text" class="dropzone" method="post" encType="multipart/form-data" name="file">
+            <!-- <div id="dropBox">                    <h3>Drag Your mp3 To Upload</h3></div>
+            <img src="cloud-upload.png" id="cloud"> -->
+        </form>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src='dropzone.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
