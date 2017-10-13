@@ -1,0 +1,251 @@
+*
+{
+	box-sizing:border-box;
+}
+html,body
+{
+	height: 100%;
+}
+.hello
+{
+	height:70%;
+	margin:0px;
+}
+#hello{
+	font-family:Gtek Technology Gtek Technology;
+	font-size:900%;
+	color:white;
+	padding:10px;
+	text-align:center;
+}
+.container
+{
+	display:flex;
+	flex-wrap:wrap;
+}
+.parent
+{
+	height: 100%;
+	width:100%;
+	background-image:url('portimg.jpg');
+	background-repeat: no-repeat;
+    background-position:contain;	
+	background-size:cover;
+}
+.div1,.div2
+{
+	height:250px;
+}
+.div3
+{
+	display:flex;
+	flex-wrap:wrap;
+	height:250px;
+}
+.f
+{
+	width:32%;
+	padding:40px;
+}
+.details
+{
+	font-size:20px;
+	color:#ffebbb;
+	font-family:ninjago regular;
+}
+#anch
+{
+	font-size:300%;
+	color:white;
+	text-align:center;
+	animation:anchframe 0.8s ease-in-out 0s infinite;
+	animation-direction:alternate;
+}
+@keyframes anchframe
+{
+	from
+	{
+		opacity:0;
+	}
+	to
+	{
+		opacity:1;
+	}
+}
+#mid
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	height: 100%;
+	width:100%;
+	background-image:url('bg.jpg');
+	background-repeat: no-repeat;
+    background-position:contain;	
+	background-size:cover;
+}
+#p1,#p2,#p3
+{
+	height:50vh;
+	background-image:url('bg6.jpg');
+	background-repeat: no-repeat;
+    background-position:contain;	
+	background-size:cover;
+	width:31%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#p4,#p5,#p6
+{
+	height:50vh;
+	background-image:url('bg6.jpg');
+	background-repeat: no-repeat;
+    background-position:contain;	
+	background-size:cover;
+	width:31%;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.project:hover 
+{
+	animation:fadeout 1s ease-in-out 0s 1;
+	animation-fill-mode: forwards;
+}
+.project:hover .pr
+{
+	display:none;
+}
+.project:hover .ab
+{
+	animation:fade 1s ease-in-out 0s 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeout
+{
+	0%
+	{
+		opacity:1;
+	}
+	100%
+	{
+		background-image:
+	}
+}
+@keyframes fade
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:1;
+	}
+}
+.pr
+{
+	font-size:40px;
+	color:white;
+	font-family:ninjago regular;
+	text-align:center;
+	margin-top:135px;
+}
+.ab
+{
+	font-size:22px;
+	color:white;
+	font-family:calibri;
+	text-align:center;
+	opacity:0;
+}
+footer
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	height: 100%;
+	width:100%;
+	background-image:url('foot.jpg');
+	background-repeat: no-repeat;
+    background-position:contain;	
+	background-size:cover;
+}
+#anchup
+{
+	font-size:300%;
+	color:white;
+	text-align:center;
+	animation:anchframe2 0.8s ease-in-out 0s infinite;
+	animation-direction:alternate;
+}
+@keyframes anchframe2
+{
+	from
+	{
+		opacity:0;
+	}
+	to
+	{
+		opacity:1;
+	}
+}
+ @media only screen and (max-width: 600px){
+        #hello{
+			font-size:500%;
+		}
+		.details
+		{
+			font-size:15px;
+		}
+		.f{
+			padding:10px;
+		}
+		.div2
+		{
+			height:0px;
+		}
+		.div1,.div3
+		{
+			height:50vh;
+		}
+		#anch
+		{
+			font-size:160%;
+			width:180%;
+			order:1;
+		}
+		#nm,#dt
+		{
+			width:49%;
+			order:2;
+		}
+		.pr
+		{
+			font-size:25px;
+			margin-top:20px;
+		}
+		.ab
+		{
+			font-size:15px;
+		}
+		#anchup
+		{
+			font-size:200%;
+		}
+		#p1,#p2,#p3,#p4,#p5,#p6
+		{
+			height:48vh;
+			width:98%;
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+ }
+ @media only screen and (max-width: 1080px) and (min-width: 601px){
+		#p1,#p2,#p3,#p4,#p5,#p6
+		{
+			height:48vh;
+			width:49%;
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+ }
