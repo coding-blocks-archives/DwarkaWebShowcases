@@ -69,7 +69,7 @@
         left: 550px;
     }
     100% {
-        transition: 0s;
+        /*transition: 0s;*/
         left: 1100px;
     }
 }

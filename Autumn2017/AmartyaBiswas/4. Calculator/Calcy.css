@@ -1,0 +1,38 @@
+#result{
+    text-align: right;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+.btn, .num{
+    background-color: bisque;
+    margin: 4px;
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 10px;
+    height: 65px;
+    width: 80px;
+    font-size: 25px;
+}
+
+#heads{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    animation-name: hero;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hero{
+    0%{
+        color: yellow;
+    }
+    33%{
+        color: cyan;
+    }
+    67%{
+        color: lawngreen;
+    }
+    100%{
+        color: pink;
+    }
+}

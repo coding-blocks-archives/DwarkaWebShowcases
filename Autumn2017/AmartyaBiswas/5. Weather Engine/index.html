@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MapUsage</title>
+    <link rel="stylesheet" href="MapUsage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="#1abc9c">
+
+<div id="container" style="display: inline" align="center">
+
+    <div id="myMap" style="display: inline-block"></div>
+    <div id="contains" style="display: inline" align="center">
+            <h1>Google Maps and Weather Integration</h1>
+            <input id="address" type="text"><br/><br/>
+            Latitude: <input class="inp" type="text" id="latitude" placeholder="Latitude"/>
+            &nbsp;&nbsp;&nbsp;
+            Longitude: <input class="inp" type="text" id="longitude" placeholder="Longitude"/>
+            <br><br>
+            <i class="fa fa-search" aria-hidden="true" style="font-size: 24px"></i>&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn" type="button" value="Search" onclick="codeAddress()">&nbsp;&nbsp;&nbsp;
+            <input class="btn" type="button" value="Find Weather" onclick="weatherRequest(document.getElementById('latitude').value, document.getElementById('longitude').value)">
+            <br><br>
+    </div>
+    <div id="summary" style="display: none"></div>
+    <h3>-by Amartya Biswas</h3>
+
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1IGQu5MYQ5yrJPwibJfSXlF8Nd3cxFx8&sensor=false"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="MapUsage.js"></script>
+
+</body>
+</html>
