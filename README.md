@@ -41,11 +41,3 @@
     - **[TodoList](https://sentry-porcupine-65848.bitballoon.com)**
 
 
-<<<<<<< HEAD
-- Kawal Preet 
-	  - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
-
-       
-=======
->>>>>>> d5dbe5bf9f01ed54882d3cc8102e3f5eece565ed
-       
