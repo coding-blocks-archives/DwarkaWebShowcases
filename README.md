@@ -35,7 +35,8 @@
 	  - **[Portfolio](http://upholsterer-beaver-25857.bitballoon.com/)**
 
 - Kawal Preet 
-	  - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
+	   - **[portfolio](https://story-teller-joseph-73622.bitballoon.com)**
+	   - **[todolist](http://printer-squadrons-26478.bitballoon.com/)**
     
 - Parul
     - **[TodoList](https://sentry-porcupine-65848.bitballoon.com)**
