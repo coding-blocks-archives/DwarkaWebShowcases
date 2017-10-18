@@ -1,0 +1,206 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+  background: #E0EAE7; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #E0EAE7; /* Gecko Browsers */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #E0EBE8;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #3ea08a;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+/*.back-to-top {
+    display: none;
+    position: fixed;
+    z-index: 100000000;
+    bottom: 50%;
+    right: 20px;
+    background-color: cornflowerblue;
+    padding: 20px;
+    color: #fff;
+}*/
+
+nav {
+    height: 128px;
+}
+
+nav img{
+
+}
+
+#bs-example-navbar-collapse-1 {
+    margin-right: 60px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#bs-example-navbar-collapse-1 li:last-child{
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 760px) {
+    #bs-example-navbar-collapse-1 li:last-child{
+        margin-left: 0px;
+    }
+
+    #bs-example-navbar-collapse-1 ul{
+        float: right;
+        text-align: right;
+    }
+
+    #bs-example-navbar-collapse-1{
+        margin-right: 0px;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+     background-color: white;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus {
+    font-weight: bold;
+    color: #4ab19a;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #4a766d;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    font-weight: bold;
+    color: #4a766d;
+    background-color: transparent;
+}
+
+.line {
+    width: 100px;
+    height: 6px;
+    background: url('../images/line-bg.png');
+    margin: 0 auto;
+}
+
+#messageMe {
+    padding: 10px 30px;
+    margin-top: 40px;
+    font-size: 1.3em;
+    background-color: #45b29a;
+    color: white;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+#messageMe:hover {
+    background-color: #1b7f69!important;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #4A766D;
+}
+
+.bar-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #566336;
+    margin: 0 0 20px 0;
+}
+
+.bar {
+    background-color: #f2f2f1;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 40px;
+}
+
+#htmlCss {
+    background-color: #2ecc71;
+    width: 85%;
+    height: 100%;
+    position: relative;
+}
+
+#htmlCss:after {
+    position: absolute;
+    right: 2.5%;
+    color: white;
+    content: attr(data-percent);
+    line-height: 20px;
+}
+
+#javascript {
+    background-color: #2ecc71;
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+#javascript:after {
+    position: absolute;
+    right: 2.5%;
+    color: white;
+    content: attr(data-percent);
+    line-height: 20px;
+}
+
+#node {
+    background-color: #2ecc71;
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+
+#node:after {
+    position: absolute;
+    right: 2.5%;
+    color: white;
+    content: attr(data-percent);
+    line-height: 20px;
+}
+
+#sql {
+    background-color: #2ecc71;
+    width: 82%;
+    height: 100%;
+    position: relative;
+}
+
+#sql:after {
+    position: absolute;
+    right: 2.5%;
+    color: white;
+    content: attr(data-percent);
+    line-height: 20px;
+}
+
+.connect a {
+    margin: 30px 30px 0 30px;
+     color: black;
+}
+
+.connect a:hover {
+     color: gray;
+}
