@@ -25,7 +25,7 @@
     - **[Todolist](http://to-do-list-by-rajat.bitballoon.com)**
 
 - Ankit Dua
-	- **[ToDoList] (http://poacher-amplitude-73481.bitballoon.com/) **
+	- **[ToDoList](http://poacher-amplitude-73481.bitballoon.com/)**
 
  - Tanuj
 	  - **[Portfolio](http://upholsterer-beaver-25857.bitballoon.com/)**
