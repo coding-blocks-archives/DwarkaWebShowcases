@@ -1,0 +1,96 @@
+#myMap {
+    height: 612px;
+    width: 790px;
+    border: groove;
+    border-color: red;
+    margin: 0;
+    box-shadow: 5px 5px 20px black;
+}
+
+h1{
+    font-family: "Old English Text MT";
+}
+
+h3{
+    position: absolute;
+    top: 574px;
+    left: 990px;
+}
+
+#contains{
+    position: absolute;
+    border: dotted;
+    border-radius: 10px;
+    border-color: red;
+    margin-left: 5px;
+    background-color: #bdc3c7;
+    box-shadow: 5px 5px 20px black;
+}
+
+#address{
+    background-color: white;
+    border-radius: 12px;
+    border: dashed;
+    border-color: black;
+    width: 530px;
+    height: 35px;
+    font-family: "Monotype Corsiva";
+    font-size: 20px;
+    margin: 4px;
+    box-shadow: 4px 4px 20px black;
+}
+
+.btn{
+    background-color: #18ffff;
+    border-radius: 12px;
+    width: 120px;
+    height: 30px;
+    box-shadow: 2px 2px 20px black;
+}
+
+.inp{
+    text-align: center;
+    border: #6200ea groove;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 20px black;
+}
+
+#summary{
+    transition: .4s;
+    position: absolute;
+    width: 525px;
+    top: 258px;
+    left:804px;
+    border: groove;
+    border-radius: 10px;
+    border-color: red;
+    margin-left: 5px;
+    background: -webkit-linear-gradient(left top, #ff6e7f, #bfe9ff);
+    box-shadow: 5px 5px 20px black;
+    padding: 10px;
+    background-size: cover;
+    line-height: 150%;
+    font-family: "sans-serif";
+    color: beige;
+    font-size: 20px;
+
+    animation-name: ground;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes ground {
+    0%{
+        background-image: url("weather.jpg");
+    }
+    33%{
+        background-image: url("image.jpg");
+    }
+    67%{
+        background-image: url("storm.jpg");
+    }
+    100%{
+        background-image: url("rain.jpg");
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <link type="text/css" rel="stylesheet" href="Calcy.css" ></link>
+</head>
+<body style="background: -webkit-linear-gradient(left, red , teal)">
+
+<div align="center">
+    <br><br><br>
+    <div align="center" style="height: 453px;width: 743px; background-color: black; border-bottom-left-radius: 10px; border-top-right-radius: 10px">
+        <h1 id="heads" style="font-family:'Monotype Corsiva';font-size: 40px; color: sandybrown">Scientific-Calculator</h1>
+        <div id="container" align="center">
+            <div style="padding-bottom: 4px">
+                <input id="result" placeholder="0.00" name="output" type="text" style="width: 394px; height: 60px; border-bottom-left-radius: 10px; border-top-right-radius: 10px">
+                <button class="btn" id="clear" style="height: 65px; width: 134px; font-size: 25px; background-color: deepskyblue" value="clear">Clear</button>
+                <button class="btn" id="delete" style="background-color: deepskyblue" value="delete">Del</button>
+                <button class="btn" id="%" style="; background-color: deepskyblue" value="%">%</button>
+            </div>
+            <div>
+                <button class="btn" id="2^" value="2^">2^</button>
+                <button class="btn" id="10^" value="10^" onclick="document.getElementById('result').value+=this.value">10^</button>
+                <button class="btn" id="^" value="y^x">^</button>
+                <button class="btn" id="x*x"  value="x*x">x²</button>
+                <button class="num" id="1" style=" background-color: white" value="1" onclick="document.getElementById('result').value+=this.value">1</button>
+                <button class="num" id="2" style=" background-color: white" value="2" onclick="document.getElementById('result').value+=this.value">2</button>
+                <button class="num" id="3" style=" background-color: white" value="3" onclick="document.getElementById('result').value+=this.value">3</button>
+                <button class="btn" id="+" style=" background-color: deepskyblue" value="+" onclick="document.getElementById('result').value+=this.value">+</button>
+            </div>
+
+            <div style="margin-top: 4px; margin-bottom: 4px">
+                <button class="btn" id="x!"  value="x!">x!</button>
+                <button class="btn" id="inverse"  value="1/x" onclick="document.getElementById('result').value+='1/'">1/x</button>
+                <button class="btn" id="sqRoot"  value="sqRoot">2√x</button>
+                <button class="btn" id="e"  value="e">e</button>
+                <button class="num" id="4" style=" background-color: white" value="4" onclick="document.getElementById('result').value+=this.value">4</button>
+                <button class="num" id="5" style=" background-color: white" value="5" onclick="document.getElementById('result').value+=this.value">5</button>
+                <button class="num" id="6" style=" background-color: white" value="6" onclick="document.getElementById('result').value+=this.value">6</button>
+                <button class="btn" id="-" style=" background-color: deepskyblue" value="-">-</button>
+            </div>
+
+            <div style="margin-bottom: 4px">
+                <button class="btn" id="tan"  value="tan" onclick="document.getElementById('result').value+=this.value">tan</button>
+                <button class="btn" id="sin"  value="sin">sin</button>
+                <button class="btn" id="cos"  value="cos" onclick="document.getElementById('result').value+=this.value">cos</button>
+                <button class="btn" id="pi"  value="pi">π</button>
+                <button class="num" id="7" style=" background-color: white" value="7" onclick="document.getElementById('result').value+=this.value">7</button>
+                <button class="num" id="8" style=" background-color: white" value="8" onclick="document.getElementById('result').value+=this.value">8</button>
+                <button class="num" id="9" style=" background-color: white" value="9" onclick="document.getElementById('result').value+=this.value">9</button>
+                <button class="btn" id="x" style=" background-color: deepskyblue" value="*">X</button>
+            </div>
+
+            <div>                
+                <button class="btn" id="log"  value="log">log</button>
+                <button class="btn" id="mod"  value="mod">Mod</button>
+                <button class="btn" id="("  value="(" onclick="document.getElementById('result').value+=this.value">(</button>
+                <button class="btn" id=")"  value=")" onclick="document.getElementById('result').value+=this.value">)</button>
+                <button class="num" id="." style=" background-color: white" value="." onclick="document.getElementById('result').value+=this.value">.</button>
+                <button class="num" id="0" style=" background-color: white" value="0" onclick="document.getElementById('result').value+=this.value">0</button>
+                <button class="btn" id="=" style=" background-color: white" value="=">=</button>
+                <button class="btn" id="/" style=" background-color: deepskyblue" value="/">/</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <h3 style="font-family: 'Monotype Corsiva'; font-size: 24px">
+            -by Amartya Biswas
+        </h3>
+    </div>
+</div>
+
+
+<script src="Calculator.js"></script>
+</body>
+</html>

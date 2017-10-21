@@ -1,0 +1,210 @@
+#image1{
+    position: absolute;
+    left:550px;
+    top:220px;
+
+    animation-name: shine;
+    animation-iteration-count: 1;
+    animation-duration: 20s;
+
+}
+
+@keyframes shine {
+    0%{
+        top:200px;
+    }
+    100%{
+        top:20px;
+    }
+}
+
+#moon{
+    position: absolute;
+    left:550px;
+    top:220px;
+
+    animation-delay: 20s;
+    animation-name: wolf;
+    animation-iteration-count: 1;
+    animation-duration: 20s;
+
+}
+@keyframes wolf {
+    0%{
+        top:200px;
+    }
+    100%{
+        top:20px;
+    }
+}
+
+#image2{
+    position: relative;
+    width: 100%;
+    top:32px;
+}
+
+#image3{
+    position: relative;
+    width: 100%;
+    top:29px;
+}
+
+#image4{
+    position: absolute;
+    top: 510px;
+    left:25px;
+
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes car {
+    0%{
+        left: 25px;
+    }
+    50%{
+
+        left: 550px;
+    }
+    100% {
+        /*transition: 0s;*/
+        left: 1100px;
+    }
+}
+
+#image5{
+    position: absolute;
+    top:605px;
+    left:1171px;
+
+    animation-name: racer;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transition: 2s;
+}
+
+@keyframes racer {
+    100% {
+        left: 25px;
+    }
+}
+
+#cloud{
+    position: absolute;
+    top:10px;
+
+    animation-name: shape;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    transition: 0s;
+}
+
+@keyframes shape {
+    0%{
+       left: 0px;
+    }
+    10%{
+        left: 110px;
+    }
+    20%{
+        left: 220px;
+    }
+    30%{
+        left: 330px;
+    }
+    40%{
+        left: 440px;
+    }
+    50%{
+        left: 550px;
+    }
+    60%{
+        left: 660px;
+    }
+    70%{
+        left: 770px;
+    }
+    80%{
+        left: 880px;
+    }
+    90%{
+        left: 990px;
+    }
+    100%{
+        left: 1100px;
+    }
+}
+
+#cloud1{
+    position: absolute;
+    top:80px;
+    left:1090px;
+
+    animation-name: shaping;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    transition: 0s;
+}
+
+@keyframes shaping {
+    0%{
+        left: 1090px;
+    }
+    10%{
+        left: 980px;
+    }
+    20%{
+        left: 870px;
+    }
+    30%{
+        left: 760px;
+    }
+    40%{
+        left: 650px;
+    }
+    50%{
+        left: 540px;
+    }
+    60%{
+        left: 430px;
+    }
+    70%{
+        left: 320px;
+    }
+    80%{
+        left: 210px;
+    }
+    90%{
+        left: 100px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+body{
+    animation-iteration-count: infinite;
+    animation-name: day;
+    animation-duration: 46s;
+}
+
+@keyframes day {
+    0%{
+        background-color: skyblue;
+    }
+    33%{
+        background-color: skyblue;
+    }
+    66%{
+        background-color: black;
+    }
+    100%{
+        background-color: black;
+    }
+
+}
+
+
+

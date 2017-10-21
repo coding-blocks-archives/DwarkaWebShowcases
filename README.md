@@ -9,18 +9,25 @@
 
 ### Projects URL
  - **[Sandeep Ranjan](https://github.com/srsandy/DwarkaWebShowcases/tree/master/Summer2017/Sandeep%20Ranjan/Expenso)**
+ 
  - Avani Verma 
        - **[Blogify](http://blogify-version4.bitballoon.com/)**
+       
  - Paavini Nanda
     - **[Portfolio](http://lifeguard-runouts-78461.bitballoon.com/)**
     - **[ToDoList](http://reporter-goat-24368.bitballoon.com/)**
+    
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
- -Amartya Biswas
-	  - **[Todolist](http://fireman-florence-78507.bitballoon.com/)**
- 	  - **[PortFolio](http://advisor-complexes-28855.bitballoon.com/)**
+	  
+  -Amartya Biswas
 	  - **[Animation](http://miller-alice-38748.bitballoon.com/)**
+	  - **[PortFolio](http://advisor-complexes-28855.bitballoon.com/)**
+	  - **[Todolist](http://fireman-florence-78507.bitballoon.com/)**
+	  - **[Calculator](http://janitor-mole-52543.bitballoon.com/)**
+	  - **[WeatherEngine](http://sentry-paces-41553.bitballoon.com/)**
+  
 - Rajat Sharma
     - **[Todolist](http://to-do-list-by-rajat.bitballoon.com)**
 
