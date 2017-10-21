@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=2.0 ">
+    <title>Title</title>
+
+    <style>
+
+        .container{
+            /*width: 1100px;*/
+            /*not necessary to mention width , its taking full width*/
+            margin: 0 auto;
+
+        }
+
+        .box1 ,  .box2 ,  .box3 ,  .box4 ,  .box5 {
+            height: 300px;
+            width: 100%;
+
+        }
+        .box1 {background-color: rgba(187,150,227,0.87);
+        }
+
+        .box2 {
+           background-color: rgba(223,227,54,0.87);
+        }
+
+        .box3 {
+           background-color: rgba(158,227,153,0.87);
+        }
+
+        .box4 {
+            background-color: darkblue;
+        }
+
+        .box5 {
+           background-color: crimson;
+        }
+
+
+        @media screen and (min-width: 500px) {
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box2{
+                width: 50%;
+            }
+            .box3{
+                width: 50%;
+            }
+
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box1{
+                width: 50%;
+
+            }
+            .box2{
+                width: 50%;
+
+            }
+            .box3, .box4, .box5
+            {
+                width: 33.33%;
+            }
+
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+    <div class="box3">
+
+    </div>
+    <div class="box4">
+
+    </div>
+    <div class="box5">
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
