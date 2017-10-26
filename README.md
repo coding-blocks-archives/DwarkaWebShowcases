@@ -14,6 +14,7 @@
  - Paavini Nanda
     - **[Portfolio](http://lifeguard-runouts-78461.bitballoon.com/)**
     - **[ToDoList](http://reporter-goat-24368.bitballoon.com/)**
+    - **[Calculator](http://cashier-suit-45113.bitballoon.com/)**
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
@@ -29,7 +30,7 @@
 
 
 - Ankit Dua
-	- **[ToDoList] (http://poacher-amplitude-73481.bitballoon.com/) **
+	- **[ToDoList](http://poacher-amplitude-73481.bitballoon.com/)**
 
  - Tanuj
 	  - **[Portfolio](http://upholsterer-beaver-25857.bitballoon.com/)**
