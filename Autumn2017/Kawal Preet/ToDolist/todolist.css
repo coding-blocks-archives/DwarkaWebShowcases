@@ -1,0 +1,137 @@
+
+.container
+{
+	height: 100vh;
+	width:100%;
+	background-image:url('https://images.pexels.com/photos/159621/open-book-library-education-read-159621.jpeg?h=350&auto=compress&cs=tinysrgb');
+	background-repeat: no-repeat;
+    background-position:contain;	
+	background-size:cover;
+}
+h1
+{
+	display:block;
+	font-family:Bell MT;
+	font-size:400%;
+	color:white;
+	margin-top: 0;
+	text-align:center;
+}
+li
+{
+	display:inline-block;
+	width:82.5%;
+	height:35px;
+	font-size:190%;
+	color:white;
+	padding-left:15px;
+}
+#task
+{
+	display:inline-block;
+	width:90%;
+	height:40px;
+	border:5px solid #e0ebeb;
+	background-color:#5c8a8a;
+	font-size:200%;
+	color:white;
+	margin-left:20px;
+}
+.fa-thumbs-up,.fa-thumbs-down,.fa-trash-o
+{
+	font-size:250%;
+}
+.fa-thumb-tack
+{
+	font-size:340%;
+	border:5px solid #e0ebeb;
+}
+.tasks
+{
+	display:inline-block;
+	width:60%;
+	border:5px solid #e0ebeb;
+	margin:5px 0px 5px 0px;
+	background-color:#ffeecc
+	text-align:center;
+}
+@media only screen and (max-width: 600px){
+    h1
+	{
+		font-size:300%;
+	}
+	header
+	{
+		margin:0 auto;
+	}
+	li
+	{
+		width:100%;
+		height:25px;
+		font-size:120%;
+		padding-left:3px;
+		border:1px solid #e0ebeb;
+	}
+	#task
+	{
+		width:75%;
+		height:20px;
+		border:2px solid #e0ebeb;
+		font-size:100%;
+	}
+	.fa-thumbs-up,.fa-thumbs-down,.fa-trash-o
+	{
+		font-size:100%;
+	}
+	.fa-thumb-tack
+	{
+		font-size:120%;
+		border:4px solid #e0ebeb;
+	}
+	.tasks
+	{
+		display:inline-block;
+		width:90%;
+		border:0px;
+		margin:1px 0px 1px 0px;
+	}
+}
+@media only screen and (max-width: 1500px){
+    h1
+	{
+		font-size:350%;
+	}
+	header
+	{
+		margin:0 auto;
+	}
+	li
+	{
+		width:100%;
+		padding-left:3px;
+		border:1px solid #e0ebeb;
+	}
+	#task
+	{
+		width:75%;
+		height:20px;
+		border:2px solid #e0ebeb;
+		font-size:100%;
+	}	
+	.fa-thumbs-up,.fa-thumbs-down,.fa-trash-o
+	{
+		font-size:200%;
+	}
+	.fa-thumb-tack
+	{
+		font-size:220%;
+		border:4px solid #e0ebeb;
+	}
+	.tasks
+	{
+		display:inline-block;
+		width:90%;
+		border:0px;
+		margin:1px 0px 1px 0px;	
+	}
+}
