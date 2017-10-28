@@ -18,7 +18,7 @@
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
- -Amartya Biswas
+ - Amartya Biswas
 	  - **[Todolist](http://fireman-florence-78507.bitballoon.com/)**
  	  - **[PortFolio](http://advisor-complexes-28855.bitballoon.com/)**
 	  - **[Animation](http://miller-alice-38748.bitballoon.com/)**
