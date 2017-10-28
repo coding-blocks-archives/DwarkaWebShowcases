@@ -42,4 +42,9 @@
 - Parul
     - **[TodoList](https://sentry-porcupine-65848.bitballoon.com)**
 
+- Arya Soni
+	- **[ToDoList](http://palmist-canary-37811.bitballoon.com/)**
+	- **[Portfolio](http://aryasoni-portfoliopage.bitballoon.com/)**
+	- **[Google Map API](http://examiner-platter-35753.bitballoon.com/)**
+	- **[Navigation Bar](http://examiner-platter-35753.bitballoon.com/)**
 
