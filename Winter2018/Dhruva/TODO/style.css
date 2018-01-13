@@ -1,0 +1,54 @@
+.container{
+  width:50%;
+  text-align: center;
+  margin: 0 auto;
+}
+#a{
+  width:41vw;
+  border-width: 2px;
+  border-style: inset;
+  background-color:#f2f2f2;
+  height: 3vw;
+  font-size: 1.5vw;
+}
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+#table{
+  width:80%;
+  text-align: center;
+  margin:1vw auto;
+}
+.display-box{
+  text-align: left;
+}
+
+input{
+  background-color:transparent;
+  border:0px;
+}
+#c{
+  font-size: 1.5vw;
+  width:6vw;
+
+}
