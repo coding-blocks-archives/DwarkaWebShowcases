@@ -53,5 +53,10 @@
     - **[Navigation Bar](http://examiner-platter-35753.bitballoon.com/)**
     - **[Google Map API Call](http://organist-aaron-32126.bitballoon.com/)**
 
-
+- Nikita Rai
+    - **[Animation](http://modest-pasteur-ee6fff.bitballoon.com/)**
+    - **[Portfolio](http://portfolio29.bitballoon.com/)**
+    - **[Resume](http://resume29.bitballoon.com/#wrapper)**
+    - **[ToDo List](http://todogithub.bitballoon.com/)**
+    - **[Weather API](https://www.bitballoon.com/sites/weatherapigithub)**
 
