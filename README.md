@@ -53,7 +53,7 @@
     - **[Navigation Bar](http://examiner-platter-35753.bitballoon.com/)**
     - **[Google Map API Call](http://organist-aaron-32126.bitballoon.com/)**
 
-     --- Winter2018
+### Winter2018
 
 - Dhruva Bhagdikar
     - **[Resume](http://dhruva.bitballoon.com)**
