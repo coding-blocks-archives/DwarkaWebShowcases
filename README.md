@@ -53,6 +53,8 @@
     - **[Navigation Bar](http://examiner-platter-35753.bitballoon.com/)**
     - **[Google Map API Call](http://organist-aaron-32126.bitballoon.com/)**
 
+
+
 ### Winter2018
 
 - Dhruva Bhagdikar
@@ -62,8 +64,13 @@
 - Praveen Shah
     - **[Resume](http://competent-morse-c4cea5.bitballoon.com)**
     - **[To-do List](http://upbeat-ritchie-9f6d9b.bitballoon.com)**
-
-
-
+    - **[To-do List](http://to-do-list-dhruva.bitballoon.com)** 
+    
+- Nikita Rai
+    - **[Animation](http://modest-pasteur-ee6fff.bitballoon.com/)**
+    - **[Portfolio](http://portfolio29.bitballoon.com/)**
+    - **[Resume](http://resume29.bitballoon.com/#wrapper)**
+    - **[ToDo List](http://todogithub.bitballoon.com/)**
+    - **[Weather API](https://www.bitballoon.com/sites/weatherapigithub)**
 
 
