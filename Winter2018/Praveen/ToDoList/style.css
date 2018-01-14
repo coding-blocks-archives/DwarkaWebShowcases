@@ -1,0 +1,53 @@
+
+html,body {
+    height: 100%;
+    width: 100%
+    background-attachment: fixed;
+    /*height:100%;*/
+    /*width:100%;*/
+    background: url(background-websites-web.jpg) top center no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+
+#task{
+    width: 80%;
+    padding: 5px 5px;
+    margin-bottom: 3px;
+    border: 1px solid black;
+}
+
+#add{
+    width: 15%;
+    padding: 5px 5px;
+    margin-bottom: 3px;
+    border: 1px solid red;
+}
+
+.update{
+    width:90%;
+    padding: 5px 5px;
+    margin-bottom: 3px;
+    border: 1px solid black;
+}
+
+.fa{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+}
+
+.list-group-item{
+    margin-top: 10px;
+    width: 95%;
+    /*display: inline-block;*/
+}
+.list-inline-item{
+    width: ;
+    /*display: inline-block;*/
+    float: contour right;
+}
+
+.list-group{
+    display: inline;
+}

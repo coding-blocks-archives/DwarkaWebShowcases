@@ -1,0 +1,50 @@
+html{
+    	background-size: cover;
+    }
+      #map {
+        width: 100%;
+        height: 630px;
+        background-color: grey;
+      }
+
+      #body {
+  background-image: url("https://crystalseye.files.wordpress.com/2011/08/dsc_0724.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  background: #222;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+.jumbotron .title {
+  font-family: "Georgia";
+  color: #FFFFFF;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.jumbotron .weather {
+  color: #FFFFFF;
+}
+
+p.temp-type {
+  padding-top: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  color: #FFFFFF;
+  margin: 6px;
+  font-size: 20px
+}
+

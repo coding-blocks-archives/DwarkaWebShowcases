@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Clock</title>
+	<style>
+	.clock {
+		height: 100%;
+		background-image: url("clock.png");	
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	.second {
+		top : 194px;
+		left: 68px;
+		position: absolute;
+		display: block;
+    	animation-name: rotate;
+    	animation-duration: 60s;
+    	animation-iteration-count: infinite;
+	}
+
+	.minute {
+		top : 199px;
+		left: 113px;
+		position: absolute;
+		display: block;
+    	animation-name: rotate;
+    	animation-duration: 120s;
+    	animation-iteration-count: infinite;
+	}
+
+	@keyframes rotate {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+	body {
+		background-color: black;
+	}
+	</style>
+</head>
+
+<body class="clock">
+	<div class="second">
+		<img src="minute.png"  alt="second" style="width: 300px">	
+	</div>
+	<div class="minute">
+		<img src="minute.png"  alt="minute" style="width: 210px">	
+	</div>
+</body>
+
+</html>
