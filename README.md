@@ -57,7 +57,13 @@
 
 - Dhruva Bhagdikar
     - **[Resume](http://dhruva.bitballoon.com)**
-    - **[To-do List](http://to-do-list-dhruva.bitballoon.com)**  
+    - **[To-do List](http://to-do-list-dhruva.bitballoon.com)*
+
+- Praveen Shah
+    - **[Resume](http://competent-morse-c4cea5.bitballoon.com)**
+    - **[To-do List](http://upbeat-ritchie-9f6d9b.bitballoon.com)**
+
+
 
 
 
