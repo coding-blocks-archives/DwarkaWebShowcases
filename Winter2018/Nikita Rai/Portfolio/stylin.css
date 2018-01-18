@@ -1,0 +1,249 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sub-container {
+    width: 100%;
+    height: auto;
+}
+.myImage {
+    box-sizing: border-box;
+    background-image: url('Nikki.jpeg');    
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 146px;
+    width: 143px;
+    position: relative;
+    border-radius: 25%;
+    left: 98px;
+    top: 40px;
+}
+.sidebar {
+    background-color: #1f9496;
+    left: 61px;
+    width: 100%;    
+    top: 20px;
+}
+.main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    left: 61px;
+}
+.two {
+    background-color: #87CEEB;    
+    width: 100%;
+    top: 20px;
+}
+.widdd {
+    background-color: #AFEEEE;
+    height: 2780px;
+    left: 91px;
+}
+.secondd {
+    height: 700px;
+}
+.outerBox {
+    width: 100%;
+    height: 200px;
+}
+.upperSB {
+    background-color: #1f9496;
+    height: 250px;
+}
+.lowerSB {
+    background-color: #1f9496;
+    height: 331px;
+}
+.about {
+    height: 32px;
+    background-color: grey;
+    text-align: center;
+}
+.icons {
+    height: 25px;
+    background-color: grey;
+    margin-top: 2px;
+}
+.namee {
+    position: relative;
+    top: 80px;
+    left: 30px;
+    font-color: white;
+}
+.List {
+    list-style-type: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    position: relative;
+    left: 3px;
+    top: 1px;
+}
+.responsible {
+    list-style-type: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    position: relative;
+    right: 50px;
+    top: 1px;
+}
+.headd {
+    padding-left: 37px;
+    font-size: 1rem;
+}
+.contact {
+    padding-top: 37px;
+    position: relative;
+    left: -13px;
+    color: black;
+}
+.wrapperr {
+    display: flex;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: white;
+}
+.colorr {
+    color: white;
+}
+.c {
+    color: white;
+}
+.education {
+    position: relative;
+    left: -10px;
+    top: 35px;
+}
+.greyy {
+    color: #d3e4e5;
+    line-height: 1.2;
+}
+.interests {
+    position: relative;
+    top: 75px;
+    left: -9px;
+}
+.projects {
+    position: relative;    
+    left: 49px;
+    top: 65px;
+}
+.proin {
+    font-size: 0.98rem;
+    margin-top: 15px;
+    line-height: 1.6;
+    margin-right: 55px;
+}
+.headingg:hover {
+    text-decoration: underline;
+    background-color: #FFFACD;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.invv {
+    color: #800000;
+    height: 35px;
+    width: 35px;
+}
+.fa {
+    position: relative;
+}
+.unok {
+    position: relative;
+    left: -36px;
+    top: -9px;
+}
+.fa-cloud-download:before {
+    position: relative;
+    left: 9px;
+    top: 1px;
+}
+.flexi {
+    position: relative;
+    top: 14px;
+    display: flex;
+    margin-left: 20px;
+    color: black;
+}
+.progressBars {
+    width: 65%;
+    position: relative;
+    left: 18px;
+}
+.progress {
+    margin-bottom: 16px;
+    position: relative;
+    display: flex;
+}
+.bgg {
+    background-color: green !important;
+}
+.posss {
+    position: relative;
+    left: 11px;
+    top: 10px;
+}
+.headingg {
+    font-size: 1.1rem;
+    color: #A52A2A;
+}
+.pro {
+    color: #800000;
+    font-size: 1.5rem;
+}
+.r{
+    color: #800000;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .main-container {
+        flex-direction: unset;
+    }
+    .sidebar {
+        width: 45%;
+        order: 1;
+    }
+    .main {
+        width: 100%;
+        order: 3;
+    }
+    .two {
+        width: 55%;
+        order: 2;
+    }
+     .myImage {
+         left: 268px;
+    }
+    .icons{
+        margin-top: 132px;
+    }
+    
+}
+@media (min-width: 800px) {
+    .main-container {
+        flex-direction: row;
+    }
+    .sidebar {
+        width: 20%;
+        order: 1;
+    }
+    .main {
+        width: 60%;
+        order: 2;
+    }
+    .two {
+        width: 20%;
+        order: 3;
+    }
+    .myImage {
+         left: 298px;
+    }
+    .icons{
+        margin-top: 20px;
+    }
+}
