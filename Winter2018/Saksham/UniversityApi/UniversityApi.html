@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        table{
+            display:block;
+            margin-bottom:10px !important;
+        }
+
+        h1{
+
+            color:darkblue;
+            font-weight: bolder;
+            font-family: "Courier 10 Pitch";
+        }
+
+        #btn{
+
+            display:block;
+            margin: 0 auto;
+        }
+
+        ::placeholder{
+
+            color:steelblue;
+            opacity:1;
+        }
+
+        #results{
+
+            margin-top:50px;
+        }
+        .listItem{
+
+            margin-top:2px !important;
+            border:2px solid darkblue !important;
+            background-color: #daf5fc85 !important;
+            border-radius:5% !important;
+            color: #000000 !important ;
+            font-family: "Abyssinica SIL" !important;
+            font-size: large !important;
+
+        }
+        .Active{
+            background-color: #b0e0ff !important;
+        }
+
+        #outer{
+            border-radius:50%;
+            position:relative;
+            width:50px;
+            height:50px;
+            margin:0 auto;
+            animation-name:rotat;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .inner{
+
+            border:2px solid red;
+            position:absolute;
+            width:20px;
+            height:20px;
+        }
+        .one{
+            background-color: #7acdff;
+            top:50%;
+            border-radius:50%;
+            transform:translate(0,-50%);
+        }
+        .two{
+            border-radius:50%;
+            background-color: #5651ff;
+            top:50%;
+            right:0%;
+            transform:translate(0,-50%);
+
+        }
+
+        @keyframes rotat{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body style="background-color:bisque;">
+<div class="container">
+
+    <div class="row">
+        <div class="col s12 l12 m12 center-align"><h1>University Finder</h1></div>
+    </div>
+
+    <input id="univ" class="center-align" onkeydown="check(event);" placeholder="Search for University">
+    <span id="caution" style="color:red;"></span>
+    <input id="cont" class="center-align" onkeydown="Submit(event);" placeholder="Country">
+    <button id="btn" class="waves-effect btn-large" >Search</button>
+
+    <div id="search"></div>
+    <div id="results" class="collection" >
+    </div>
+
+</div>
+
+    <script src="api.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+
+
+        body{
+
+            background-color: navajowhite;
+        }
+        #pendulum{
+            position:relative;
+            transform:translate(-50%,-50%);
+            top:-400px;
+            border-radius:50%;
+            width:900px;
+            height:900px;
+            box-sizing:border-box;
+            animation-name: rotation;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes rotation{
+
+            0%{
+                transform:rotate(0deg);
+
+        }
+            10%{
+            transform:rotate(-180deg);
+
+        }
+            20%{
+
+            transform:rotate(-22.5deg);
+        }
+            30%
+            {
+
+                transform:rotate(-157.5deg);
+            }
+            40%
+            {
+
+                transform:rotate(-45deg);
+            }50%
+             {
+
+                 transform:rotate(-135deg);
+             }60%
+              {
+
+                  transform:rotate(-67.5deg);
+              }70%
+               {
+
+                   transform:rotate(-112.5deg);
+               }
+            80%
+            {
+
+                transform:rotate(-80deg);
+            }90%
+             {
+
+                 transform:rotate(-100deg);
+             }
+            100%
+            {
+
+                transform:rotate(0);
+            }
+        }
+
+        #hinge{
+            position:absolute;
+            top: 50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border:1px solid green;
+            border-radius:50%;
+            width:10px;
+            height:10px;
+            background-color:blue;
+
+        }
+
+        #bob{
+
+            position:absolute;
+            top:50%;
+            transform:translate(0,-50%);
+            border:1px solid green;
+            border-radius:50%;
+            background-color:red;
+            width:50px;
+            height:50px;
+        }
+
+        #rope{
+                position:absolute;
+                top:50%;
+                left:50px;
+                width:395px;
+                height:1px;
+                border-bottom: 1px solid purple;
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="pendulum">
+
+    <div id="hinge"></div>
+
+
+    <div id="bob"></div>
+    <div id="rope"></div>
+</div>
+
+</body>
+</html>
