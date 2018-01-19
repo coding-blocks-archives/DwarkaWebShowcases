@@ -59,7 +59,7 @@
 
 - Dhruva Bhagdikar
     - **[Resume](http://dhruva.bitballoon.com)**
-    - **[To-do List](http://to-do-list-dhruva.bitballoon.com)*
+    - **[To-do List](http://to-do-list-dhruva.bitballoon.com)**
 
 - Praveen Shah
     - **[Resume](http://competent-morse-c4cea5.bitballoon.com)**
@@ -72,5 +72,7 @@
     - **[Resume](http://resume29.bitballoon.com/#wrapper)**
     - **[ToDo List](http://todogithub.bitballoon.com/)**
     - **[Weather API](https://www.bitballoon.com/sites/weatherapigithub)**
-
+- Aakash
+    - **[Animation](http://moving-globe.bitballoon.com/)**
+    - **[To-do List](http://everyday-todolist.bitballoon.com/)**
 
