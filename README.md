@@ -74,8 +74,8 @@
     - **[Weather API](https://www.bitballoon.com/sites/weatherapigithub)**
 
 - Riya
-    - **[Resume](http://http://riya-resume-cb.bitballoon.com/)**
-    - **[ToDoList](http://http://todo-list-riya.bitballoon.com/)**
-    - **[Chat Bot API](http://http://clever-bot-riya.bitballoon.com/)**
+    - **[Resume](http://riya-resume-cb.bitballoon.com/)**
+    - **[ToDoList](http://todo-list-riya.bitballoon.com/)**
+    - **[Chat Bot API](http://clever-bot-riya.bitballoon.com/)**
 
 
