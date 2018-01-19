@@ -1,0 +1,84 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  background-color: #ddd;
+
+}
+.headd{
+  width: 100%;
+  background-color: #5D5757;
+  padding: 1vw;
+  margin-left: -1vw;
+  margin-top: -1vw;
+  margin-right: -1vw;
+  font-size: 3.5vw;
+  font-weight: bolder;
+  color:white;
+  min-height: 10vw;
+
+  box-shadow: -2px 6px 47px -9px rgba(0,0,0,0.75);
+}
+.valuee{
+  margin-top: 2vw;
+  width:96vw;
+  margin-left: 1vw;
+  box-shadow: -2px 6px 47px -9px rgba(0,0,0,0.75);
+  background-color: white;
+}
+
+
+#inp{
+  background-color:white;
+  min-width: 71vw;
+  font-size: 2vw;
+  width:60%;
+}
+#bt{
+  min-width: 17vw;
+  margin-right:0.5vw;
+  margin-top:0.2vw;
+  float: right;
+  font-size: 1.8vw;
+  border-radius: 0%;
+}
+table {
+    margin-top: 2vw;
+    background-color: white;
+    border-collapse: collapse;
+    width:96vw;
+    box-shadow: -2px 6px 47px -9px rgba(0,0,0,0.75);
+}
+td, th {
+    font-size: 1.8vw;
+    padding: 0.5vw;
+    border-bottom: 1px solid #ddd;
+
+}
+.list{
+  margin-left: 1vw;
+}
+button{
+
+    padding: 0.8vw;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 1.8vw;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+input{
+  width:80%;
+  padding: 1vw;
+  font-size: 1.8vw;
+  border: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+.done{
+  background-color: #66bb6a;
+}
+.rem{
+  background-color: #FC97A7;
+}
+.up{
+  background-color: #90caf9;
+}
