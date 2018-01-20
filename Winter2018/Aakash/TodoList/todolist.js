@@ -18,6 +18,7 @@ window.onload = function() {
             "check" : false
         };
         todoList.push(task);
+        inp.value = "";
         display();
     }
 
