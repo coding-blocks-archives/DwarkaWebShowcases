@@ -1,0 +1,58 @@
+.main-section{
+    padding: 10px;
+    height: 650px;
+    background-image: url("images/world_map.gif");
+    background-size: cover;
+}
+.main{
+    border: 1px solid #333333;
+    margin-top: 420px;
+    height: 100px;
+    background-color:#333333;
+    border-radius: 3px;
+}
+.find{
+    font-weight: 500;
+    margin-left: 80px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: grey;
+}
+.input{
+    margin-top: 5px;
+    color: white;
+}
+.universities{
+    padding: 10px;
+    margin-top: -13px;
+    }
+.btn{
+    margin-top: 10px;
+}
+.btn1{
+    margin-top: 1px;
+}
+.card a{
+    color: #2BBBAD!important;
+    font-weight:500;
+}
+h4{
+    background-color: #2BBBAD;
+    color: white;
+    padding: 10px;
+    width: 96.5%;
+    margin-left: 23px!important;
+}
+span{
+    color: red!important;
+    font-weight: 500!important;
+}
+.footer{
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    width: 96.5%;
+    margin-left: 23px;!important;
+    background-color: #2BBBAD;
+    color: white;
+}

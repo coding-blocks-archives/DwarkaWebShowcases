@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Village Night View</title>
+
+    <style>
+
+        body{
+            background-color: #F6F6F6;
+        }
+        div{
+
+            background-image: url("images/3.jpg");
+            width: 650px;
+            height: 551px;
+            margin: 50px auto ;
+            position: relative;
+            border-radius: 150px;
+            border: 1px solid #F6F6F6;
+            overflow: hidden;
+
+        }
+
+
+
+        .Person1{
+
+            height: 80px;width: 80px;position: absolute;left: 00px;top: 0px;
+            animation-name: slideout;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+
+        }
+
+
+        .Person2{
+
+            height: 80px;width: 80px;position: absolute;left: 00px;top: 250px;
+            animation-name: slideout;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .Person3{
+
+            height: 80px;width: 80px;position: absolute;left: 620px;top: 250px;
+            animation-name: slidein;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+
+        }
+
+
+
+
+        .Person4{
+
+            height: 80px;width: 80px;position: absolute;left: 0px;top: 250px;
+            animation-name: slideout;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .Person5{
+
+            height: 80px;width: 80px;position: absolute;left: 550px;top: 450px;
+            animation-name: slidein;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+        }
+
+
+
+        @keyframes slidein {
+           from{
+
+           }
+            to{
+                left: -65px;
+            }
+        }
+
+        @keyframes slideout {
+            from{
+
+            }
+            to{
+                left: 680px;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<div>
+
+    <img src="images/giphy.gif" class="Person3">
+    <img src="images/walk9_0.gif"  class="Person2">
+    <img src="images/tumblr_opj9kkCRW31tjg1mxo1_500.gif"  class="Person4">
+    <img src="images/giphy%20(1).gif"  class="Person1">
+    <img src="images/source%20(1).gif" class="Person5">
+
+
+</div>
+
+
+</body>
+</html>
