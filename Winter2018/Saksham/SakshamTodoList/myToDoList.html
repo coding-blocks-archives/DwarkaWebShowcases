@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        i{
+         cursor: pointer;
+
+        }
+        ::placeholder{
+            color: #ffac6f !important;
+            font-family:"DejaVu Sans";
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body style="background-color:bisque;">
+<div class="container">
+    <h1 class="center-align" style="color:darkblue;font-weight:bolder;text-shadow:1px 1px darkblue;font-family:'Lato',sans-serif;">To-Do List</h1>
+    <input id="inp" class="center-align" placeholder="Enter the Item">
+<button class="btn-large" style="display:block;margin:0 auto;" id="btn">Add Todo</button><br><br><br>
+<ul class="collection" style="list-style-type: none" id="result"></ul>
+</div>
+    <script src="myTodoList.js"></script>
+</body>
+</html>
