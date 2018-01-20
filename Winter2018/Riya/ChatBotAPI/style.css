@@ -1,0 +1,167 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  background-color: #ddd;
+  background-color: #2D2D2D;
+
+}
+.container{
+  position: relative;
+  width:70vw;
+  margin: auto;
+  background-color: #F5C400;
+  min-height: 96vh;
+  border-radius: 0.2vw;
+}
+h2{
+  margin: 0;
+  font-size: 5vh;
+  padding: 2vh;
+}
+.name{
+  height:10vh;
+  box-shadow: inset 0px 0px 14px 0px rgba(4, 4, 4, 0.75);
+}
+#reply{
+  position: absolute;
+  /*bottom: 23px;*/
+  top:10vh;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  height: 77vh;
+  overflow-y: auto;
+  background-image: url(https://thumbs.dreamstime.com/b/social-media-word-icon-pattern-background-doodle-icons-sketchy-hand-drawing-set-backdrop-fabric-wallpaper-vector-54678226.jpg);
+  /*background-size: cover; */
+}
+#reply::-webkit-scrollbar {
+  display: none;
+}
+.inp{
+  bottom: 2.4vh;
+  width: 70vw;
+  height: 7vh;
+  top:77vh;
+  background-color:#F5C400;
+  position: relative;
+  padding-top: 0.4vh;
+  padding-bottom: 2vh;
+  align-items: center;
+  box-shadow: inset 0px 0px 14px 0px rgba(4, 4, 4, 0.75);
+}
+input{
+  font-family: inherit;
+  font-size: 3vh;
+  height: 6vh;
+  /*width: ;*/
+  margin-left: 1vw;
+  border: none;
+  color: black;
+  border-bottom-style: dashed;
+  background-color: transparent;
+}
+input:focus{
+  /*border: none;*/
+}
+button{
+  border-radius: 50%;
+  border: none;
+  width: 6vh;
+  height: 6vh;
+  padding: 1vh;
+  float: right;
+  margin-right: 3vh;
+  /*background-color: transparent;*/
+
+}
+.mydiv, .myspan{
+  display: inline-block;
+  background-color: #C2C2C2;
+  margin: 1.2vh;
+  font-size: 2.2vh;
+  padding: 1vh;
+  min-height: 3.2vh;
+  font-weight: bolder;
+  box-shadow: inset 0px 0px 6px 0px rgba(8, 8, 8, 0.93);
+  float: right;
+  border-radius: 14vh;
+
+}
+.botdiv, .botspan{
+  display: inline-block;
+  background-color: #6cc7c2;
+  margin: 1.2vh;
+  font-size: 2.2vh;
+  padding: 1vh;
+  min-height: 3.2vh;
+  float:left;
+  /*color: white;*/
+  box-shadow: inset 0px 0px 6px 0px rgba(8, 8, 8, 0.93);
+  font-weight: bolder;
+  border-radius:14vh;
+
+}
+.my{
+  min-height: 6vh;
+  width: 68vw;
+  margin: auto;
+}
+.bot{
+  min-height: 6vh;
+  width: 68vw;
+  margin: auto;
+}
+.botspan{
+  margin-right: 0.2vw;
+  border-radius: 50%;
+  min-width: 1.6vw;
+  text-align: center;
+}
+.myspan{
+  margin-left: 0.2vw;
+  border-radius: 50%;
+  min-width: 1.6vw;
+  text-align: center;
+}
+#me{
+  width: 89%;
+}
+
+@media (max-width:900px) and (min-width:600px){
+  .container{
+    width: 100%;
+  }
+  .inp{
+    width: 100%;
+  }
+  input{
+    width:90%;
+  }
+  .my, .bot{
+    width: 98%;
+  }
+  #me{
+    width:88%;
+  }
+}
+
+@media (max-width:600px) {
+  .container{
+    width: 100%;
+
+  }
+  .inp{
+    width: 100%;
+  }
+  input{
+    width:90%;
+    /*font-size: 3vh;*/
+  }
+  .my, .bot{
+    width: 98%;
+  }
+  #me{
+    width:80%;
+  }
+
+}

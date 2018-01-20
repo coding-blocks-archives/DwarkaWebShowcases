@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,intital-scale=1">
+  <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.250fc306bef36914fafcac2d6cfdef51.ico">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title> Guardian-API </title>
+</head>
+<body>
+  <div id="container">
+    <img id= "icon" src="http://open-platform.theguardian.com/public/img/roundel.svg">
+    <div onmouseleave="hideoptions()" class="dropdown">
+      <div onclick="hideoptions('a')" id="a"> Content </div>
+      <hr>
+      <div onclick="hideoptions('b')" id="b"> Tags </div>
+      <hr>
+      <div onclick="hideoptions('c')" id="c"> Sections </div>
+    </div>
+    <div class="input">
+      <input  id="ibox" type="text" placeholder="Type Here" >
+      <button id="dp" onmouseover="showoptions()"><i class="fa fa-chevron-down" style="font-size:3vw; color:#ecf3f1;"></i></button>
+      <button  id='submit' onclick="submit('a')"> Submit </button>
+      <input  type="date" id="w"> <button id="f"> Set Date </button>
+    </div>
+  </div>
+  <div class="Content">
+  </div>
+  <div class="footer">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
