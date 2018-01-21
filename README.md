@@ -72,13 +72,10 @@
     - **[ToDo List](http://todogithub.bitballoon.com/)**
     - **[Weather API](https://www.bitballoon.com/sites/weatherapigithub)**
 
-<<<<<<< HEAD
-=======
 - Riya
     - **[Resume](http://riya-resume-cb.bitballoon.com/)**
     - **[ToDoList](http://todo-list-riya.bitballoon.com/)**
     - **[Chat Bot API](http://clever-bot-riya.bitballoon.com/)**
->>>>>>> e8161bd9fd9284f671e92b21ce1e35a7e6f1599e
     
 - Saksham Bhalla
     - **[Animation](http://damping.bitballoon.com/)**
@@ -86,8 +83,3 @@
     - **[Resume](http://sakshambhalla.bitballoon.com/resume)**
     - **[ToDo List](http://saksham-todolist.bitballoon.com/)**
     - **[University API](http://saksham-univ-finder.bitballoon.com/)**
-<<<<<<< HEAD
-=======
-
->>>>>>> e8161bd9fd9284f671e92b21ce1e35a7e6f1599e
-
