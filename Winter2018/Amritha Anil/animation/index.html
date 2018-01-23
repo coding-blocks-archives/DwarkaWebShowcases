@@ -1,0 +1,228 @@
+<!DOCTYPE=html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>animation hhw</title>
+	<style>
+		*{
+			box-sizing:border-box;
+
+		}
+		.out{
+			position:relative;
+			box-sizing:border-box;
+			margin:0px auto;
+
+			left:300px;
+			padding:250px;
+
+		}
+		.b1{
+			width:3.5vw;
+			height:3.5vw;
+			border:1px solid black;
+			border-radius: 0 0 0 0;
+			display:inline-block;
+			background-color:#e65c6f;
+			position: relative;
+
+			animation-name: ll;
+   			 animation-duration: 5s;
+  			  animation-iteration-count: infinite;
+
+		}
+
+		.b2{
+			width:3.5vw;
+			height:3.5vw;
+			border:1px solid black;
+			border-radius: 0 0 0 0;
+			display:inline-block;
+			position: relative;
+			background-color:	#f98d77;
+
+			animation-name:rr ;
+   			 animation-duration: 5s;
+  			  animation-iteration-count: infinite;
+		}
+		.b3{
+			width:3.5vw;
+			height:3.5vw;
+			background-color:#ffcb69;
+			border:1px solid black;
+			border-radius: 0 0 0 0;
+			display:inline-block;
+			position: relative;
+
+			animation-name: tt;
+   			 animation-duration: 5s;
+  			  animation-iteration-count: infinite;
+		}
+		.b4{
+			width:3.5vw;
+			height:3.5vw;
+			background-color:#ffcb69;
+			border:1px solid black;
+			border-radius: 0 0 0 0;
+			display:inline-block;
+			position: relative;
+
+			animation-name: dd;
+   			 animation-duration: 5s;
+  			  animation-iteration-count: infinite;
+		}
+
+		@keyframes ll{
+			0%{
+				transform: rotate(30deg);
+			}
+			15%{
+				transform:translateX(-100px);
+				}
+			25%{
+				transform: rotate(60deg);
+				border-radius:50% 0 0 0;
+				background-color:#cdff75;
+			}
+			35%{
+				transform: translate(-50px,-50px);
+			}
+			55%
+			{
+				transform: translate(50px,-50px)	;
+				border-radius: 0 0 50% 0;
+				background-color:	#00b8ff;
+			}
+			65%{
+				transform: rotate(60deg);
+			}
+			75%{
+				transform: translateX(-75px);	border-radius:50% 50% 50% 50% ;
+				background-color:	#ff00e7;
+			}
+			90%{
+				transform: translateX(1005px);
+			}
+		}
+
+
+		@keyframes rr{
+			0%{
+				transform: rotate(30deg);
+			}
+			15%{
+				transform:translateY(-100px);
+				}
+			25%{
+				transform: rotate(60deg);
+				border-radius:50% 0 0 0;
+				background-color:	#ffc182;
+			}
+			35%{
+				transform: translate(50px,50px);
+			}
+			55%
+			{
+				transform: translate(-50px,50px);border-radius: 0 0 50% 0;
+				background-color:#00b8ff;
+			}
+			65%{
+				transform: rotate(60deg);
+			}
+			75%{
+				transform: translateY(-75px);border-radius:50% 50% 50% 50% ;
+				background-color:	#fb8ef1;
+			}
+			100%{
+				transform: translateX(1005px);
+			}
+		}
+
+
+		@keyframes tt{
+			0%{
+				transform: rotate(30deg);
+			}
+			15%{
+				transform:translateY(100px);
+
+			}
+			25%{
+				transform: rotate(60deg);
+				border-radius:0 0 50% 0;
+				background-color:#eaff9b;
+			}
+			35%{
+				transform: translate(-50px,-50px);
+			}
+			55%{
+				transform: translate(50px,-50px);border-radius:50% 0 0 0;
+				background-color:	#91e2b6;
+			}
+			65%{
+				transform: rotate(60deg);
+			}
+			75%{
+				transform: translateY(75px);
+				border-radius:50% 50% 50% 50% ;
+				background-color:	#ff008d;
+			}
+			90%{
+				transform: translateX(1005px);
+			}
+		}
+
+
+		@keyframes dd{
+			0%{
+				transform: rotate(30deg);
+			}
+			15%{
+				transform:translateX(100px);
+
+			}
+			25%{
+				transform: rotate(60deg);
+				border-radius:0 0 50% 0;
+				background-color:#ffc2c2;
+			}
+			35%{
+				transform: translate(50px,50px);
+			}
+			55%{
+			transform: translate(-50px,50px);border-radius:50% 0 0 0;
+			background-color:	#9ff4b4;
+			}
+			65%{
+				transform: rotate(60deg);
+			}
+			75%{
+				transform: translateX(75px);
+				border-radius:50% 50% 50% 50% ;
+				background-color:#FF99E6;
+			}
+			100%{
+				transform: translateX(1005px);
+			}
+		}
+	</style>
+
+</head>
+
+<body bgcolor="black">
+	<!-- <audio autoplay>
+		<source="C:\Users\AMRITHA ANIL\Music\Infected Mushroom - Friends On Mushrooms (Deluxe Edition) 2015\01. Infected Mushroom - Kafkaf.mp3" audio="audio/mpeg">
+	</audio> -->
+	<div class="out">
+		<div class="b1"></div>
+		<div class="b2"></div>
+		<div class="b3"></div>
+		<div class="b4"></div>
+		<!-- <div class="dr1"></div>
+		<div class="dr2"></div> -->
+
+	</div>
+</body>
+</html>
