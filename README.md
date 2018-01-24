@@ -82,7 +82,7 @@
     - **[Portfolio](http://sakshambhalla.bitballoon.com/)**
     - **[Resume](http://sakshambhalla.bitballoon.com/resume)**
     - **[ToDo List](http://saksham-todolist.bitballoon.com/)**
-    - **[University API](http://saksham-univ-finder.bitballoon.com/)*
+    - **[University API](http://saksham-univ-finder.bitballoon.com/)**
 
 - Pushpender Maan
     - **[Animation](http://audi-car-animation.bitballoon.com/)**
