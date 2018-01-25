@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: 'Lobster', cursive;
+}
+div{
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.2rem;
+    background-color: #dddddd;
+    max-width: 400px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #444444;
+    margin: 0 auto;
+}
+h1 + div{
+    margin: 5px auto;
+    max-width: 400px;
+}
+#inp{
+    height: 30px;
+    background-color: #dddddd;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #444444;
+    outline: none;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    width: 180px;
+}
+#btn{
+    height: 33px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    background-color: #bbbbbb;
+    text-align: center;
+    border: 1px solid #444444;
+    box-shadow: #777777 2px 2px 2px 1px,
+                inset #eeeeee 2px 2px 2px 1px;
+    outline: none;
+}
+#btn:active{
+    box-shadow:inset #777777 2px 2px 2px 1px,
+     #eeeeee 2px 2px 2px 1px ;
+}
+table{
+    table-layout: fixed;
+    width: 95%;
+    border: 2px solid #444444;
+    border-collapse :collapse;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+tr:nth-of-type(even){
+    background-color: #e9ecef;
+}
+tr:nth-of-type(odd){
+    background-color: #bbbbbb;
+}
+th, td{
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+td{
+    border-left: 3px solid #444444;
+    padding-left: 15px;
+}
