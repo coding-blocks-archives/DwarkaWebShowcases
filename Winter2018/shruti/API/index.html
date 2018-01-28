@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="xmlrequest.css">
+    <title>XML Request </title>
+</head>
+<body>
+<div align="center" id="head"> WELCOME TO THE WORLD OF MATHS </div>
+<table>
+    <thead>
+    <tr>
+        <th align="center">Operation</th>
+        <th align="center">Expression</th>
+        <th align="center">Result</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td align="center">simplify(Simplify)</td>
+        <td align="center">2^2+2(2)</td>
+        <td align="center">8</td>
+    </tr>
+    <tr>
+        <td align="center">factor(Factor)</td>
+        <td align="center">x^2 + 2x</td>
+        <td align="center">x (x + 2)</td>
+    </tr>
+    <tr>
+        <td align="center">derive(Derive)</td>
+        <td align="center">x^2+2x</td>
+        <td align="center">2 x + 2</td>
+    </tr>
+    <tr>
+        <td align="center">integrate(Integrate)</td>
+        <td align="center">x^2+2x</td>
+        <td align="center">1/3 x^3 + x^2 + C</td>
+    </tr>
+    <tr>
+        <td align="center">zeroes(Find 0's)</td>
+        <td align="center">x^2+2x</td>
+        <td align="center">[-2, 0]</td>
+    </tr>
+    <tr>
+        <td align="center">tangent(Find Tangent)</td>
+        <td align="center">2lx^3</td>
+        <td align="center">12 x + -16</td>
+    </tr>
+    <tr>
+        <td align="center">area(Area Under Curve)</td>
+        <td align="center">2:4lx^3</td>
+        <td align="center">60</td>
+    </tr>
+    <tr>
+        <td align="center">cos(Cosine)</td>
+        <td align="center">pi</td>
+        <td align="center">-1</td>
+    </tr>
+    <tr>
+        <td align="center">sin(Sine)</td>
+        <td align="center">0</td>
+        <td align="center">0</td>
+    </tr>
+    <tr>
+        <td align="center">tan(Tangent)</td>
+        <td align="center">0</td>
+        <td align="center">0</td>
+    </tr>
+    <tr>
+        <td align="center">arccos(Inverse Cosine)</td>
+        <td align="center">1</td>
+        <td align="center">0</td>
+    </tr>
+    <tr>
+        <td align="center">arcsin(Inverse Sine)</td>
+        <td align="center">0</td>
+        <td align="center">0</td>
+    </tr>
+    <tr>
+        <td align="center">arctan(Inverse Tangent)</td>
+        <td align="center">0</td>
+        <td align="center">0</td>
+    </tr>
+    <tr>
+        <td align="center">abs(Absolute Value)</td>
+        <td align="center">-1</td>
+        <td align="center">1</td>
+    </tr>
+    <tr>
+        <td align="center">log(Logarithm)</td>
+        <td align="center">2l8</td>
+        <td align="center">3</td>
+    </tr>
+    </tbody>
+</table>
+<div align="center" id="main1">
+<input id='inp1' type="text"  placeholder="Operation">
+    <input id='inp2' type="text"  placeholder="Expression">
+<input id="sub" type="submit" onclick="loadXMLDoc()">
+    <br>
+</div>
+<div align="center">
+<p id="demo"></p>
+</div>
+</body>
+<script src="xmlrequest.js"></script>
+</html>

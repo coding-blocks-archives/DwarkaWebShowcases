@@ -1,3 +1,4 @@
+
 # DwarkaWebShowcases
 
 ## How to Submit your Projects
@@ -89,4 +90,10 @@
 	-**[Animation](http://jolly-spence-c8b35c.bitballoon.com/)**
 	-**[Todo list](http://objective-hermann-37a113.bitballoon.com/)**
 	-**[Resume](http://sharp-pike-ebb1b6.bitballoon.com/)**
+  
+  - Shruti
+    - **[Resume](http://practical-fermi-48075e.bitballoon.com/)**
+    - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
+    - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
  
+

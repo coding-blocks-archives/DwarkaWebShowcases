@@ -1,0 +1,43 @@
+.outerbox{
+    width:95%;
+    border: 2px solid black;
+    margin: 0 auto;
+    height:910px;
+}
+.name{
+
+    font-weight: bold ;
+    font-size: 30px ;
+    margin-top: -50px;
+}
+.info{
+    margin-top: -5px;
+    margin-bottom: -20px;
+}
+.jumbotron{
+    padding-bottom: 0px !important;
+    border-bottom: 1px solid darkolivegreen !important;
+}
+.links1{
+    font-weight: lighter;
+    text-align: right;
+    margin-top: -20px;
+}
+.links2{
+    font-weight: lighter;
+    text-align: right;
+    margin-top: -20px;
+}
+.education{
+
+    text-align: left ;
+    font-size: 23px ;
+    background-color: #ececec;
+    margin-top: -15px;
+}
+.tc{
+    line-height: 150%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    list-style-type: circle;
+}
