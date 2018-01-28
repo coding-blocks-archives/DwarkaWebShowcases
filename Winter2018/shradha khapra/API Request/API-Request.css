@@ -1,0 +1,27 @@
+#box{
+    text-align:center;
+    margin :0 auto;
+    font-family: 'Tangerine', cursive;
+    font-size: 120px;
+    font-weight: bolder;
+
+}
+#b-box{
+     margin:0 auto;
+    text-align:center;
+    background-color: lavender;
+    border-style:double ;
+
+    height: 1000px;
+}
+#demo{
+    margin:0 auto;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    font-family: Georgia;
+}
+p{
+    font-size:20px;
+    font-family: Pristina;
+}
