@@ -29,6 +29,11 @@ window.onload = function () {
         localStorage.removeItem('task');
     };
 
+    inp.onkeydown = function () {
+        if(event.keyCode === 13)
+            bt.onclick();
+    };
+
     function display() {
         let finalList = "";
         for(let i=0; i<todoList.length; i++){
