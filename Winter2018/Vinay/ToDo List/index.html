@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2 class="center-align" style="color: #16A09A  ">TODO LIST</h2>
+    <br>
+    <div class="row">
+        <div class="input-field col s8 offset-s2">
+            <input type="text" id="input" class="validate">
+            <label for="input">Enter Item</label>
+        </div>
+    </div>
+    <div class="center-align">
+        <button class="waves-effect waves-light btn" id="bt"><i class="material-icons left">get_app</i>Add</button>
+        <button class="waves-effect waves-light btn" id="clr"><i class="material-icons left">cached</i>Clear</button>
+    </div>
+    <br>
+    <div id="todo" class="row collection"></div>
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="ToDoList.js"></script>
+</html>

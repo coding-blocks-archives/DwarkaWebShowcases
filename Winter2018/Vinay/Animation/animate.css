@@ -1,0 +1,40 @@
+body{
+    background-color: antiquewhite;
+}
+.pend{
+    width: 500px;
+    height: 1000px;
+    position: relative;
+    top: -510px;
+    margin: 0 auto;
+    transform: rotate(30deg);
+    animation-name: swing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.thr{
+    width: 0;
+    height: 500px;
+    border-left: 1px solid;
+    position: relative;
+    left: 250px;
+    top: 500px;
+}
+.bob{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    position: relative;
+    top: 500px;
+    left: 225px;
+
+}
+@keyframes swing {
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}

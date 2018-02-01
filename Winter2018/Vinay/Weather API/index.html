@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body style="background-color: azure">
+<div class="container">
+    <h2 class="center-align">Weather API</h2>
+    <div class="row">
+        <div class="input-field col s8 offset-s2">
+        <input type="text" id="place" class="validate">
+        <label for="place" class="offset-s3">Enter Location</label>
+        </div>
+    </div>
+    <button class="waves-effect waves-light btn" id="btn" style="display: block; margin: 0 auto"><i class="material-icons left">cloud</i>button</button>
+    <div id = "weather"></div>
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="XMLHTTPRequest.js"></script>
+</html>
