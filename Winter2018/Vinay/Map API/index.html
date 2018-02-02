@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="right-panel">
+    <h2 style="text-align: center; font-style: oblique; color: #0096B4; font-size: 40px">Navigator</h2>
+    <input type="text" id="start" placeholder="Start">
+    <input type="text" id="end" placeholder="End">
+    <button id="btn">Find Path</button>
+    <hr style="width: 90%">
+    <p><span id="total"></span></p>
+    <div id="dir" style="overflow-y: auto; height: 74%"></div>
+</div>
+</body>
+<script src="map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5SM7r0-vNi-Q4rwxBEstW6PpcCc1Zwmk&callback=initMap" type="text/javascript"></script>
+</html>

@@ -92,5 +92,6 @@
     - **[Animation](http://pendulum.bitballoon.com/)**
     - **[ToDoList](http://vinaytodo.bitballoon.com/)**
     - **[Weather API](http://vinay-weather.bitballoon.com/)**
+    - **[Google Map API](http://navigator.bitballoon.com/)**
 
 
