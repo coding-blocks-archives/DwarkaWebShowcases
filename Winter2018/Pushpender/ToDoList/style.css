@@ -1,0 +1,104 @@
+body{
+    margin: 0 auto;
+    width: 75%;
+    background-color: #dddddd;
+}
+ul{
+    width: 75%;
+    padding: 0;
+    margin: 25px auto;
+    list-style: none;
+}
+#inp{
+    margin: 20px auto 10px;
+    display:block;
+}
+
+#inp{
+    width: 50%;
+}
+#buttons{
+    box-sizing: border-box;
+    margin: 0 0 0 10px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #eeeeee;
+    /*border: 1px solid rgba(50, 50, 50, 0.6);*/
+}
+i{
+    margin: 3px;
+}
+li{
+    width: 70%;
+    display: inline-block;
+    border: 2px solid rgba(150,150,150,0.5);
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 5px;
+    line-height: 1.5;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    border-bottom: 7px solid #aaaaaa;
+}
+
+input[type = text], button[id = btn]{
+    height: 50px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+#inp{
+    padding: 5px;
+    border: 2px solid rgba(100, 100, 100, 0.8);
+    border-radius: 30px;
+}
+.done{
+    background-color: #cccccc;
+    border-bottom: 7px solid #999999;
+    padding: 3px 5px 5px 3px;
+}
+li + div > i{
+    margin: 5px;
+}
+ul > li > input[type = text]{
+    height: 25px;
+    width: 93%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+i{
+    border: 3px solid rgba(100, 100, 100, 0.8);
+    border-radius : 25px;
+    padding: 3px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+@media (max-width: 904px) {
+    li {
+        width: 60%;
+    }
+}
+
+@media (max-width : 680px) {
+    ul{
+        width: 90%;
+    }
+}
+@media (max-width: 570px) {
+    body{
+        margin:0;
+        width: 100%;
+    }
+    ul{
+        margin: 0;
+        width: 100%;
+    }
+    li{
+        margin-left: 10px;
+        width: 55%;
+    }
+}
+input, li{
+    overflow-wrap: break-word;
+}

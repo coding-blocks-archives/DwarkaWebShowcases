@@ -1,0 +1,120 @@
+body{
+    animation: color 5s ease-in-out both;
+}
+@keyframes color {
+    from{
+        background-color: #ffffff;
+    }to{
+             background-color: #000000;
+         }
+}
+.logo{
+    position: absolute;
+  display: block;
+    top: 320px;
+    left: 425px;
+    animation: surprise 1s ease-out 3s both;
+}
+@keyframes surprise {
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+100%{
+    transform: scale(1);
+}
+}
+.car{
+  position: absolute;
+  top: 125px;
+  left: -620px;
+  animation-name:moving-car;
+  animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moving-car {
+  0%{
+    transform: translateX(-600px);
+  }
+  100%{
+  transform: translateX(2000px);
+  }
+}
+.wheel{
+  width: 80px;
+  height: 80px;
+  border: 13px solid white;
+  position:absolute;
+  border-radius: 50%;
+}
+#a{
+    animation: slide1 2s ease-out 2s both;
+}
+#b{
+    animation: slide2 2.4s ease-out 2s both;
+}
+#c{
+    animation: slide3 2.2s ease-out 2.4s both;
+}
+#d{
+    animation: slide4 2.5s ease-out 2.4s both;
+}
+@keyframes slide1 {
+    0%{
+        transform: translate(1280px,165px);
+        opacity: 0;
+    }
+    50%{
+        opacity: .6;
+    translateX(1080px,125px)
+    }
+    100%{
+        opacity: 1;
+        transform: translate(580px,165px);
+    }
+}
+@keyframes slide2 {
+    0%{
+        opacity: 0;
+        transform: translate(1280px,165px);
+    }
+    20%{
+        opacity: .2;
+    translateX(1180px,130px)
+    }
+    40%{
+        opacity: .5;
+        transform: translate(900px,145px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(640px,165px);
+    }
+}
+@keyframes slide3 {
+    0%{
+        opacity: 0;
+        transform: translate(1280px,165px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(700px,165px);
+    }
+}
+@keyframes slide4 {
+    0%{
+        opacity: 0;
+        transform: translate(1280px,165px);
+    }
+    50%{
+        opacity: .6;
+    translate(1080px,115px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(760px,165px);
+    }
+}
