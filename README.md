@@ -83,9 +83,18 @@
     - **[Resume](http://sakshambhalla.bitballoon.com/resume)**
     - **[ToDo List](http://saksham-todolist.bitballoon.com/)**
     - **[University API](http://saksham-univ-finder.bitballoon.com/)**
+
 - Shruti
     - **[Resume](http://practical-fermi-48075e.bitballoon.com/)**
     - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
     - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
+
+- Damak Bajaj
+    - **[Loader Animation-1](http://nervous-goodall-7b399a.bitballoon.com)**
+    - **[Loader Animation-2](http://wonderful-banach-7afe9f.bitballoon.com)**
+    - **[Resume](http://damak-resume.bitballoon.com)**
+    - **[Todo List](http://damak-todo1.bitballoon.com)**
+    - **[Math-API](http://damak-api1.bitballoon.com)**
+
 
 
