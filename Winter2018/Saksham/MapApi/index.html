@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hungry?</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+
+        *{
+            box-sizing:border-box;
+        }
+        ::placeholder{
+            color:blue;
+        }
+        #map {
+            min-height:100%;
+            width:100%;
+            position:absolute;
+            z-index:5;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .pane {
+            position: absolute;
+            width:100%;
+            top: 90px;
+            margin:0 auto;
+            z-index: 50;
+            background-color: rgba(199, 217, 255, 0);
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+        }
+
+        #Info{
+            position:absolute;
+            min-height:100%;
+            z-index:100;
+            background-color: rgba(0, 0, 0, 0.8);
+            left:-40%;
+            width:40%;
+            color:white;
+            }
+        @media (max-width: 970px) and (min-width:750px)
+        {
+            #Info{
+                position:absolute;
+                min-height:100%;
+                z-index:100;
+                background-color: rgba(0, 0, 0, 0.8);
+                left:-60%;
+                width:60%;
+                color:white;
+            }
+            .animate{
+
+                border-radius:2%;
+                opacity:0.9 !important;
+                animation:openWindow;
+                padding:15px;
+                animation-duration:1500ms;
+                animation-iteration-count: 1;
+                left:0%   !important;
+            }
+
+            @keyframes openWindow{
+
+                0%{ left:-60%;}
+                100%{left:0%;}
+            }
+
+        }
+        @media (max-width: 750px)
+        {
+            #Info{
+                position:absolute;
+                min-height:100%;
+                z-index:100;
+                background-color: rgba(0, 0, 0, 0.8);
+                left:-100%;
+                width:100%;
+                color:white;
+            }
+            .animate{
+
+                border-radius:2%;
+                opacity:0.9 !important;
+                animation:openWindow;
+                padding:15px;
+                animation-duration:1500ms;
+                animation-iteration-count: 1;
+                left:0%   !important;
+            }
+
+            @keyframes openWindow{
+
+                0%{ left:-100%;}
+                100%{left:0%;}
+            }
+
+
+        }
+
+        hr{
+            border-color:black !important;
+        }
+        .pic{
+            height:20%;
+            border-radius:50%;
+            float:right;
+
+        }
+        h1,h2,h3{
+
+            font-family:'Roboto', 'sans-serif';
+            font-weight:bolder    !important;
+            text-shadow:1px 1px white;
+        }
+        .opaqueRest{
+            opacity:0.7;
+        }
+        .animate{
+
+            border-radius:2%;
+            opacity:0.9 !important;
+            animation:openWindow;
+            padding:15px;
+            animation-duration:1500ms;
+            animation-iteration-count: 1;
+            left:0%   !important;
+        }
+
+        @keyframes openWindow{
+
+            0%{ left:-40%;}
+            100%{left:0%;}
+        }
+
+            #titl{
+                z-index:100;
+                position:absolute;
+                width:100%;
+                text-align:center;
+                font-family:"Courier 10 Pitch";
+                font-weight: bolder;
+                color:darkblue;
+                font-size:400%;
+                text-shadow:1px 1px white;
+            }
+
+        @media (max-width:550px)
+        {
+            #titl{
+                font-size:200%;
+            }
+            .floating-panel {
+                top: 50px;
+            }
+
+        }
+
+    </style>
+
+
+</head>
+<body style="background-color:#f5d6b6;">
+
+<div id="titl">
+Hungry??
+</div>
+
+<div class="pane">
+    <input id="address" type="text" style="padding:10px;" placeholder="Enter the location">
+    <input id="submit" style="padding:10px;" type="button" value="Show Location">
+    <button id="find" style="padding:10px;" >Find Nearby Eating Spots</button>
+</div>
+
+<div id="Info"></div>
+
+<div id="map"></div>
+
+<script src="MapApi.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOtTdIwEcLKc4J2X2SsVGTa_Nrw9Wddm0&libraries=places&callback=initMap" async defer>
+</script>
+
+</body>
+</html>
