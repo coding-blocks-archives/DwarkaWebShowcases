@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ribeye" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url("tt3.jpg");
+            background-size: 1400px;
+        }
+        h1{
+            font-family: 'Ribeye', cursive;
+            padding-left:40vw;
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px black;
+
+        }
+        #inp{
+            margin-left:20vw;
+            padding-left: 1vw;
+            width: 50vw;
+            height:8vh;
+            border-radius: 5px;
+            font-size:1.5em;
+            font-family: 'Inconsolata', monospace;
+            border:0px;
+            box-shadow: 5px 5px 15px gray;
+        }
+        #inp:focus{
+            outline: 0px;
+        }
+        #btn{
+            height:8vh;
+            width:5vw;
+            font-size:1.5em;
+            font-weight: lighter;
+            font-family: 'Inconsolata', monospace;
+            border:0px black solid;
+            border-radius:10%;
+            margin-left:1vw;
+            box-shadow: 3px 3px 4px black;
+        }
+        #result{
+            list-style-type: none;
+            margin-left:10vw;
+        }
+
+        .but{
+            width :3vw;
+            height : 8vh;
+            margin-right : 3vh;
+            box-shadow: 3px 3px 4px black;
+            border : 0px black solid;
+            background-color : white;
+            border-radius : 10%;
+        }
+        .out{
+            border-radius :5px;
+            height:8vh;
+            width :40vw ;
+            box-shadow: 4px 4px 10px #152c43;
+            border:0px;
+            padding :2vw;
+            margin :1vw;
+            margin-left:8vw;
+            font-style :italic;
+            box-sizing :border-box;
+            font-size :3vh;
+            color :black;
+            font-family: "Comic Sans MS";
+        }
+        @media (max-width:1100px){
+            #btn{
+                width:10vw;
+            }
+            .but{
+                width:5vw;
+            }
+
+        }
+        @media (max-width:900px){
+            #result{
+                padding-left:2vw;
+            }
+        }
+        @media (max-width: 600px){
+            .out{
+                width:50vw;
+                margin-right:40vw;
+                margin-left: -10vw;
+            }
+            .but{
+                width:7vw;
+                margin:2vw;
+            }
+            #result{
+                padding-left:20vw;
+            }
+            #inp{
+                margin-left:5vw;
+                width: 70vw;
+            }
+            h1{
+                padding-left: 30vw;
+            }
+            body{
+                background-position: top;
+            }
+        }
+        @media (max-width:450px) {
+            .out{
+                width:60vw;
+            }
+            .but{
+                width:10vw;
+            }
+            #btn{
+                font-size:small;
+            }
+            h1{
+                padding-left: 20vw;
+                font-size: 30px;
+            }
+            #result{
+                padding-left:15vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TODO LIST</h1>
+        <input id="inp" type="text" placeholder="TODO..">
+        <button id="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <ul id="result"></ul>
+        </div>
+    </body>
+<script src="todoChecktask.js"></script>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+      background-image: url("https://ak1.picdn.net/shutterstock/videos/13299221/thumb/10.jpg?i10c=img.resize(height:160)");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #inp{
+      width:40vw;
+      height:8vh;
+      margin: 10vh 10vw 10vh 10vw;
+      border: 2px black solid;
+      border-radius: 10%;
+      font-family: 'Heebo', sans-serif;
+      color: black;
+      font-size:1em;
+      font-weight:900;
+      padding-left: 1vw;
+      box-sizing: border-box;
+    }
+    #inp:focus{
+      outline: none;
+    }
+    button{
+      background-color: #E84545;
+      border-radius: 20%;
+      width:8vw;
+      height:8vh;
+      border: 2px black solid;
+      margin-left:0.3vw;
+      font-weight: bold;
+      color: white;
+      outline: none;
+      /*-webkit-text-stroke:0.5px blac*/
+    }
+    .back{
+      margin:20vh 20vw 20vh 20vw;
+      background-color: rgba(10,10,10,0.8);
+      width: 60vw;
+      height:60vh;
+
+    }
+    @media (max-width:600px) {
+      button{
+        width:22vw;
+        height:6vh;
+        margin-left:10vw;
+      }
+      .back{
+        width: 80vw;
+        margin:10vw;
+        height:70vh;
+      }
+      #inp{
+      width:60vw;
+        height: 8vh;
+        font-size: 0.7em;
+      }
+      #clr{
+        margin-left: 27vw;
+      }
+    }
+    @media (min-width:600px) and (max-width:900px) {
+      button{
+        width: 20vw;
+      }
+      .back{
+        width:70vw;
+        height:70vh;
+      }
+      #clr{
+        margin-left: 22vw;
+      }
+    }
+    @media (min-width:900px) and (max-width:1260px) {
+      button{
+        width: 15vw;
+        margin-left:5vw;
+      }
+      .back{
+        width:70vw;
+        height:70vh;
+      }
+      #clr{
+        margin-left: 26vw;
+      }
+    }
+    </style>
+</head>
+<body>
+<div class="back">
+  <input type="text" id="inp" placeholder="  Enter the expression.."><br>
+  <button onclick="simp()"  id="simp">SIMPLIFY</button>
+  <button onclick="fact()"id="fact">FACTOR</button>
+  <button onclick="diff()" id="diff">DIFF<sup>N</sup></button>
+  <button onclick="intg()" id="intg">INTG<sup>N</sup></button>
+  <button onclick="zero()" id="zero">ZEROES</button>
+  <button onclick="abs()" id="abs">ABS</button>
+  <button onclick="clr()" id="clr">CLR</button>
+  <div id="ans"></div>
+</div>
+</body>
+<script src="api.js"></script>
+</html>

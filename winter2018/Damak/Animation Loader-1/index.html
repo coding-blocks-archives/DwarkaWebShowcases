@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: dimgrey;
+        }
+        #back{
+            margin: 200px auto;
+            height: 200px;
+            width: 200px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: -1;
+        }
+        #out1{
+            height:112px;
+            width:112px;
+            animation: an1 infinite 2s alternate;
+            position: relative;
+            top:56px;
+            left:44px;
+        }
+        #one{
+            height: 112px;
+            width: 56px;
+            border-top-left-radius: 56px;
+            border-bottom-left-radius: 56px ;
+            background-color: #b71c1c;
+        }
+        #out2{
+            height: 70px;
+            width: 70px;
+            animation: an2 infinite 2s alternate;
+            position: relative;
+            top:-35px;
+            left:65px;
+        }
+        #two{
+            height:70px;
+            width:35px;
+            border-top-left-radius: 35px;
+            border-bottom-left-radius: 35px ;
+            background-color: #f0f4c3;
+        }
+        #out4{
+            height: 80px;
+            width: 80px;
+            animation: an4 infinite 2s alternate;
+            position: relative;
+            left:60px;
+            top:-145px;
+            z-index: 1;
+        }
+        #four{
+            height:40px;
+            width:40px;
+            border-top-right-radius: 40px;
+            background-color: yellow;
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+        }
+        #out3{
+            height: 40px;
+            width: 40px;
+            animation: an3 infinite 2s alternate;
+            position: relative;
+            left:80px;
+            top:-88px;
+            z-index: 1;
+        }
+        #three{
+            top:20px;
+            left:20px;
+            height:20px;
+            width:20px;
+            border-bottom-right-radius: 20px;
+            background-color: #ffa000;
+            position: absolute;
+        }
+        #five{
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            left:86px;
+            top: 90px;
+            border-radius: 50%;
+            background-color:#152c43;
+            animation: an5 infinite 2s alternate;
+        }
+        @keyframes an1 {
+            0%{
+                transform: rotate(0deg);
+            }
+            15%{
+                transform: rotate(0deg);
+            }
+            90%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+        @keyframes an3 {
+            0%{
+                transform: rotate(0deg);
+            }
+            15%{
+                transform: rotate(0deg);
+            }
+            90%{
+                transform: rotate(90deg);
+            }
+            100%{
+                transform: rotate(90deg);
+            }
+        }
+        @keyframes an2 {
+            0%{
+                transform: rotate(0deg);
+            }
+            15%{
+                transform: rotate(0deg);
+            }
+            90%{
+                transform: rotate(-180deg);
+            }
+            100%{
+                transform: rotate(-180deg);
+            }
+        }
+        @keyframes an4 {
+            0%{
+                transform: rotate(0deg);
+            }
+            15%{
+                transform: rotate(0deg);
+            }
+            90%{
+                transform: rotate(-90deg);
+            }
+            100%{
+                transform: rotate(-90deg);
+            }
+        }
+        @keyframes an5 {
+            0%{
+                transform: translateX(0px);
+            }
+            15%{
+                transform: translateX(0px);
+            }
+            90%{
+                transform: translateX(20px);
+            }
+            100%{
+                transform: translateX(20px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="back">
+    <div id="out1">
+        <div id="one"></div></div>
+    <div id="out2">
+        <div id="two"></div></div>
+    <div id="out3">
+        <div id="three"></div></div>
+    <div id="out4">
+        <div id="four"></div></div>
+    <div id="five"></div>
+</div>
+</body>
+</html>
