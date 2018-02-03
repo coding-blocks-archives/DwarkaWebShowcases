@@ -1,30 +1,28 @@
 let prevMarker = null;
-let map = null;
-let table = document.getElementById('tab');
-let url = "http://api.openweathermap.org/data/2.5/weather";
-let currLoc ;
+let url = "https://api.openweathermap.org/data/2.5/weather";
 let key1 = "61863211ddcd1ae6f550c344619be1a3";
 function initMap() {
-    if (navigator.geolocation) {
+    if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function (position) {
-            currLoc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-            map = new google.maps.Map(document.getElementById('map'), {
+            var currLoc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            let option = {
                 zoom: 10,
                 center: currLoc,
                 disableDefaultUI: true
-            });
+            };
+            var map = new google.maps.Map(document.getElementById("map"), option);
             placeMarker(map, currLoc);
             google.maps.event.addListener(map, 'click', function (event) {
                 placeMarker(map, event.latLng);
             });
         });
+
     }
-};
+}
 function placeMarker(map, location) {
     if(prevMarker !== null) {
         prevMarker.setMap(null);
     }
-    map.setZoom(10);
     map.setCenter(location);
     let marker = new google.maps.Marker({
         position: location,
