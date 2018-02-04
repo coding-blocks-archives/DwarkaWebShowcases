@@ -1,0 +1,81 @@
+.{
+  font-size: 3rem;
+  box-sizing: border-box;
+  font-family: Helvetica Neue;
+
+}
+.bg{
+//  margin-top:2vw;
+padding-top:13.5vh;
+background-color: #e0fcf0;
+}
+.hd{
+  text-align: center;
+  text-shadow: 2px;
+  background-color: #004D40;
+  display:block;
+  color:white;
+  padding:0.9vh;
+  position: fixed;
+  width:100%;
+  z-index:5;
+}
+.alert{
+  margin-top:4vh;
+}
+#map{
+  width:50vw;
+  height:70vh;
+  border:2px solid black;
+
+  left: 0;
+    top: 0;
+}
+
+.mapholder{
+  margin-top: 2vh;
+  display:inline-block;
+  margin-left:2vw;
+  z-index: 3;
+  position: fixed;
+  width:500px;
+  height:500px;
+}
+.weather{
+  display:inline:block;
+  //border:2px solid black;
+  margin-right: 4vw;
+  width:400px;
+
+  float: right;
+  padding-right: 40px;
+  font-size: 40px;
+}
+.card-header{
+  font-size: :inherit;
+}
+
+.card{
+  padding-left: 1vw;
+  font-size: inherit;
+  border:1px solid black;
+  border-left:2vw solid #004D40;
+  /*margin:1vw;*/
+  margin-top:3vh;
+  width:40vw;
+
+}
+@media screen and (max-width:840px) and (min-width:400) {
+  .mapholder{
+    display:block;
+    width:80%;
+    position:relative;
+
+  }
+
+  .weather{
+    display: block;
+    width:80%;
+  }
+
+}
