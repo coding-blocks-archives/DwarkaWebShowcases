@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <link href="new.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="jumbotron">
+    <h1 class="heading">My Todolist</h1>
+<div class="list-inline">
+    <button type="button" id="btn"> <i class="fa fa-plus" aria-hidden="true"></i> Add </button>
+    <input id="inp" type="text">
+</div>
+</div>
+        <div class="center" align="center">
+            <table id="result"></table>
+        </div>
+   <br>
+
+    <div align="center">
+        <input onclick="toggle2()" id="clear" type="button" value="Clear all" >
+    </div>
+
+
+<script src="todoup.js"></script>
+</body>
+</html>

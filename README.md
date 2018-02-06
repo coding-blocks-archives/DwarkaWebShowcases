@@ -72,4 +72,20 @@
     - **[ToDo List](http://todogithub.bitballoon.com/)**
     - **[Weather API](https://www.bitballoon.com/sites/weatherapigithub)**
 
+- Riya
+    - **[Resume](http://riya-resume-cb.bitballoon.com/)**
+    - **[ToDoList](http://todo-list-riya.bitballoon.com/)**
+    - **[Chat Bot API](http://clever-bot-riya.bitballoon.com/)**
+    
+- Saksham Bhalla
+    - **[Animation](http://damping.bitballoon.com/)**
+    - **[Portfolio](http://sakshambhalla.bitballoon.com/)**
+    - **[Resume](http://sakshambhalla.bitballoon.com/resume)**
+    - **[ToDo List](http://saksham-todolist.bitballoon.com/)**
+    - **[University API](http://saksham-univ-finder.bitballoon.com/)**
+- Shruti
+    - **[Resume](http://practical-fermi-48075e.bitballoon.com/)**
+    - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
+    - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
+
 
