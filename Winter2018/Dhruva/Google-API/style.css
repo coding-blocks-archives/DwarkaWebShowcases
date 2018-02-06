@@ -1,0 +1,128 @@
+body,html{
+  padding:0;
+  margin:0;
+  font-family: 'Dosis', sans-serif;
+  background-color: #e4e4e445;;
+}
+#text{
+  margin: 0vw;
+  position: relative;
+  font-size: 4vw;
+  top: -1vw;
+}
+#input{
+  background-color:#F7DD44;
+  min-height: 3.5vw;
+  margin: -1vw;
+  padding: 0.3vw;
+  box-shadow: 2px 3px 20px -8px rgba(5,5,5,1);
+}
+
+.head{
+  height: 6vw;
+  position: relative;
+  background-color: #58BCEF;
+  font-family: 'VT323', monospace;
+  color: white;
+  width: 50vw;
+  left: -1vw;
+  top: -1vw;
+
+}
+#select{
+   height: 3vw;
+   font-size: 2vw;
+   overflow: hidden;
+   width: 38vw;
+   border-radius: 1vw;
+   border:none;
+   background-color: transparent;
+}
+select{
+  font-family: 'Dosis', sans-serif;
+}
+button{
+  height: 3.5vw;
+  font-size: 2vw;
+  border-radius: 1vw;
+  cursor:pointer;
+  background-color: transparent;
+  border: none;
+  font-family: 'Dosis', sans-serif;
+}
+#a{
+  width: 100%;
+}
+#map{
+  height:98vh;
+  width:50vw;
+  display: inline-block;
+  transform: translateX(50vw);
+}
+#dho{
+  margin-top: 0.5vw;
+  width:4.7vw;
+  filter: invert(100%)
+}
+button:hover{
+  box-shadow: 2px 3px 20px -8px rgba(5,5,5,1);
+  background-color: white;
+}
+p{
+  margin:0;
+}
+#content{
+  display:inline-block;
+  height:98vh;
+  width:50vw;
+  padding:1%;
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top:0;
+  box-sizing: border-box;
+  /*flex-wrap: wrap;*/
+}
+div::scrollbar{
+  display:none;
+}
+#menu{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.7vw;
+  transform: translateY(4vh);
+}
+.r{
+  padding: 0.9vw;
+  background-color: white;
+  box-shadow: 2px 3px 20px -8px rgba(5,5,5,1);
+  border-radius: 0.4vw;
+}
+@media (max-width:1024px){
+  #map{
+    width:100vw;
+    height:80vh;
+    transform: translateY(10vh);
+  }
+  #menu{
+    width:100vw;
+    transform: translateY(12vh);
+  }
+  #content{
+    width:100vw;
+  }
+  .head{
+    width:102%;
+  }
+  #select{
+    width:38vh;
+    font-size:1.5vh;
+    height: 3vh;
+  }
+  #input{
+    min-height:3vh;
+  }
+  button{
+    height:3.5vh;
+    font-size: 1.5vh;
+  }
+}
