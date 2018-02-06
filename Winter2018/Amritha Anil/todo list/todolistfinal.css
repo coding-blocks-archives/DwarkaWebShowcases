@@ -1,0 +1,92 @@
+.{
+	box-sizing:border-boxing;
+	color:white;
+
+}
+body{
+	background-image:URL("pencil.jpg");
+	font-family: 'Slabo 27px', serif;
+	//font-size: 3em;
+}
+
+.back{
+	//background-image:URL("pencil.jpg");
+	//font-family: 'Slabo 27px', serif;
+	width:100%;
+	height:100vh;
+}
+.addtxt{
+	font-family:inherit;
+}
+.t{
+	font-family:inherit;
+}
+
+.mn{
+	margin-top:4vw;
+	background-image:URL("http://www.userlogos.org/files/backgrounds/ctach1991/Simple%20Blue%20Gradient.jpg");
+	border:3px solid black;
+	padding:2vw;
+	min-width:40px;
+	justify-content:center;
+}
+.head{
+	justify-content:center;
+	margin:0px auto;
+	text-align:center;
+
+	color:white;
+	font-weight:bold;
+}
+.headtext{
+		font-size:4rem;
+		margin-bottom:0.5vh;
+	}
+.scrollhead{
+	font-size:1em;
+	color:#01023a;
+	margin-bottom:2vh;
+}
+
+	.scrollhead:hover{
+		display:inline-block;
+		font-size:1em;
+		color:white;
+
+	}
+
+.firstbox{
+	text-align:center;
+}
+.addtxt{
+	carpet-color:red;
+	font-size:1.5rem;
+     
+}
+.add{
+	margin-left:0.75vw;
+	//opacity:0;
+}
+.todo{
+	margin-top:3vh;
+}
+
+.t{
+	margin-left:0.75vw;
+	font-size:1.5rem;
+	size:50;
+	background-color:#ffcece;
+}
+.c{
+	margin-left:0.75vw;
+}
+.e{
+	margin-left:0.75vw;
+}
+.i{
+	margin-left:0.75vw;
+}
+.oll{
+	color:white;
+	font-size:1.5rem;
+}
