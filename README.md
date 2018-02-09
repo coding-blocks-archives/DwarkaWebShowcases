@@ -88,4 +88,9 @@
     - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
     - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
 
+- Arya Soni
+	- **[ToDoList](http://palmist-canary-37811.bitballoon.com/)**
+	- **[Portfolio](http://aryasoni-portfoliopage.bitballoon.com/)**
+	- **[Google Map API](http://examiner-platter-35753.bitballoon.com/)**
+	- **[Navigation Bar](http://examiner-platter-35753.bitballoon.com/)**
 
