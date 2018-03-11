@@ -89,6 +89,6 @@
     - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
     - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
 
-	### Winter2018 Dwarka
-	-Sarthak Goel
-	  -**[Portfolio and Resume](https://gifted-babbage-0fa3d1.netlify.com/)**
+### Summer 2018 Dwarka
+-Sarthak Goel
+-**[Portfolio and Resume](https://pensive-keller-081333.netlify.com)**

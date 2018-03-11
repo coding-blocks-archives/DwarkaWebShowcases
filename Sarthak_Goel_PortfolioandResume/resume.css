@@ -6,7 +6,7 @@ html,body{
   flex-wrap:wrap;
   justify-content: center;
   border: 5px solid black;
-  max-width: 980px;
+  max-width: 1024px;
   margin:0 auto;
   background-color: white;
 
@@ -30,9 +30,9 @@ html,body{
   border:0px;
 }
 .container2>.box{
-  width: 49.5%;
+  width: 49%;
   border: 1px solid white;
-  max-height:500px;
+  max-height:800px;
     background-color: #b3d1ff;
 }
 .container1>.box{
