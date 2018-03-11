@@ -1,0 +1,53 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 42%;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th{
+    background-color: maroon;
+    color: floralwhite;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#head{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: cursive;
+    color: crimson;
+}
+#inp1,#inp2{
+    width: 20%;
+
+    font-size: 20px;
+}
+#sub{
+    height: 20px;
+
+}
+#main1{
+    background-color: crimson;
+    padding: 40px;
+}
+#demo{
+    margin-top: -5px;
+    padding: 40px;
+    background-color: antiquewhite;
+    font-size: large;
+}
+@media screen and (max-width:600px )
+{
+    #inp1,#inp2{
+        width: 20%;
+        font-size: 15px;
+    }
+}

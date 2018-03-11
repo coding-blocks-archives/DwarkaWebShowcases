@@ -1,0 +1,138 @@
+#container{
+  background-color: #284863;
+  height:18vw;
+  position: relative;
+}
+#icon{
+  position: absolute;
+  width:6vw;
+  left:1vw;
+  top:1vw;
+}
+body{
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #ecf3f1;
+}
+#container .input{
+  width: 100%;
+  position:relative;
+  transform: translateY(9vw);
+}
+#dp , #next , #prev{
+  background-color: transparent;
+  width:5vw;
+  overflow:hidden;
+  border-style: none;
+}
+#dp{
+  transform: translateX(8vw);
+}
+#submit{
+  font:inherit;
+  padding:0.4vw;
+  width: 10vw;
+  transform: translateX(8vw);
+  font-size: 2vw;
+  border-radius: 1vw;
+  background-color: transparent;
+  border-style:solid;
+  border-width:0.2vw;
+  border-color: #ecf3f1;
+  color:#ecf3f1;
+}
+#w {
+  font:inherit;
+  padding:0.4vw;
+  width: 18vw;
+  transform: translateX(8vw);
+  font-size: 1.8vw;
+  border-radius: 1vw;
+  background-color: transparent;
+  border-style:solid;
+  border-width:0.2vw;
+  border-color:#ecf3f1;
+  color:#ecf3f1;
+}
+#f{
+  font:inherit;
+  padding:0.4vw;
+  width: 12vw;
+  font-size: 2vw;
+  border-width:0.2vw;
+  border-radius: 1vw;
+  transform: translateX(8vw);
+  background-color: transparent;
+  border-style:solid;
+  border-color: #ecf3f1;
+  color:#ecf3f1;
+}
+#ibox{
+  font:inherit;
+  width:29vw;
+  font-size: 1.5vw;
+  padding: 0.4vw;
+  transform: translateX(6vw);
+  background-color:transparent;
+  border-style: none;
+  color:#ecf3f1;
+}
+.dropdown{
+  font:inherit;
+  font-size: 1.5vw;
+  position: absolute;
+  visibility: hidden;
+  /*width:6.5%;*/
+  z-index:1;
+  top:6.5vw;
+  left:36vw;
+  color:#ecf3f1;
+}
+.content{
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 0.5vh;
+  margin-top:0.5vh;
+  margin-left: 0;
+  margin-right:0;
+}
+.footer{
+  position:relative;
+  text-align: center;
+  bottom:0;
+  width:100%;
+  transform: translateY(4vw);
+  font-size: 3.7vw;
+}
+p{
+  margin: 0.65vw;
+  font-size: 1.5vw;
+  width:31%;
+  overflow:auto;
+  background-color: rgba(22,137,185,0.1);
+}
+a{
+  text-decoration: none;
+  color:#2D2D2D;
+}
+p::-webkit-scrollbar{
+  display: none;
+}
+p::scrollbar{
+  display:none;
+}
+p::-moz-scrollbar{
+  display: none;
+}
+@media (min-width:700px) and (max-width:1024px) {
+  p{
+    width:47.4%;
+    font-size: 2.5vw;
+  }
+}
+@media (max-width:699px){
+  p{
+    width:97%;
+    font-size:4.5vw;
+  }
+}

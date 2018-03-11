@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            width:99.3%;
+            height: 57px;
+            background-color: #00cccc;
+            padding: 10px 0px 10px 10px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        #task{
+            width: 90%;
+            height: 50px;
+            /*margin: 10px 0px 10px 10px;*/
+            background-color: #008080;
+            outline: none;
+            border: 2px solid #00394d;
+            border-radius: 4px;
+            color: white;
+            font-size: 25px;
+            padding: 0 0 0 30px;
+            margin-left: 3%;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        #add{
+            margin: 0px;
+            width:54px;
+            height: 54px;
+            border-radius: 50%;
+            background-color: black;
+            border: 2px solid white;
+            position: absolute;
+            z-index: 100;
+            right: 53px;
+            color: white;
+            font-size: 235%;
+
+
+        }
+
+        .container{
+            background-color: #ff4d4d;
+            position: absolute;
+            z-index:1000;
+            width: 100%;
+            top: 77px;
+        }
+
+        .list li{
+            list-style: none;
+
+        }
+
+        li{
+            display: inline;
+            color: white;
+            font-family: 'Slabo 27px', serif;
+            /*font-size: 40px;*/
+            padding: 3%
+        }
+
+        .lidiv{
+            height: 54px;
+            border:1px solid;
+        }
+
+        .remove{
+            background-color: rgba(255,255,255,0);
+            float: right;
+            height: 53px;
+            width: 50px;
+            border: 0px;
+        }
+
+        .tick{
+            background-color: rgba(255,255,255,0);
+            height: 55px;
+            width: 50px;
+            border: none;
+            position: relative;
+            margin: -1px;
+
+        }
+
+        .p{
+            display: inline;
+        }
+
+
+        .tick:focus {outline:0;}
+
+        .remove:focus {outline:0;}
+
+        #add:focus {outline:0;}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <input id="task" >
+    <button type="button" id="add">+</button>
+</header>
+
+<div class="container">
+    <ul id="list"></ul>
+</div>
+
+
+
+<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>

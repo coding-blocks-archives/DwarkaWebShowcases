@@ -1,0 +1,26 @@
+.jumbotron{
+    font-family: 'Joti One', cursive; !important;
+    font-size: 20px; !important;
+    text-align: center; !important;
+}
+.heading{
+    font-size: 60px;
+    font-family: 'Joti One', cursive;
+    margin-bottom: 25px;
+    margin-top: -30px;
+}
+td{
+    font-size: 15px;
+}
+.done{
+    background-color: #66bb6a;
+}
+.delete{
+    background-color: #FC97A7;
+}
+.update{
+    background-color: #90caf9;
+}
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wether Conditions</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="wether.css">
+	
+</head>
+<body>
+<div id="container">
+    <header>
+        <hr style="color:#007399;">
+		<h1 id="head">Weather Forecast</h1>
+		<hr style="color:#007399;">
+    </header>
+    <div class="middiv">
+		<div class="maps">
+			<div id="map"></div>
+		</div>
+		<div class="info">
+			<div id="icon">
+			<figure class="icons">
+				<canvas id="clear-day" width="0" height="0">
+				</canvas>
+
+				<canvas id="clear-night" width="0" height="0">
+				</canvas>
+
+				<canvas id="partly-cloudy-day" width="0" height="0">
+				</canvas>
+
+				<canvas id="partly-cloudy-night" width="0" height="0">
+				</canvas>
+
+				<canvas id="cloudy" width="0" height="0">
+				</canvas>
+
+				<canvas id="rain" width="0" height="0">
+				</canvas>
+
+				<canvas id="sleet" width="0" height="0">
+				</canvas>
+
+				<canvas id="snow" width="0" height="0">
+				</canvas>
+
+				<canvas id="wind" width="0" height="0">
+				</canvas>
+
+				<canvas id="fog" width="0" height="0">
+				</canvas>
+			</figure>
+			</div>
+			<div class ="report">
+				<h2 id="summary"></h2>
+				<ul id="list"></ul>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+		
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChnG7-G8746XOos97UbCGMDdAy_aAqLM4&callback=initMap">
+	</script>
+<script src="skyicons.js"></script>
+<script>
+    var icons = new Skycons({"color": "#00b3b3"}),
+        list  = [
+            "clear-day", "clear-night", "partly-cloudy-day",
+            "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+            "fog"
+        ],
+        i;
+    for(i = list.length; i--; )
+        icons.set(list[i], list[i]);
+    icons.play();
+</script>		
+<script src="weather.js"></script>
+
+</body>
+</html>
