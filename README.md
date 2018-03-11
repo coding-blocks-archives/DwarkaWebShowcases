@@ -16,7 +16,8 @@
  - Nupur Baghel
  	  - **[Todolist](http://mercenary-cheetah-86354.bitballoon.com/)**
  	  - **[PortFolio](http://coordinator-bird-67045.bitballoon.com/)**
-
+  -Sarthak Goel
+	  -**[Portfolio and Resume](https://gifted-babbage-0fa3d1.netlify.com/)**
        
        
        

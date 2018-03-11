@@ -139,6 +139,7 @@ button.btn.btn-primary {
 	border-radius: 0;
 	border: 0;
 	outline: 0;
+  color:white;
 	resize: none;
 }
 
@@ -168,6 +169,17 @@ input {
 
 .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity: 1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity: 1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
 }
 @media screen and (max-width: 992px) {
 	.whitespace {
