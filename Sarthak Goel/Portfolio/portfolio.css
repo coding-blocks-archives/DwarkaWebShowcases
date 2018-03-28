@@ -1,7 +1,8 @@
   html, body {
   	margin: 0;
   	padding: 0;
-    background-color:#000033;
+    /* background-color:#000033; */
+      /* background-image: url(https://lh3.googleusercontent.com/e7TitxeMXgGbOT-PhRfHH9etKwwE-EKdodDwhbcMOFJPJf2iMtY4YZcsA0Wip7GOgg=w300); */
   }
 
   * {
@@ -13,12 +14,12 @@
   .strip {
   	width: 100%;
   }
-
   .inner {
-  	padding: 0px 50px;
+    /* background-image: url(https://lh3.googleusercontent.com/e7TitxeMXgGbOT-PhRfHH9etKwwE-EKdodDwhbcMOFJPJf2iMtY4YZcsA0Wip7GOgg=w300); */
+    padding: 0px 50px;
   	padding-bottom: 15px;
   	display: inline-block;
-  	background:#000033;
+  	/* background:#000033; */
   	width: 100%;
   }
 
@@ -58,6 +59,10 @@ h2{
   background-color: #ebebe0;
 }
 
+/* #AboutMe{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtop5i8qq41oiPNMicaU2nTlHKlMN1qFtxUWRRmsTsX4VguJo);
+
+} */
 .container-fluid {
 	width: 85%;
 	max-width: 1024px;

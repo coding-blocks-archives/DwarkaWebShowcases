@@ -1,12 +1,15 @@
 html,body{
-  background-color: #f2f7f7}
+  background-color:#000a19;
+  font-size: 95%;
+  font-family: "Open Sans", sans-serif;
+}
 
 .container{
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
   border: 5px solid black;
-  max-width: 1024px;
+  max-width: 980px;
   margin:0 auto;
   background-color: white;
 
@@ -30,16 +33,17 @@ html,body{
   border:0px;
 }
 .container2>.box{
-  width: 49%;
+  width: 49.5%;
   border: 1px solid white;
-  max-height:800px;
-    background-color: #b3d1ff;
+  max-height:500px;
+  background-color: #798ca8;
+  /* padding:px; */
 }
 .container1>.box{
   border:0px;
   width:100%;
   border: 1px solid green;
-background-color: #1f9496;
+background-color: #466087;
   color:white;
 }
 h1,h3,h4{
@@ -61,6 +65,7 @@ margin-bottom: 50px;}
 #icon{
     text-shadow: 1px 1px 1px #ccc;
     font-size: 1.5em;
+    color:#010e23;
 }
 #myimg,#profiles{
   display:flex;
@@ -69,7 +74,7 @@ margin-bottom: 50px;}
 
 }
 .ip{
-background-color: #1f9496;
+background-color: #466087;
 }
 @media(max-width:900px){
   .container2{
