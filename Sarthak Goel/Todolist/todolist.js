@@ -19,11 +19,11 @@ function check(el)
            var val=$(el).is(':checked');
            if(val==true)
            {
-             result2.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" checked="true" onclick="uncheck(this)"><input class="para" type="text" disabled="true" value=${value}>
+             result2.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" checked="true" onclick="uncheck(this)"><input class="para" type="text" disabled="true" value="`+value+`">
                            <span id="sp"><button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button><button class="btn btn-danger" id="del_btn" onclick="del(this)" >DELETE TASK</button></span></div></div></div>`);
             }
             else {
-              result2.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" onclick="uncheck(this)"><div class="yo"><input class="para" type="text" disabled="true" value=${value}>
+              result2.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" onclick="uncheck(this)"><div class="yo"> <input class="para" type="text" disabled="true" value="`+value+`">
                             <span id="sp"><button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button><button class="btn btn-danger" id="del_btn" onclick="del(this)" >DELETE TASK</button></span></div></div></div>`);
             }
             localStorage.setItem('data',JSON.stringify(taskarray));
@@ -38,11 +38,11 @@ function uncheck(el)
            var val=$(el).is(':checked');
            if(val==true)
            {
-             result.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" checked="true" onclick="check(this)"><div class="yo"><input class="para" type="text" disabled="true" value=${value1}>
+             result.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" checked="true" onclick="check(this)"><div class="yo"> <input class="para" type="text" disabled="true" value="`+value+`">
                            <span id="sp"><button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button><button class="btn btn-danger" id="del_btn" onclick="del(this)" >DELETE TASK</button></span></div></div>`);
             }
             else {
-              result.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" onclick="check(this)"><input class="para" type="text" disabled="true" value=${value}>
+              result.append(`<div class="cont" id=${id}><div id="task"><input class="tick" type="checkbox" onclick="check(this)"> <input class="para" type="text" disabled="true" value="`+value+`">
                             <span id="sp"><button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button><button class="btn btn-danger" id="del_btn" onclick="del(this)" >DELETE TASK</button></span></div></div>`);
             }
             localStorage.setItem('data',JSON.stringify(taskarray));
@@ -81,6 +81,7 @@ $(document).ready(function(){
                });
 
             add_btn.on('click',function(){
+
                   var val=inp.val();
                   if(val!=""){
                         var task={
@@ -89,16 +90,18 @@ $(document).ready(function(){
                           keep:1
                         }
                         taskarray.push(task);
-                        result.append(`<div class="cont" id=${counter}><div id="task"><input class="tick" type="checkbox" onclick="check(this)"><input class="para" type="text" disabled="true" value=${val}>
-                                      <span id="sp"><button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button><button class="btn btn-danger" id="del_btn" onclick="del(this)" >DELETE TASK</button></span></div></div>`);
+                        result.append(`<div class="cont" id=${counter}><div id="task"><input class="tick" type="checkbox" onclick="check(this)">
+                        <input class="para" type="text" disabled="true" value="`+val+`"><span id="sp">
+                        <button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button>
+                        <button class="btn btn-danger" id="del_btn" onclick="del(this)" >DELETE TASK</button></span></div></div>`);
                         inp.val("");
                         counter++;
                       //  localStorage.setItem('counter',JSON.stringify(counter));
                         localStorage.setItem('data',JSON.stringify(taskarray));
-                  }
-                  else{
-                      alert("Enter the Task Name !!")
-                  }
+                      }
+                      else{
+                        alert("Please enter the Task name!!")
+                      }
             });
 
             function display(){
@@ -109,11 +112,11 @@ $(document).ready(function(){
                 if(arr[i].keep==1){
                         if(arr[i].done==true){
 
-                          result2.append(`<div class="cont" id=${i}><div id="task"><input class="tick" type="checkbox" checked="true" onclick="uncheck(this)"><input class="para" type="text" disabled="true" value=${arr[i].name}>
+                          result2.append(`<div class="cont" id=${i}><div id="task"><input class="tick" type="checkbox" checked="true" onclick="uncheck(this)">  <input class="para" type="text" disabled="true" value="`+arr[i].name+`">
                                         <span id="sp"><button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button><button class="btn btn-danger" id="del_btn" onclick="del(this)">DELETE TASK</button></span></div></div>`);
                         }
                         else {
-                          result.append(`<div class="cont" id=${i}><div id="task"><input class="tick" type="checkbox" onclick="check(this)"><input class="para" type="text" disabled="true" value=${arr[i].name}>
+                          result.append(`<div class="cont" id=${i}><div id="task"><input class="tick" type="checkbox" onclick="check(this)"> <input class="para" type="text" disabled="true" value="`+arr[i].name+`">
                                           <span id="sp"><button class="btn btn-dark" id="update_btn" onclick="update(this)" >UPDATE TASK</button><button class="btn btn-success" id="confirm_btn" disabled>CONFIRM</button><button class="btn btn-danger" id="del_btn" onclick="del(this)" >DELETE TASK</button></span></div></div>`);
                         }
                         c++;
