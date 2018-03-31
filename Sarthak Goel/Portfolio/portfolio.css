@@ -1,0 +1,197 @@
+  html, body {
+  	margin: 0;
+  	padding: 0;
+    /* background-color:#000033; */
+      /* background-image: url(https://lh3.googleusercontent.com/e7TitxeMXgGbOT-PhRfHH9etKwwE-EKdodDwhbcMOFJPJf2iMtY4YZcsA0Wip7GOgg=w300); */
+  }
+
+  * {
+  	font-family: Helvetica, Arial, sans-serif;
+  	font-weight: 400;
+
+  }
+
+  .strip {
+  	width: 100%;
+  }
+  .inner {
+    /* background-image: url(https://lh3.googleusercontent.com/e7TitxeMXgGbOT-PhRfHH9etKwwE-EKdodDwhbcMOFJPJf2iMtY4YZcsA0Wip7GOgg=w300); */
+    padding: 0px 50px;
+  	padding-bottom: 15px;
+  	display: inline-block;
+  	/* background:#000033; */
+  	width: 100%;
+  }
+
+  .inner img {
+  	width: 150px;
+  	height: 150px;
+  	border-radius: 50%;
+  	-webkit-border-radius: 50%;
+  	-moz-border-radius: 50%;
+  	-o-border-radius: 50%;
+  	border: 5px solid white;
+  }
+
+  .tagline h2 {
+  	color: white;
+  	text-align: center;
+    margin:55px;
+  }
+  .intro-text h1
+  {
+    color:white;
+    text-align: center;
+  }
+  .tagline h2 {
+  	font-size: 160%;
+  	background-color: rgb(100, 100, 100);
+  	display: inline-block;
+  	padding: 14px 36px;
+  }
+h2{
+  color: white;
+}
+  .centered {
+  	text-align: center;
+  }
+#Education,#TestScores{
+  background-color: #ebebe0;
+}
+
+/* #AboutMe{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtop5i8qq41oiPNMicaU2nTlHKlMN1qFtxUWRRmsTsX4VguJo);
+
+} */
+.container-fluid {
+	width: 85%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.container-text {
+	font-size: 120%;
+	text-align: justify;
+}
+
+
+.progress {
+	background-color: rgb(50, 50, 50);
+	height: 30px;
+	margin-bottom: 20px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.progress-bar {
+	line-height: 30px;
+	font-size: 114%;
+	text-align: left;
+	background-color: rgb(79, 79, 79);
+}
+
+.bar-text span {
+	padding: 40px 15px;
+}
+.card-img-top {
+	width: 150px;
+  height:150px;
+  margin: 0 auto;
+}
+
+.card {
+	background: rgb(100, 100, 100);
+}
+
+.card-block {
+	padding: 13px 15px;
+	color: white;
+}
+
+
+a.btn.btn-primary {
+	background: #009933;
+	border: 0;
+	width: 100%;
+	padding: 9px;
+	border-radius: 0;
+}
+
+a.btn.btn-primary:hover, a.btn.btn-primary:visited, a.btn.btn-primary:active {
+	background: #009933;
+	border: 0;
+}
+
+.card h4 {
+	font-size: 130%;
+}
+
+button.btn.btn-primary {
+	border-radius: 0;
+}
+
+.form-group input {
+	background: rgb(80, 80, 80);
+	border-radius: 0;
+	color: white;
+	width: 100%;
+}
+
+.form-group textarea {
+	background: rgb(80, 80, 80);
+	border-radius: 0;
+	border: 0;
+	outline: 0;
+  color:white;
+	resize: none;
+}
+
+input {
+	border: none !important;
+	outline: none;
+ 	-webkit-box-shadow: none !important;
+ 	-moz-box-shadow: none !important;
+ 	box-shadow: none !important;
+}
+
+#submit {
+	background: #009933;
+	color: white;
+	outline: 0;
+	font-size: 100%;
+  padding: 2px 40px;
+  width: 150px;
+	border: 0 !important;
+}
+
+.form-control {
+	position: relative;
+	left: 0;
+
+}
+
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity: 1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity: 1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+@media screen and (max-width: 992px) {
+	.whitespace {
+		height: 15px;
+	}
+
+	#submit {
+		width: 100%;
+	}
+}
