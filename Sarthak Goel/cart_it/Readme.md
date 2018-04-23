@@ -2,7 +2,7 @@
 
 A Shopping Cart Web Application:
 
-The web application can be seen on **(https://young-earth-18742.herokuapp.com/)*
+The web application can be seen on **(https://sarthak-goel-cart-it.herokuapp.com/)*
 
 Steps to run the application:
 1. Run npm install on the command line
