@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-6 col-md-4 offset-md-4 offset-sm-3">
+        <div id="success" class="alert alert-success {{#if noMessages}}d-none{{/if}}">
+            {{successMsg}}
+        </div>
+    </div>
+</div>
+{{# each products }}
+    <div class="row">
+        {{# each this }}
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-responsive" src="{{this.imagePath}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.title}}</h5>
+                            <p class="card-text">{{this.description}}</p>
+                            <div class="clearfix">
+                                <div class="price float-left">${{this.price}}</div>
+                                <a href="/add-to-cart/{{this._id}}" class="btn btn-success float-right">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        {{/each}}
+    </div>
+{{/each}}
