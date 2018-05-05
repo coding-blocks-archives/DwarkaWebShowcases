@@ -8,8 +8,8 @@
                   --- Add Link of URL in Readme 
 
 ### Projects URL
--Bhavya Takkar
-    - **[GoogleMapApi](https://silly-mayer-f19362.netlify.com)**
+- Bhavya Takkar
+    - **[GoogleMapApi](https://silly-mayer-f19362.netlify.com)** 
     - **[TheBookPad](https://kind-mayer-fca118.netlify.com)** 
  - Sarthak Goel
     - **[Portfolio](https://practical-mcnulty-daa87a.netlify.com)**
