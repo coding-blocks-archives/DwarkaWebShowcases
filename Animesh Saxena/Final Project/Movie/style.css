@@ -1,0 +1,113 @@
+.movie img{
+    width:100%;
+}
+.jumbotron{
+    opacity: 0.8;
+}
+
+#spidy{
+    color: white;
+    font-family: Helvetica;
+    text-align: justify;
+text-align-last: right;
+    font-size: large;
+}
+
+#luke{
+    font-family: Helvetica;
+    text-align: justify;
+    color: white;
+    font-size: large;
+}
+
+#jack{
+    color: white;
+    font-family: Helvetica;
+    text-align: justify;
+    text-align-last: right;
+    font-size: large;
+}
+
+
+#filter{
+position: relative;
+    top: 40px;
+}
+
+@media(min-width:960px){
+    .movie .col-md-3 {
+        height: 390px;
+    }
+
+   .movie .col-md-3 img{
+        height:240px;
+    }
+}
+
+.heading{
+position: relative;
+    left: 30%;
+
+    top: 10px;
+    font-size: 50px;
+    cursor: pointer;
+
+
+}
+
+.heading a:hover{
+cursor: pointer;
+}
+
+
+
+#searchWrite {
+
+    position: relative;
+    top: 30px;
+}
+
+
+
+
+.wordart.tilt .heading {
+    font-family: Impact;
+    background: #fdea00;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdea00), color-stop(44%, #fdcf00), color-stop(100%, #fc2700));
+    background: -webkit-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+    background: -o-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+    background: -ms-linear-gradient(top, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+    background: linear-gradient(to bottom, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdea00', endColorstr='#fc2700', GradientType=0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wordart.tilt .heading:before {
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    text-shadow: 0.01em 0em 0 #802700, 0em 0.01em 0 #c23d00, 0.02em 0.01em 0 #802700, 0.01em 0.02em 0 #c23d00, 0.03em 0.02em 0 #802700, 0.02em 0.03em 0 #c23d00, 0.04em 0.03em 0 #802700, 0.03em 0.04em 0 #c23d00, 0.05em 0.04em 0 #802700, 0.04em 0.05em 0 #c23d00, 0.06em 0.05em 0 #802700, 0.05em 0.06em 0 #c23d00, 0.07em 0.06em 0 #802700, 0.06em 0.07em 0 #c23d00, 0.08em 0.07em 0 #802700, 0.07em 0.08em 0 #c23d00;
+}
+body{
+    background-image: url("https://images4.alphacoders.com/909/909185.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#movieInfo{
+    background-color: #fdcf00;
+    padding: 30px;
+    border-radius: 60px;
+}
+
+@media (max-width: 576px) {
+    .heading{
+position: center;
+    }
+}
