@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moviepedia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <div class="wordart tilt"><h3 class="heading">Moviepedia</h3></div>
+
+    <form autocomplete="off" action="/action_page.php" id="search"><div class="form-group">
+        <div class="autocomplete" >
+<input class="form-control" id="searchWrite" type="text" placeholder="Search here...." style="font-size: larger">
+            <div id="filter" class="row">
+
+
+                <div class="col"><strong>Year :</strong> <select id="releaseyr">
+                    <option value="">None</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                </select></div>
+
+                <div class="col"><strong>Type :</strong> <select id="typ">
+                    <option value="">Both</option>
+                    <option value="movie">Movie</option>
+                    <option value="series">TV Show</option>
+
+                </select></div>
+
+
+
+
+                <div class="col"> <input id="submitbt" class="form-control" type="submit"></div>
+
+            </div>
+
+        </div>
+    </div>
+    </form>
+    </div>
+    <div class="container" id="quote">
+        <p id="spidy"><i>With great power ,<br> Comes great responsibilities. <br>  - SpiderMan</i></p>
+        <p id="luke"><i>I’ll never turn to the dark side.<br> I am a Jedi, like my father before me.<br> - Luke Skywalker</i></p>
+        <p id="jack"><i>The seas may be rough, but I'm the Captain!<br>No matter how difficult, I will always prevail<br> - Captain Jack Sparrow</i></p>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="movie" id="movie-list">
+        <div class="row" id="items" style="padding-bottom: 20px">
+
+        </div>
+
+    </div>
+</div>
+<script src="moviesfilter.js"></script>
+</body>
+</html>
