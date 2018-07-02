@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<style >
+
+	#sidebar
+	{
+		position: relative;
+
+
+	}
+
+	table,th,tr,td
+	{
+		border: 1px solid black;
+		padding:10px;
+	}
+
+	#blog
+	{ 
+		position:absolute;
+	
+	}
+
+	.c
+	{
+		position: absolute;
+		top:100px;
+		left: 60px;
+		width: 200px;
+		height:200px;
+		border-radius:2%;
+		
+	}
+
+	.c1
+	{
+		background-color:tomato;
+		z-index: 100;
+	}
+
+
+	.c2
+	{
+		background-color:dodgerblue;
+		left: 40px;
+		top: 120px;
+		bottom: 120px;
+		height: 160px;
+		z-index: 90;
+	}
+
+	.c3
+	{
+		background-color:yellowgreen;
+		left: 20px;
+		top: 140px;
+		bottom: 140px;
+		height: 120px;
+		z-index: 80;
+	}
+
+	.c4
+	{
+		background-color:orange	;
+		left: 0px;
+		top: 160px;
+		bottom: 160px;
+		height: 80px;
+		z-index: 70;
+	}
+
+
+	.c2:hover ~ .c
+	{
+		top:100px;
+		left: 250px;
+		transition: 2s;
+
+	}
+
+	
+	.c2:hover 
+	{
+		width: 200px;
+		height:200px;
+		top: 100px;
+		transition: 2s;
+
+	}
+
+	.c3:hover ~ .c
+
+	{
+		top: 100px;
+		left: 350px;
+		transition: 2s;
+	}
+	.c3:hover 
+	{
+		width: 200px;
+		height:200px;
+		top: 100px;
+		transition: 2s;
+
+	}
+	.c3:hover + .c2
+	{
+	
+		width: 200px;
+		height:200px;
+		transition: 2s; 
+		left: 250px;
+		top: 100px;
+
+	}
+
+
+	.c4:hover ~ .c
+	{
+		left: 100px;
+		transition: 2s;
+
+	}
+	.c4:hover 
+	{
+		width: 200px;
+		height:200px;
+		top: 100px;
+		transition: 2s;
+
+	}
+
+	.c4:hover + .c3
+	{
+		width: 200px;
+		height:200px;
+		transition: 2s; 
+		left:250px;
+		top: 100px;
+
+		/*top: 100px;*/
+	}
+
+	.c4:hover ~ .c2
+	{
+		width: 200px;
+		height:200px;
+		transition: 2s; 
+		left:350px;
+		top: 100px;
+		
+	}	
+
+	.c4:hover ~ .c1
+	{
+		width: 200px;
+		height:200px;
+		transition: 1s; 
+		left:450px;
+		top: 100px;
+
+		
+	}	
+	.c4:hover .y
+	{
+		 height:120px;
+		
+	}
+
+	</style>
+</head>
+<body>
+
+<header style="width:100%">
+	
+	<div class="jumbotron" style="background-image:url(https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif);margin-bottom:0px;margin-top:55px;width:100%">
+			<center><h1 style="color:white;font-size:70px;">Akash Sharma</h1>
+			<p style="font-size:30px;color:white"><i>(A webpage about me !)</i></p></center>
+	</div>
+
+</header>
+
+<div class="fixed-top" style="width:100%;z-index:2000">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:black">
+  <a class="navbar-brand" href="#" style="color:white">SECTIONS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#abt">Introduction</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#edu">Education & Experience</a>
+      </li>
+      <li class="nav-item">
+      </li>
+        <a class="nav-link" href="#skil">Skills</a>
+      <li class="nav-item">
+      </li>
+        <a class="nav-link" href="#ach">Achievements</a>
+      <li class="nav-item">
+      </li>
+        <a class="nav-link" href="#pro">Projects</a>
+      <li class="nav-item">
+      </li>
+        <a class="nav-link" href="#res">Research Paper</a>
+      <li class="nav-item">
+      </li>
+        <a class="nav-link" href="#hob">Hobbies</a>
+      <li class="nav-item">
+      </li>
+        <a class="nav-link" href="#cont">Contact Details</a>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="row">
+	
+	<div class="col-lg-4 col-md-4" style="background-image:url(https://singularity-buyfabrics.s3.amazonaws.com/products/40481/images/40481_296d2c86-b0ba-48e3-be27-b3624b1324fc.png);" >
+		<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-bottom: 0px;">
+				  <strong> Check </strong> out the new responsive design with cooler navbar on your phone now! 
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+</div>
+	<div class="container" style="width:80%" id="sidebar">
+		<div class="card" style="width:100%;margin-top:40px;">
+  		<img class="card-img-top" src="pp.jpg" alt="My Photo" class="rounded">
+  			<div class="card-body">
+    		<h5 class="card-title">Akash Sharma ®  </h5>
+    		<h6>(Copyrights Reserved :P)</h6>
+  			</div>
+		</div>
+
+		
+		<div class="container" id="cont">
+			
+		<h2 style="margin-top:40px;">Connect with me via:</h2>
+		<div class="alert alert-primary alert-dismissible fade show" role="alert" style="margin-bottom: 0px;">
+				  <strong> Click </strong> on the icon to go to its respective contact forum
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+		</div>
+
+		<h5 style="margin-top:40px;background-color:Red; padding:5px; color:white;">Gmail<h5>
+		<a href="mailto:akashthegreatlegend@gmail.com"><img src="https://errorfixer.co/wp-content/uploads/2017/03/what-does-compose-gmail-mean.jpg" alt="gmail" style="width:72px;height:42px;border:0;"></a>
+		<h6>(akashthegreatlegend@gmail.com)</h6>
+
+		<h5 style="margin-top:40px;background-color:Darkblue; padding:5px; color:white;"> Facebook </h5> 
+		<a href=https://www.facebook.com/profile.php?id=100020300898559><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAACeCAMAAAB0DSNzAAAAZlBMVEU6WJ7///81VZ7T2ekpTZkuUJrIz+EhRpaOnMXy9Pk6WJ9xg7WSoceqtdOWpMg6WZ3a3usjSZe+x92Bk721wNggRJV5jbsAOZBhdq7FzeJofLHf4+7q7fWtuNRRa6lsgbNFYaNNZ6Z1hREUAAACnklEQVR4nO3c21LqMABGYQwJhwjUbg4KKOL7v+QGSVGkaWP+i8K4vmG4cyazhpCWxPZ6AAAAAAAAAAAAwD0rPt99x6O4Y/7zZYyr0/Xg7oJxpdvv3leTayPT9eBunrHmZTLYjh9qjS1TO+7QxpWbxWt9uxCw60HeruP3nnvsN9QjYAu3XzfnI2ATb1eRLz4CtjpeudhRaz4CNrDzhH4EjDK7lH4EjPDebQmosLOkfgSMMe0LMAEbuKQVhIBRtuUGhIDN/EdiPwLWcysCKoryjYCSckBAge/ZtKtoAkZ4l3gVeEDAGk0B+9PZdxP2ROqY6IzdWHu5K+eLrgd7g3w04NxebhB7tovrRAOO91e9CFgnFnDLkpEmFrBPwDTxgMzYJNGAZdcjuxNMYREBRQQUEVBEQBEBRQT8vaJXhN9VjgeLogH9z79CxQzPlstYwOfhpZIr64p5GXyJnascrwc//OOYfmAeI9GasSdSyQz4RMAgM+CA32eCzIALPoFBZsApAYPMgDNW4SAz4JyAQWbAdwIGmQF3hlX4JDPg9UbxX5UXcOwJGOQF3HK2qJIXsO/4BAZ5AdcswpW8gAvL8bYgL+DhTo45fJIX8HAnR8CTvIBzFpGK2WyfvkR6vU4vve3od2bKs+EwErC/tJfod1Yc9zVP4kd8a/aFSRh8uyfzvwrIZUwNTiaICCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCCgioIiAIgKKCKhp+Jd/HpHQzhNQFQ3IY7fTeD8Z1ZmseOBnIhfR9bgAAAAAAAAAAAD+tP/TbSLK6nqPjQAAAABJRU5ErkJggg==" alt="facebook" style="width:72px;height:42px;border:0;"></a>   
+		<h6>(Akash Sharma)</h6>
+
+		<h5 style="margin-top:40px;background-color:#f09433; padding:5px; color:white;"> Instagram</h5>
+		<a href=https://www.instagram.com/____akashsharma____/?hl=en><img src="https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300" alt="gmail" style="width:48px;height:42px;border:0;"></a>
+		<h6>(__akashsharma__)</h6>
+
+		<h5 style="margin-top:40px;background-color:#1da1f2; padding:5px; color:white;"> Twitter</h5>
+		<a href=https://twitter.com/AkashSh13004978><img src="http://logos-download.com/wp-content/uploads/2016/02/Twitter_logo_bird_transparent_png-700x568.png" alt="gmail" style="width:48px;height:42px;border:0;"></a>
+		<h6>(@AkashSh13004978)</h6>
+
+		<h5 style="margin-top:40px;background-color:black; padding:5px; color:white;">Github</h5>
+		<a href=https://github.com/Akash-Sharma-1><img src="https://avatars1.githubusercontent.com/u/9919?s=200&v=4" alt="gmail" style="width:48px;height:42px;border:0;"></a>
+		<h6>(Akash-Sharma-1)</h6>
+
+		<h5 style="margin-top:40px;background-color:DodgerBlue; padding:5px; color:white;">LinkedIn</h5>
+		<a href=https://www.linkedin.com/in/akash-sharma-246b67165><img src="http://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo-500x500.png" alt="gmail" style="width:48px;height:42px;border:0;"></a>
+		<h6>(Akash Sharma)</h6>
+
+		</div>
+			
+		<div class="container" >
+			<h5 style="margin-top:40px;background-color:Green; padding:5px; color:White;"> Blogs</h5>
+			<a href=https://saturdaynighttechnobar.wordpress.com><img src="https://saturdaynighttechnobar.files.wordpress.com/2017/08/cropped-cropped-technobar6.jpeg?w=1000&h=356" alt="gmail" style="width:150px;height:70px;border:0;"></a>
+			<h6>(Saturday Night Techno Bar)</h6>
+
+			
+		</div>
+		
+		<div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-bottom: 0px;">
+				  <strong>Hover</strong> over the boxes below to navigate and <strong> Click </strong> on the image to check out blogs
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+		</div>
+		<div style="height:400px;" class="container">
+			<div class="container" id="blog">
+			<h3 style="margin-top:20px;">Some of my recent blogs</h3>
+			<div class="c c4" style="text-align: center;border:0px solid black"><a  href="https://saturdaynighttechnobar.wordpress.com/2017/10/02/bitcoins-in-your-wallet-of-future/"><img  src="https://i0.wp.com/saturdaynighttechnobar.files.wordpress.com/2017/10/459759077-56a6a4733df78cf7728f8b8a.jpg?ssl=1&w=450" height="50px" width="150px" style="margin-top:15px;border-radius:2%" class="y" ></a><p style="color:white"><b>Bitcoins in your future wallet</b></p></div>
+			<div class="c c3" style="text-align: center;border:0px solid black"><a href="https://saturdaynighttechnobar.wordpress.com/2017/10/03/ransomwares-and-wipers-whats-that-2/"><img src="https://i0.wp.com/saturdaynighttechnobar.files.wordpress.com/2017/10/aaeaaqaaaaaaaayhaaaajgu0mwi2ogu0lwnhntgtngnlzs1hndaxlwq3zjywmjfmmtjioa.jpg?ssl=1&w=450" height="120px" width="150px" style="margin-top:15px;border-radius:2%"></a><p style="color:white"><b>Ransomwares and Wipers</b></p></div>
+			<div class="c c2" style="text-align:center;border:0px solid black"><a href="https://saturdaynighttechnobar.wordpress.com/2017/11/17/internet-of-things/"><img src="https://i0.wp.com/saturdaynighttechnobar.files.wordpress.com/2017/11/iot-graphic.png?ssl=1&w=450" height="120px" width="150px" style="margin-top:15px;border-radius:2%"></a><p style="color:white"><b>Internet of Things</b></p></div>
+			<div class="c c1" style="text-align:center;border:0px solid black"><a href="https://saturdaynighttechnobar.wordpress.com/2017/11/19/programming-as-a-way-of-life/"><img src="https://i1.wp.com/saturdaynighttechnobar.files.wordpress.com/2017/11/programming-languages.jpg?ssl=1&w=450" height="120px" width="150px" style="margin-top:15px;border-radius:2%"></a><p style="color:white"><b>Programming as a way of life</b></p></div>
+
+		</div>
+		</div>
+
+
+		
+		
+
+	</div>
+
+	</div>		
+
+	
+	<div class="col-lg-8 col-md-8" style="background-image:url(https://orig00.deviantart.net/5575/f/2013/132/a/8/diagonal_pin_stripes_background_blue_on_white_by_aleumdaunchanyeol-d651p60.png)">
+		
+		<div class="container" id="abt" >
+			<div style="margin-top:20px;border:5px solid black;border-color:Blue" >
+				<section class="container">
+					<h2 style="color:Blue;text-align:center">About Me</h2>
+					<p>I am Akash Sharma. I absolutely adore anything that has any logic in it.I love reading books and articles on spirituality, humour, biographies etc and learning new skills.</p>
+				</section>
+			</div>
+	
+			<div id="edu">
+			<div style="margin-top:20px;border:5px solid black;border-color:Red" >
+				<section class="container">
+					<h2 style="color:Red;text-align:center">Education & Work Experience</h2>
+					
+						<h4>Educational Background</h4>
+						<table class="table-hover ">
+							<thead>
+								<th>Milestone</th>
+								<th>Institute</th>
+								<th>%/CGPA</th>
+								<th>Year</th>
+							</thead>
+							<tr>
+								<td>Btech- Computer Science</td>
+								<td>IIIT-DELHI</td>
+								<td>-</td>
+								<td>2017-Present</td>
+							</tr>
+							<tr>
+								<td>12th CBSE Boards</td>
+								<td>Ryan International School,Vasant Kunj</td>
+								<td>95% (475/500) </td>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<td>10th CBSE Boards</td>
+								<td>Ryan International School,Vasant Kunj</td>
+								<td>10 CGPA</td>
+								<td>2015</td>
+							</tr>
+						</table>
+						<hr>
+
+						<h4>Work Experience</h4>
+						<p>Non-technical Internship at <a href="http://shantisahyog.org">Shanti Sahyog</a></p>
+				</section>
+			</div>
+			</div>
+	
+
+			<div style="margin-top:20px;border:5px solid black;border-color:green" id="skil">
+				<section class="container">
+					<h2 style="color:green;text-align:center">Skills</h2>
+					<h4>Technical Skills</h4>
+					<ul>
+					<li><b>Languages learnt:</b>  C/C++,Python,Java,HTML,CSS,Javascript</li>
+					<li><b>Command Line Languages learnt:</b> Bash(POSIX AND SH Shell),Batch(Windows)...</li>
+					<li><b>Tools Used:</b> Latex,Arduino,AutoCAD,WireShark,Github.....</li>
+					<li>Great logical and algorithmic thinking</li>
+					</ul>
+					<hr>
+					<h4>Soft Skills</h4>
+					<ul>
+						<li>Time management</li>
+						<li>Self -motivated</li>
+						<li>Ability to work under pressure</li>
+						<li>Analytic and critical thinking</li>
+						<li>Creativity</li>
+						<li>People Skills</li>
+					</ul>
+
+				</section>
+			</div>
+	
+
+			<div style="margin-top:20px;border:5px solid black;border-color:purple" id="ach">
+				<section class="container">
+					<h2 style="color:purple;text-align:center">Achievements</h2>
+					<ul>
+						<li>Became Class 12th School Topper</li>
+						<li>Won Maths Wizkid Award</li>
+						<li>Became National Zoological Artist of the Year- 2016</li>
+						<li>Became CBSE Science Exhibition Winner-2015</li>
+						<li>International Maths Olympiad Rank-211 (National Rank - 3) - 2014</li>
+						<li>National Science Olympiad Rank-67 (State Rank-4)- 2014</li>
+					</ul>
+				</section>
+			</div>
+	
+
+			<div style="margin-top:20px;border:5px solid black;border-color:crimson" id="pro">
+				<section class="container">
+					<h2 style="color:crimson;text-align:center">Projects</h2>
+					<ol>
+						<li> <a href="https://www.youtube.com/watch?v=N9Y5pVHvPL0">Made an interactive lamp (Based on IOT) which can interact with the sound and proximity of the user</a></li>
+						<li><a href="https://www.youtube.com/watch?v=sR81SNCW_Ok">Made an automated personalised health monitoring system (Also based on IOT)</a></li>
+					</ol>
+				</section>
+			</div>
+	
+
+			<div style="margin-top:20px;border:5px solid black;border-color:indigo" id="res">
+				<section class="container">
+					<h2 style="color:indigo;text-align:center">Research Paper Published</h2>
+					<ul>
+						<li><a href="https://drive.google.com/file/d/1xKcLfd6pLfqvfXhgSy8rdPP-SmKCZclM/view?usp=sharing">Mcdonaldization of Social Media Groups</a></li>
+					</ul>
+					
+				</section>
+			</div>
+	
+
+			<div style="margin-top:20px;border:5px solid black;border-color:saddlebrown" id="hob">
+				<section class="container">
+					<h2 style="color:saddlebrown;text-align:center">Hobbies</h2>
+					<ul>
+						<li>Solving Puzzles</li>
+						<li>Painting (Mostly landscapes)</li>
+						<li>Playing Piano/Acoustic Casio</li>
+						<li>Playing Soccer and Table Tennis</li>
+						<li>Playing Video Games</li>
+					</ul>
+				</section>
+			</div>
+	
+
+			<div style="margin-top:20px;border:5px solid black;border-color:lightslategray" id="form">
+				<section class="container">
+					<h2 style="color:lightslategray;text-align:center">Form</h2>
+					<form>
+  					<div class="form-group row">
+    					<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    					<div class="col-sm-10">
+      					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    					</div>
+  					</div>
+  					<div class="form-group row">
+    				<label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    				<div class="col-sm-10">
+      					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+   					 </div>
+  					</div>
+  					<div class="form-group row">
+  						<label  class="col-sm-2 col-form-label">Message</label>
+  						<div class="col-sm-10">
+  						<input type="text" class="form-control" id="inputEmail3" placeholder="Your message comes here..">
+  						</div>
+  					</div>
+
+					 <div class="form-group row">
+					    <div class="col-sm-10">
+					      <button type="submit" class="btn btn-primary">Send</button>
+					    </div>
+					 </div>
+
+					</form>
+				</section>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+</div>
+</body>
+</html>
