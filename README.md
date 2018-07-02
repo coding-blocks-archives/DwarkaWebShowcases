@@ -93,3 +93,6 @@
     - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
     - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
 
+- Ishu Anand {Noida summer 2018}
+    - **[Resume {WIP}](https://ishuanand97.github.io/)**
+    - **[ToDoList](https://ishuanand97.github.io/simple-to-do/)**
