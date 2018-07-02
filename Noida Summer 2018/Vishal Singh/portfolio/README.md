@@ -1,2 +1,0 @@
-# tmibvishal.github.io
-Portfolio
