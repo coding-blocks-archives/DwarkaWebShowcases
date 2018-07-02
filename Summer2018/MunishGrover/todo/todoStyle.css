@@ -1,0 +1,27 @@
+body{
+    background: rgb(224,255,255);
+    text-align: center;
+}
+
+.navbar{
+    background: rgb(240,230,140);
+    min-height: 80px;
+    font-family: 'Wendy One', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+#k{
+    margin-left: 22%;
+}
+ul{
+    list-style-type: none;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+}
+.container{
+    min-height: 450px;
+    background: url("https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-0.3.5&s=0518da1439a395a418b5c2b91b9f43e8&auto=format&fit=crop&w=750&q=80") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,180 @@
+
+body{
+    background: url("https://images.unsplash.com/photo-1498753427761-548428edfa67?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7fc0db4ecb6b80e2875d08395c5f094&auto=format&fit=crop&w=889&q=80") no-repeat;
+   background-position: center;
+    background-attachment: fixed;
+   background-size: cover;
+
+}
+hr{
+    border: 1px solid white;
+}
+.containerhallo{
+    padding-top: 200px;
+}
+#content{
+    text-align: center;
+    padding-top: 25%;
+    color: beige;
+
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+#c{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box1{
+    height: 250px;
+    width: 100%;
+    background: blue;
+    text-align: center;
+    color: white;
+
+}
+
+
+
+#edu{
+    padding-top: 40px;
+}
+#eduhead{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+.container{
+    background: rgb(245,245,245) ;
+}
+#eduq{
+    font-family: 'Montserrat', sans-serif;
+}
+.b1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: black;
+
+}
+#b1subpara{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.b2{
+    text-align: center;
+}
+#b2subhead{
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+#b2subpara{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+#sillHeadSub{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+   font-weight: bold;
+}
+.box2{
+    color: white;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+ }
+
+.skills{
+    background: url("https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f64af19374484d1e18a6e79a439cff9d&auto=format&fit=crop&w=750&q=80") no-repeat;
+    background-size: cover;
+}
+.skillSet{
+size: 400px;
+    text-align: center;
+
+}
+.skillSet2{
+    size: 600px;
+    text-align: center;
+
+}
+#skillsHead{
+    padding-top:10%;
+}
+.java{
+    background: black;
+    padding-top: 90px;
+}
+.haloo{
+    background: rgb(245,245,245) ;
+}
+.html5l{
+    background: rgb(135,206,235);
+    height: 200px;
+    padding-top: 90px;
+    position: relative;
+}
+.ceh{
+    background: rgb(0,0,0);
+    height: 200px;
+    padding-top: 90px;
+}
+.cpro{
+    background: rgb(240,255,240);
+    height: 200px;
+    padding-top: 90px;
+}
+.game{
+    background: rgb(178,34,34);
+    padding-top: 70px;
+    height: 200px;
+}
+
+.troppara{
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
+    background: rgb(253,245,230);
+}
+.box4{
+    height: 250px;
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1516652929324-1ef2aec1df87?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66c9fcabb189726a2b8e51c7a4e74296&auto=format&fit=crop&w=753&q=80") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    color: white;
+
+}
+#hobbies{
+    padding-top: 100px;
+}
+#hobbieshead{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+.hobby{
+    text-align: center;
+}
+.hobby2{
+    text-align: center;
+}
+.hero{
+    width: 600px;
+}
+.box5{
+    background: white;
+    height: 200px;
+    text-align: center;
+}
+#f{
+    padding-top: 30px;
+    list-style-type: none;
+}
+.ga li a{
+    color: white;
+}
+.g{
+    float: right;
+}
+
