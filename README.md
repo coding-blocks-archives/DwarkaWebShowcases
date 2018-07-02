@@ -93,3 +93,8 @@
     - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
     - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
 
+### Noida Summer 2018
+
+- Vishal Singh
+    - **[Resume](https://tmibvishal.github.io/portfolio/)**
+    - **[To-do List](https://tmibvishal.github.io/todolist)**
