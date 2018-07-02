@@ -1,0 +1,92 @@
+.home {
+	background-image: url("https://images.unsplash.com/photo-1505327191481-d31e1fb4ff79?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fc7b942f2d4048e5c43cc1e3daebf417&auto=format&fit=crop&w=1808&q=80");
+	text-align: center; 
+	height: 100vh;
+	width: 100%; 
+	background-size: cover;
+	background-position: center;
+} 
+
+.info{
+	text-align: center; 
+	padding-top: 40%;
+	font-family: 'Poppins', sans-serif;
+	color: #F5F5F5;
+}  
+
+.info-text{
+	font-size: 60px;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #F5F5F5;
+    border-width: 3px;
+} 
+.green{
+	background-color: #43A047; 
+	border-color: #43A047;
+} 
+.about{
+	background: #43A047;
+} 
+.text{
+	color:#F5F5F5;
+	text-align: center
+} 
+
+
+.space{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	font-size: 22px;
+	padding-left: 10%;
+} 
+.project{
+	
+}  
+.text2{
+	color: black;
+	text-align: center;
+} 
+.size{
+	height: 60px;
+	width: 60px;
+} 
+
+.contact{
+	padding-top: 4%;
+	padding-left: -2% ;
+	background-color :#43A047; 
+} 
+#icon1{
+	color: #F5F5F5; 
+} 
+
+#icon2{
+	color: #F5F5F5; 
+} 
+#icon3{
+	color: #F5F5F5; 
+} 
+
+
+#icon4{
+	color: #F5F5F5; 
+} 
+
+
+#icon5{
+	color: #43A047; 
+}  
+
+.white{
+	color: #F5F5F5; 
+} 
+
+.navbar-custom {
+    background-color: #43A047;
+} 
+.navbar-custom .navbar-text {
+    color: #F5F5F5;
+}
