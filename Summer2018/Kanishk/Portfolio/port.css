@@ -1,0 +1,104 @@
+body{
+	margin:0;	
+}
+
+.intro{
+	width:100%;
+	display:flex;
+	flex-wrap: wrap;
+}	
+
+.name{
+	width:100%;
+	background-color: #292929;
+	height:400px;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+.name > h2{
+  font-family: "Courier New";
+  font-size: 100px;
+  color:#00d49d;
+
+}
+
+.skills{
+  height :550px;
+  padding: 50px;
+  background-color: #292929;
+}
+
+.stat-levels {
+  /*box-shadow: inset 0 0 25px rgba(0,0,0,.5);*/
+  max-width: 60%;
+  margin: auto;
+  padding: 25px;
+  /*border: 1px solid #494a4e;*/
+  border-radius: 10px;
+  /*background: -webkit-linear-gradient(bottom, #444549 0%, #343539 100%);
+  background: linear-gradient(#444549 0%, #343539 100%);*/ 
+}
+.stat-bar {
+  background-color: #323337;
+  /*box-shadow: inset 0 5px 15px rgba(0,0,0,.6);*/
+  height: 40px;
+  overflow: hidden;
+  padding: 3px;
+  border-radius: 7px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  /*&:last-child {
+    margin-bottom: 0;
+  }*/
+
+}
+.stat-bar-rating {
+  border-radius: 4px;
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin:0 auto;
+  /*text-indent: -9999px;*/
+  font-family: "Courier New";
+  font-weight: bold;
+  background-color: #00d49d;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+ 
+
+@media screen and (max-width: 660px) {
+    
+
+.stat-levels{
+  max-width: 100%;
+}
+.name > h2{ 
+  font-size: 50px;
+}
+.stat-bar-rating{
+  font-size: 20px;
+}
+
+}
+
+.aboutme{
+  font-size:20px;
+  height:400px;
+  font-family: "Courier New";
+  font-weight: bold;
+  color:#00d49d;
+  background-color:#292929; 
+  padding-top: 20px;
+  text-align: center;
+  padding-left:150px;
+  padding-right: 150px;
+}
+
+
+
