@@ -93,8 +93,14 @@
     - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
     - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
 
+<<<<<<< HEAD
 ### Noida Summer 2018
 
+- Ayush Poddar
+    - **[Portfolio](https://mr-magnificent.github.io/)**
+	
 - Vishal Singh
     - **[Resume](https://tmibvishal.github.io/portfolio/)**
     - **[To-do List](https://tmibvishal.github.io/todolist)**
+
+>>>>>>> e4c7fa272e711b9c71169ed5aff0518370f33891
