@@ -1,0 +1,23 @@
+.navbar{
+	background : #222 ;
+}
+.navbar-nav > a{
+	color : #fff !important;
+}
+
+.navbar-brand {
+	color : #fff ;
+}
+.navbar-toggler-icon{
+	color : #000 !important ;
+}
+.navbar-toggler:focus,.navbar-toggler:active {
+   outline: none !important;
+   box-shadow: none;
+}
+.carousel-control-prev-icon{
+	color: #000 !important;
+}
+li i{
+	margin-right: 15px ;
+}

@@ -8,6 +8,8 @@
                   --- Add Link of URL in Readme 
 
 ### Projects URL
+ - Devyendu Shekhar
+    - **[Portfolio](https://dsc712.github.io)**
  - Sarthak Goel
     - **[Portfolio](https://practical-mcnulty-daa87a.netlify.com)**
     - **[Resume](https://nifty-kalam-55c9c2.netlify.com)**
