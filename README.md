@@ -8,8 +8,7 @@
                   --- Add Link of URL in Readme 
 
 ### Projects URL
- - Devyendu Shekhar
-    - **[Portfolio](https://dsc712.github.io)**
+
  - Sarthak Goel
     - **[Portfolio](https://practical-mcnulty-daa87a.netlify.com)**
     - **[Resume](https://nifty-kalam-55c9c2.netlify.com)**
@@ -95,3 +94,9 @@
     - **[ToDoList](http://quirky-wright-6cf6dd.bitballoon.com/)**
     - **[Maths API](http://hardcore-booth-38eb2e.bitballoon.com/)**
 
+### Summer 2018
+
+- Ayush Poddar
+    - **[Portfolio](https://mr-magnificent.github.io/)**
+- Devyendu Shekhar
+    - **[Portfolio](https://dsc712.github.io)**

@@ -1,0 +1,158 @@
+@media screen and (min-width: 815px) {
+    .bigger-screen-email {
+        display: inline !important;
+        /*display: inline-block !important;*/
+    }
+
+    .smaller-screen-email {
+        display: none !important;
+    }
+
+    .rlink {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 550px){
+    .about {
+        width: 30%;
+    }
+
+    .wider-screen {
+        width: 70%;
+    }
+
+    .smaller-screen-lang {
+        display: none;
+    }
+
+    .larger-screen-lang {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: space-between;
+    }
+
+    .larger-screen-lang>div {
+        /*flex-grow: 1;*/
+    }
+
+    .larger-screen-lang>div>figure {
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lang-heading {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .tech-img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .nav {
+        height: 40px;
+    }
+
+    .anchor-nav > span {
+        display: initial;
+        font-size: 12px;
+    }
+
+    .anchor-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+    }
+
+    .anchor-nav > i {
+        text-align: center;
+        margin-bottom: 1px;
+        font-size: 16px;
+    }
+
+    .anchor-nav > span {
+        opacity: 0;
+        position: absolute;
+        top: 25px;
+        transition: opacity 0.1s linear;
+        left: -5px;
+    }
+
+    .anchor-nav:hover > span {
+        opacity: 1;
+        display: initial;
+        color: #000;
+        transition: opacity 0.2s linear;
+    }
+
+    .tech-img>div>figure {
+        border: thin #c0c0c0 solid;
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .hov-enlarge {
+        position: absolute;
+        top: 80px;
+        margin: 0 auto;
+        left: 0px;
+        right: 0px;
+    }
+
+    .tech-img + figcaption {
+        display: none;
+    }
+
+    .tech-img:hover {
+        z-index: 10;
+        transform: scale(1.2, 1.2);
+        transition: transform 0.2s ease-out;
+    }
+
+    .tech-img:hover + figcaption {
+        display: initial;
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 80%;
+    }
+
+    .top>h1 {
+        font-size: 40px;
+        margin-bottom: 24.800px;
+        margin-top: 21.800px;
+    }
+
+    .top>p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .bigger-screen-email {
+        display: none;
+    }
+
+    .smaller-screen-email {
+        display: block !important;
+        vertical-align: top;
+        /*horiz-align: left;*/
+    }
+
+    .rlink {
+        font-size: 16px !important;
+    }
+}
