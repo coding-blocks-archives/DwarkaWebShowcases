@@ -95,5 +95,5 @@
 
 ### Summer 2018
 
- - Ayush Poddar
-	 - **[Portfolio](https://mr-magnificent.github.io/)**
+- Ayush Poddar
+    - **[Portfolio](https://mr-magnificent.github.io/)**
