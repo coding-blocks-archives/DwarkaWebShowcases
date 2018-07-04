@@ -1,0 +1,247 @@
+.container{
+    display: flex;
+    width: 50%;
+    height: 2000px;
+    top: 60px;
+    margin-left: 545px;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    background: yellow linear-gradient(to bottom, greenyellow, #dddd00 50%, orange) no-repeat 99% center;
+}
+.maincontent {
+    width: 60%;
+}
+.upperbox{
+    height: 300px;
+    width: 640px;
+    margin-top:30%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    background: yellow linear-gradient(to bottom, turquoise, #dddd00 50%, lightgray) no-repeat 99% center;
+}
+.outerbox{
+    width:50%;
+    height: 200px;
+
+    margin-left: 25%;
+    margin-top:10%;
+
+}
+.image {
+    height: 300px;
+    width: 100%;
+    left: 69px;
+    top: 57px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+}
+.name{
+    position: absolute;
+    top: 10px;
+    left: 750px;
+    text-align: center;
+    font-family:serif;
+}
+.experience{
+    position: relative;
+    left:50px;
+    top:250px;
+}
+.exp {
+    color:gray;
+    font-size:1.5rem;
+}
+.exp1{
+    position: relative;
+    top: 10px;
+}
+.ul{
+    font-size: 0.9rem;
+    line-height:1.5;
+    position: relative;
+    left: -3px;
+}
+.skills {
+    position: relative;
+    left: 50px;
+    top: 300px;
+
+}
+.text{
+    position: relative;
+    top:40px;
+}
+.edu{
+    position: relative;
+    left: 20px;
+    top: 400px;
+}
+.edu1{
+    position: relative;
+    top:400px;
+    left: 40px;
+    color:gray;
+    font-size:1.5rem;
+
+}
+.projects{
+    position: relative;
+    top:470px;
+    left: 40px;
+    color:gray;
+    font-size:1.5rem;
+
+}
+.about{
+    position: relative;
+    left: 20px;
+    top: 100px;
+
+}
+.about1{
+    position: relative;
+    left: 20px;
+    top: 80px;
+    color:gray;
+    font-size:1.5rem;
+}
+.imagepro{
+    position: relative;
+    height: 200px;
+    width: 40%;
+    left: 69px;
+    top: 57px;
+
+}
+.project1{
+    position: relative;
+    top:50px;
+    left: 50px;
+    color:darkslategray;
+}
+.side{
+    position: relative;
+    width: 400px;
+    height: 1000px;
+    background: yellow linear-gradient(to bottom, mediumblue, #dddd00 50%, dodgerblue) no-repeat 99% center;
+    top: -2020px;
+    left: 80px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+}
+.sidetext{
+    font-size: 1rem;
+    line-height:3;
+    position: relative;
+    margin-top: 100px;
+
+
+}
+
+
+@media only screen and  (max-width: 680px) and (min-width: 530px) {
+    .side {
+        order: 2;
+        width: 100%;
+        position: static;
+    }
+
+    .name {
+        left: 10px;
+        top: -150px;
+    }
+
+    .maincontent {
+        order: 1;
+        width: 100%;
+
+    }
+
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .outerbox {
+        transform: translateX(22%);
+    }
+
+    .upperbox {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and  (max-width: 530px) and (min-width: 400px) {
+    .container{
+        order:1;
+        flex-wrap: wrap;
+        width:530px;
+        margin: 0px;
+    }
+    .side{
+        order:2;
+        width:100%;
+        position: static;
+    }
+    .name{
+        left:-10px;
+
+    }
+    .maincontent{
+
+        width:100%;
+        position:relative;
+        left:-20px;
+    }
+    .image{
+        left:40px;
+    }
+
+    .outerbox{
+        transform: translateX(22%);
+    }
+    .upperbox{
+        width: 8px;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+        .side {
+            order: 2;
+            width: 100%;
+            position: static;
+        }
+
+        .name {
+            left: 0px;
+            top:-120px;
+        }
+
+    .maincontent {
+        order: 1;
+        width: 100%;
+        position: relative;
+        left: -25px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        width:400px;
+        margin: -10px;
+    }
+
+    .outerbox {
+        transform: translateX(10%);
+        left: 10px;
+        width: 400px;
+    }
+
+    .image {
+        margin-left: -30px;
+        width: 450px;
+    }
+    .upperbox{
+        width: 8px;
+    }
+}
