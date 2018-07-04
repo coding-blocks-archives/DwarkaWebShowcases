@@ -1,0 +1,15 @@
+/* ANSHUL GAUTAM
+   IIIT-D 
+*/
+
+#footer1 {
+	font-family: Allerta Stencil, sans-serif;
+	text-align: right;
+	color: white;
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
