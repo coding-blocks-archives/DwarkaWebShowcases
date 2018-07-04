@@ -97,3 +97,6 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+- Sonali Gupta
+    - **[Portfolio](http://sonali-gupta.bitballoon.com/)**	
+	
