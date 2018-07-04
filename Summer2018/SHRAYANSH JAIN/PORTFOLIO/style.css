@@ -1,0 +1,251 @@
+body{
+    background-color: rgba(250, 255, 221, 0.9);
+}
+.container{
+    width: 75%;
+    height: 1540px;
+    margin: 2% auto;
+    padding: 0;
+    display: flex;
+}
+.pic:hover,.name:hover,.about:hover,.education:hover,.skills:hover,.contact:hover,.social:hover,.extras:hover{
+    box-shadow: 6px 6px 15px -5px rgba(0,0,0,0.68);
+    transform: scale(1.04,1.04);
+    transition: .5s;
+    border-radius: 9px 9px 9px 9px;
+    border: 0 solid #000000;
+}
+.socialfont>h2,.extrasfont>h2,.aboutfont>h2,.educationfont>h2,.skillsfont>h2,.contactfont>h2{
+    font-family: 'Stardos Stencil', cursive;
+    padding-top: 5px;
+    text-align: center;
+    border-bottom: 1px solid greenyellow;
+}
+.sidebar{
+    width: 30%;
+    height: 1500px;
+    display: inline-block;
+}
+.main{
+    width: 70%;
+    height: 1500px;
+    display: inline-block;
+    position: relative;
+    left:13px;
+}
+.pic>img{
+    width: 100%;
+    height: 300px;
+}
+.social{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 207, 238, 0.5);
+    margin-top: 10px;
+}
+.socialcontent{
+    width: 100%;
+    height: 240px;
+}
+.iconssquare1,.iconssquare2{
+    width: 80%;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+}
+.fb>a>img,.insta>a>img,.link>a>img,.git>a>img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.fb>a>img:hover,.insta>a>img:hover,.link>a>img:hover,.git>a>img:hover{
+    box-shadow: 6px 6px 15px -5px rgba(0,0,0,0.68);
+    transform: scale(1.14,1.14);
+    transition: .8s;
+}
+.extras{
+    width: 100%;
+    height: 920px;
+    background-color: rgba(255, 207, 238, 0.5);
+    margin-top: 10px;
+}
+.extrascontent{
+    width: 100%;
+    height: 400px;
+}
+.iconsset>img {
+    width: 30px;
+    height: 30px;
+}
+.iconsset{
+    line-height: 3em;
+}
+.unorderedList>li{
+    list-style-type: none;
+    margin-left: -15px;
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+}
+.educationdes>li{
+    list-style-type: none;
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+}
+.educationplaces{
+    width: 100%;
+    height: 150px;
+}
+.educationplaceslist>li{
+    margin-top: 30px;
+    list-style-type: none;
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+}
+.eduicon>img{
+    width: 40px;
+    height: 40px;
+}
+.scicon>img {
+    width: 30px;
+    height: 30px;
+}
+.name{
+    width: 100%;
+    height: 300px;
+    background-color: #eff9f4;
+    padding: 5px;
+}
+.myname{
+    height: 75%;
+
+}
+.first{
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 6rem;
+    font-family: 'Acme', sans-serif;
+    color: lightseagreen;
+}
+.last{
+    margin: 0 auto;
+    padding: 0 40px;
+    font-size: 5rem;
+    font-family: 'Acme', sans-serif;
+    color: #2d8bb2;
+}
+.btech{
+    height: 25%;
+    width: 100%;
+}
+.cse{
+    padding-left: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 40px;
+    font-family: 'Philosopher', sans-serif;
+    color: greenyellow;
+}
+.leftalign{
+    text-align: left;
+}
+.about{
+    width: 100%;
+    height: 300px;
+    background-color: #eff9f4;
+    margin-top: 10px;
+}
+.aboutcontent>p{
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+    margin: 0 2%;
+    height: 70px;
+}
+.education{
+    width: 100%;
+    height: 400px;
+    background-color: #eff9f4;
+    margin-top: 10px;
+}
+.skills{
+    width: 100%;
+    height: 400px;
+    background-color: #eff9f4;
+    margin-top: 10px;
+}
+.technicalskills{
+    width: 100%;
+    height: 300px;
+    /*fontsize: 0;*/
+    display: flex;
+}
+.techlanguage{
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    line-height: 3rem;
+}
+.techlanguage>ul>.lan{
+    list-style-type: none;
+}
+.progress{
+    height: 49px;
+    background-color: #eff9f4;
+}
+.progress-bar{
+    height: 30px;
+}
+.mybg1{
+    background-color: turquoise;
+}
+.mybg2{
+    background-color: lightcoral;
+}
+.mybg3{
+    background-color: lightgreen;
+}
+.mybg4{
+    background-color: yellowgreen;
+}
+.mybg5{
+    background-color: royalblue;
+}
+.mybg6{
+    background-color: orange;
+}
+.mybg7{
+    background-color: lightgreen;
+}
+.techbar{
+    width: 80%;
+    height: 100%;
+    line-height: 2rem;
+}
+.contact{
+    width: 100%;
+    height: 100px;
+    background-color: #eff9f4;
+    margin-top: 10px;
+}
+.contactcontent{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-size: 0;
+}
+.myemail{
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+}
+.mycontact{
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+}
+

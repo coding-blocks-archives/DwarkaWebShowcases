@@ -1,0 +1,258 @@
+@media only screen and (max-width: 1140px){
+    .unorderedList>li{
+        font-size: 15px;
+    }
+    .educationplaceslist>li,.educationdes>li{
+        font-size: 17px;
+    }
+    .myemail>a>h4,.mycontact>a>h4{
+        font-size: 20px;
+    }
+    .techlanguage{
+        width: 30%;
+    }
+    .techbar {
+        width: 70%;
+    }
+    .first,.last{
+        font-size: 50px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1066px){
+    .sidebar{
+        width: 35%;
+    }
+    .main{
+        width: 65%;
+    }
+    .first,.last{
+        font-size: 50px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .myemail>a>h4,.mycontact>a>h4{
+        font-size: 15px;
+    }
+    .first,.last{
+        font-size: 55px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 30px;
+    }
+    .aboutcontent>p{
+        font-size: 17px;
+        margin: 0 2%;
+        /*height: 90px;*/
+    }
+}
+@media only screen and (max-width: 973px){
+    .educationplaceslist>li,.educationdes>li{
+        font-size: 14px;
+    }
+    .first,.last{
+        font-size: 50px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 30px;
+    }
+    .aboutcontent>p{
+        font-size: 17px;
+        margin: 0 2%;
+        /*height: 90px;*/
+    }
+}
+@media only screen and (max-width: 920px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pic{
+        width: 100%;
+        height: 300px;
+    }
+    .sidebar{
+        width: 80%;
+        margin: 0 auto;
+        height: 950px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main{
+        width: 90%;
+        margin: -13px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .extras{
+        height: 300px;
+    }
+    .socialcontent{
+        margin: 0 auto;
+    }
+    .iconssquare1,.iconssquare2{
+        width: 59%;
+    }
+    .first,.last{
+        font-size: 55px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 30px;
+    }
+    .aboutcontent>p{
+        font-size: 16px;
+        margin: 0 2%;
+        /*height: 90px;*/
+    }
+}
+@media only screen and (max-width: 600px) and (min-width: 480px){
+    .iconsset{
+        line-height: 2.5em;
+    }
+    .techlanguage{
+        width: 40%;
+    }
+    .techbar {
+        width: 60%;
+    }
+    .myemail>a>h4,.mycontact>a>h4{
+        font-size: 11px;
+    }
+    .first,.last{
+        font-size: 30px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 20px;
+    }
+    .aboutcontent>p{
+        font-size: 14px;
+        margin: 0 2%;
+        /*height: 90px;*/
+    }
+}
+@media only screen and (max-width: 479px) and (min-width: 400px){
+    /*.container,.main,.cover,.sidebar,.pic,.social,.extras{*/
+        /*margin: 2% 0;*/
+    /*}*/
+    .iconsset{
+        line-height: 2em;
+    }
+    .techlanguage{
+        width: 50%;
+    }
+    .techbar {
+        width: 50%;
+    }
+    .educationplaceslist>li,.educationdes>li{
+        font-size: 11px;
+    }
+    .myemail>a>h4,.mycontact>a>h4{
+        font-size: 7px;
+    }
+    .first,.last{
+        font-size: 30px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 20px;
+    }
+    .aboutcontent>p{
+        font-size: 13px;
+        margin: 0 2%;
+        /*height: 90px;*/
+    }
+}
+@media only screen and (max-width: 399px) and (min-width: 266px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main{
+        width: 100%;
+    }
+    .sidebar{
+        width: 100% ;
+    }
+    .iconsset{
+        line-height: 1.1em;
+    }
+    .iconsset>img {
+        width: 20px;
+        height: 20px;
+    }
+    .extrasfont>h2{
+        font-size: 20px;
+    }
+    .techlanguage{
+        width: 50%;
+    }
+    .techbar {
+        width: 50%;
+    }
+    .education{
+        height: 300px;
+    }
+    .educationplaceslist>li,.educationdes>li{
+        font-size: 10px;
+        position: relative;
+        left: -20px;
+    }
+    .myemail>a>h4,.mycontact>a>h4{
+        font-size: 9px;
+    }
+    .educationfont>h2{
+        font-size: 20px;
+    }
+    .eduicon>img{
+        width: 20px;
+        height: 20px;
+    }
+    .lan{
+        font-size: 9px;
+    }
+    .first,.last{
+        font-size: 25px;
+    }
+    .cse{
+        padding-left: 10px;
+        padding-top: 13px;
+        font-size: 20px;
+    }
+    .aboutcontent>p{
+        font-size: 10px;
+        margin: 0 2%;
+        /*height: 90px;*/
+    }
+    .extras{
+        height: 170px;
+    }
+    .name{
+        height: 200px;
+    }
+    .cse{
+        position: relative;
+        top: -35px;
+    }
+    .myname{
+        position: relative;
+        left: -25px;
+    }
+}
