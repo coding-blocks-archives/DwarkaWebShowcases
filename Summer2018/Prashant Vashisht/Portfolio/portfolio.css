@@ -1,0 +1,189 @@
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+.intro{
+    width:100%;
+    background-color: greenyellow;
+}
+.info{
+    height:957px;
+    width:100%;
+    background-color: greenyellow;
+}
+.inform{
+    background-color:greenyellow;
+}
+.photo>img{
+    max-width: 100%;
+    width:100%;
+    height:200px;
+    border-radius: 50%;
+}
+img{
+    width:30%;
+    height:100px;
+}
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    margin:0 auto;
+    color: red;
+    font-size: xx-large;
+}
+div>h2{
+    font-size: 27px;
+    text-align: center;
+    margin:1px auto;
+}
+hr{
+    width:80%;
+    border-color: #e57373;
+}
+.About{
+    width:100%;
+    background-color: lemonchiffon;
+}
+article{
+    font-size: 27px;
+    text-align: center;
+    margin:0 auto;
+}
+.Expertise{
+    width:100%;
+}
+.connect{
+    width:90%;
+    margin:0 auto;
+}
+.imp{
+    width:100%;
+    background-color: thistle;
+    display:inline-block;
+}
+.inner{
+    height:30px;
+    background-color:red;
+    border-radius: 16px;
+    position:relative;
+
+}
+.outer{
+    display: inline-block;
+    width:30%;
+    height:30px;
+    border-radius: 16px;
+    background-color: lightgrey;
+}
+.work{
+    position:absolute;
+    z-index:-1;
+    width:100%;
+    height:200px;
+}
+.sec{
+    margin-left:5%;
+}
+.inner>h2{
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-size:25px;
+    text-align: left;
+    display: inline-block;
+}
+.idd{
+    display:inline;
+}
+.idd>a>img{
+    width:47%;
+    height:140px;
+}
+h3{
+    display:inline;
+    position: absolute;
+    bottom: -14px;
+    left: 140px;
+}
+.inform>h3{
+    display:block;
+    position: initial;
+}
+.first{
+    width:80%;
+}
+.second{
+    width:75%;
+    background-color: blue;
+}
+.third{
+    background-color: green;
+    width:50%;
+}
+.work>img{
+    max-width:100%;
+    width:100%;
+    height:200px;
+}
+@media screen and (min-width: 655px){
+    .outer{
+        display: inline-block;
+        width:45%;
+    }
+    .photo>img{
+        width: 100%;
+        height:200px;
+    }
+    .intro{
+        margin-right: 5px;
+        width:35%;
+    }
+    .info{
+        width:64.2%;
+
+    }
+    .box:hover{
+        box-shadow: 3px 3px 3px 3px darkgrey;
+    }
+}
+@media screen and (min-width: 927px) {
+    .intro{
+        width:25%;
+    }
+    .info{
+        width:74.2%;
+    }
+    img {
+        height: 200px;
+    }
+    .outer{
+        display: inline-block;
+        width:42%;
+    }
+    .sec{
+        margin-left: 10%;
+        margin-bottom:0%;
+    }
+    .second:hover>.work{
+             left:100px;
+             top:90%;
+             bottom:1px;
+             z-index: 10;
+             background-color:blue;
+         }
+    .first:hover>.work{
+             left:100px;
+             top:90%;
+             bottom:1px;
+             z-index: 10;
+             background-color:blue;
+         }
+    .third:hover>.work{
+        left:100px;
+        top:90%;
+        bottom:1px;
+        z-index: 10;
+        width:150%;
+        background-color:blue;
+    }
+}
