@@ -1,0 +1,168 @@
+body {
+    background-color: #f9f9f9;
+}
+img {
+    width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+}
+h3 {
+    text-transform: capitalize;
+    font-size: 1.875em;
+    padding: 0 0 1% 0;
+    color: #001833;
+    font-weight: 800;
+}
+
+header {
+    background: url(https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&h=350);
+    background: -webkit-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+}
+.intro {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 8% 0;
+}
+.intro h1 {
+    font-size: 6em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+.intro h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 0.09em;
+}
+
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: proxima-nova, sans-serif;
+    -webkit-animation-delay: 4s;
+animation-delay: 2s;
+}
+.about {
+    padding: 4% 0;
+}
+.about p {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #616569;
+    letter-spacing: .03em;
+    margin: 10px auto;
+    font-size: 1.5em;
+    padding: 2% 0;
+}
+.about p a {
+    color: #E1CCC9;
+    border-bottom: 2px solid;
+}
+
+
+.work {
+    height: 300px;
+    padding: 2% 0;
+}
+.work h3 {
+    padding: 4% 0;
+}
+.text-box {
+    float: left;
+    text-align: left;
+    width: 480px;
+    background-color: #fff;
+    height: 100%;
+}
+.text-box-content {
+    padding: 4% 8%;
+}
+.text-box-content p {
+    line-height: 1.8;
+    color: #616569;
+    letter-spacing: .03em;
+    font-size: 1em;
+}
+.button {
+    padding: 5% 3%;
+    border: 3px solid #e0ccc8;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: #e0ccc8;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 4%;
+}
+.button:hover {
+    color: #fff;
+    background-color: #e0ccc8;
+}
+.image-area {
+    width: 480px;
+    height: 300px;
+    overflow: hidden;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+
+
+footer {
+    background: -webkit-linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(44,44,44,1) 30%, rgba(71,71,71,1) 39%, rgba(0,0,0,1) 51%, rgba(19,19,19,1) 60%, rgba(17,17,17,1) 75%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    color: #fff;
+    padding: 2% 0;
+    width: 100%;
+    clear: both;
+    height: 80px;
+}
+.footer-content {
+    max-width: 960px;
+    padding: 2% 0;
+    margin: 0 auto;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #fff;
+    letter-spacing: .03em;
+    font-size: 1em;
+}
+.credit {
+    float: left;
+}
+.social {
+    float: right;
+}
+.social li {
+    display: inline;
+}
+.social li a {
+    color: #fff;
+    padding: 0.2em;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.social li a:hover {
+    color: #011833;
+}
