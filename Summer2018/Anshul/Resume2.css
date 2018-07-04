@@ -1,0 +1,74 @@
+
+.upper-container{
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.name-container{
+	width: 75%;
+	background-color: #2ECEB6;
+	height: 300px;
+}
+#greeting{
+	font-family: "Courier New";
+	font-size: 20px;
+	margin-left: 5px;
+}
+#my-name{
+	font-family: "AR JULIAN"; 
+	font-weight: bold;
+	font-size: 70px;
+	margin-left: 5px;
+	margin-top: -9px;
+}
+.menu{
+	width: 100%;
+}
+#menu-parts{
+	display: inline-block;
+	margin-left: 47px;
+	margin-right: 114px;
+	border: 2px solid;
+	margin-top: 51px;
+}
+.image-container{
+	width: 25%;
+	background-color: #D0D3D4;  
+}
+
+.link-container{
+	width: 20%
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#Profile{
+	margin-left: 20px;
+	margin-top: 38px;
+	width: 77%;
+	transform: rotate(90deg);
+}
+
+#facebook{
+	width: 22px;
+	height: 21px;
+	transform: rotate(360deg);
+}
+#google{
+	width: 22px;
+	height: 21px;
+	transform: rotate(360deg);
+
+}
+#twitter{
+	width: 22px;
+	height: 21px;
+	transform: rotate(1deg);
+
+}
+#instagram{
+	width: 22px;
+	height: 21px;
+	transform: rotate(1deg);
+
+}
