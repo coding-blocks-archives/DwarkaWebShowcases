@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    background-color: red;
+}
+h1{
+    color: white;
+    margin: 0;
+    display: inline;
+}
+header{ 
+    background-color: black;
+    padding: 20px;
+    height: 60px;
+}
+.upper{
+    float: left;
+}
+.container p {
+    padding: 10px;
+}
+div > p {
+    margin-top: 0;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    color: white
+}
+li{
+padding-bottom: 4px;
+}
+header > ul{
+    float: right;
+    margin: 0;
+    padding-right: 80px;
+}
+.sidebar > h3{
+    text-align: center;
+}
+.container{
+    height: 800px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sidebar{
+    background-color: grey;
+    float: left;
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+}
+img{
+    height: 190px;
+    width: 70%;
+    border-radius: 50%;
+    margin: 10px 0 0 40px;
+}
+.content{
+    background-color: grey;
+    float: right;
+    width: 68%;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    height: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:680px ){
+header{
+    height:150px; 
+}
+h1{
+    display: block;
+}
+header > ul{
+    float: none;
+    padding: 0;
+}
+.container{
+height: 1400px;
+}
+.sidebar{
+    width: 100%;
+    height: 40%;
+}
+.content{
+    width: 100%;
+    height: 60%
+}
+}
