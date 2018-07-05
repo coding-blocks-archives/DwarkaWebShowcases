@@ -97,3 +97,7 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+
+- Ishu Anand {Noida summer 2018}
+    - **[Resume {WIP}](https://ishuanand97.github.io/)**
+    - **[ToDoList](https://ishuanand97.github.io/simple-to-do/)**
