@@ -1,0 +1,150 @@
+
+.wrapperr{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left:13%;
+	margin-right: 13%;
+	margin-top:2%;
+	margin-bottom:2%;
+	background-color: white;}
+
+.main{
+	/*margin-left: 20px;*/
+	margin-right: 20px;
+	
+	}
+.sidee{
+			position:relative;
+			left: 20px;
+
+			}
+.usidee{
+			background-color:#DB7093;
+			height: 250px;
+			margin: 0 auto;
+			padding-left: 20%;
+
+		}
+.outer{		top: 20px;
+			width:100%;
+			height: 200px;
+		}
+.lsidee{
+			background-color:#DA70D6;
+			height: 1100px;
+			margin: 0 auto;
+
+
+		}
+.intro{
+			position: relative;
+			left: 49px;
+			top: 45px;}
+.projects{
+			position: relative;
+			left: 49px;
+			top: 75px;}
+.namee{
+			position: relative;
+			top: 80px;
+			left: 17px;
+			font-color: white;
+		}
+.unorderedList{
+			list-style-type: none;
+			font-size: 1rem;
+			line-height: 2;
+			position: relative;
+			left: -3px;
+		}
+.headd{
+			padding-left: 37px;
+			font-size: 1.5rem;
+
+		}
+.contact{
+			padding-top: 37px;
+			position: relative;
+			left:-13px;
+		}
+.colorr{
+			color:white;
+		}
+.education{
+			position: relative;
+			left: -10px;
+			top: 35px;
+		}
+.ecol{
+			color:#000000;
+			line-height: 1.2;
+			margin-bottom: 10px;
+		}
+.interests{
+			position: relative;
+			top: 65px;
+			left: -9px;
+		}
+.proname {
+			color: #1f9496;
+			font-size: 1.5rem;
+		}
+.desc{
+			font-size: 0.98rem;
+			margin-top:15px;
+			line-height:1.7;
+}
+.headingg{
+			font-size: 1.1rem;
+			color:#1f9496;
+}
+.techskills{
+			top:142px;
+		}
+.techtrain{
+			position: relative;
+			left:49px;
+			top:95px;
+		}
+.tech{
+			position: relative;
+			top: 13px;
+		}
+.langg{
+			position: relative;
+			top: 14px;
+		}
+.progressBars{
+			width: 65%;
+			position: relative;
+			top: -190px;
+			left: 168px;
+}
+.progress{
+			margin-bottom: 16px;
+		}
+.pbc{
+			background-color:#9932CC !important ;
+		}
+.mee {
+	box-sizing: border-box;
+	background-image:url('https://i.imgur.com/rJUKagT.jpg');
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	height: 110px;
+	width: 110px;
+	position: relative;
+	left: 69px;
+	top: 57px;
+}
+@media screen and (max-width: 990px){
+.lsidee{
+	height: 1000px;
+
+}
+.unorderedList{
+	font-size: 170%;
+}
+}
