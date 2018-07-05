@@ -1,0 +1,127 @@
+html,body{
+      margin: 0 ;
+      padding: 0;
+      background: #D38312;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+.top{
+    background-image: url(android-hd-wallpapers.jpg);
+    background-color: grey;
+    height: 470px; 
+}
+.tagline{
+    text-align: center;
+    font-size: 70px;
+    color: #E1C66A;
+}
+ .name{
+    text-align: center;
+    font-size: 50px;
+    color: #E1C66A; 
+}
+  .inner img{
+    width: 250px;
+	  height: 250px;
+	  border-radius: 50%;
+}
+  .intro-text{
+    text-align: right
+    margin:0 10px;
+}
+  .content{
+    background-color:#EDE1C8;
+    background-position: fixed;
+}
+  * {
+	  font-family: Helvetica, Arial, sans-serif;
+	  font-weight: 400;
+}  
+  
+.container-fluid {
+    width: 85%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.progress {
+  background-color: rgb(50, 50, 50);
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  
+}
+
+.progress-bar {
+  line-height: 30px;
+  font-size: 114%;
+  text-align: left;
+  background-color: rgb(105, 97, 97);
+}
+
+.bar-text span {
+  padding: 40px 15px;
+}
+.edu{
+  background-color: #b2b4b7;
+}
+.jumbotron{
+  background-color: #939997  ;
+  margin left:  auto;
+  margin-right: auto
+
+}
+@media screen and (max-width: 770px) {
+  
+    .inner img{
+        width: 40%;
+       height: 40%;
+       border-radius: 50%;
+          
+      }         
+      }
+
+@media screen and (max-width: 400px) {
+  .top{
+    width: 50%;
+  }
+  .tagline{
+    width: 50%;
+    font-size: 20px;
+  }
+  .name{
+      width: 50%;
+      font-size: 20px; 
+    }
+    .inner img{
+        width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       
+       
+  }
+}
+.top{
+  height: 60%;
+}
+}
+@media screen and (max-width: 285px)
+{
+  .tagline{
+    font-size: 15px;
+  }
+  .top{
+    width: 60%;
+  }
+  .name{
+    font-size: 15px;
+  }
+}
+
+
+    
