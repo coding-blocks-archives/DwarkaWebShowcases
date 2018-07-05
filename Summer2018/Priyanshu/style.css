@@ -1,0 +1,139 @@
+/*.content{
+    /*background-color: #fafafa;
+    height:100%;
+    width:100%;
+    padding: 5vh;
+    margin-top:0;
+    background: url("7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+
+.text-center{
+    color: rgba(14,14,14,0.86)
+}
+
+*{
+    margin:0;
+}
+body{
+    background-image: url("5.jpg");
+
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/*.profile-cont{
+    position: relative;
+    top: 8%;
+    width:90%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+
+}*/
+
+
+
+.image-circular{
+    /*position: absolute;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid thick rgba(206,203,132,0.86);
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+}
+
+.intro{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e7e7ff;
+}
+
+.profile{
+    margin-top: 5vh;
+}
+.heading{
+    padding: 5vh;
+}
+.text-center{
+    color:floralwhite;
+}
+.card{
+    margin-left: 10%;
+    width:150px;
+    min-height:10vh;
+
+}
+.card-img-top{
+    max-height:15vh;
+}
+.card-body{
+    background-color: black;
+    color: white;
+}
+.linkedin{
+    background-color: #0077B5;
+}
+.card-title{
+    margin:auto;
+}
+.card:hover{
+    opacity:0.7;
+}
+@media screen and (max-width:550px){
+    .card-container{
+        margin-top:5vh;
+    }
+    .card-body{
+        display:none;
+    }
+}
+
+.card-container{
+    display: inline-block;
+    width:200px;
+    min-width:200px;
+    /*left-margin: 50px;*/
+}
+a
+{
+    target-name:new;
+    target-new:tab;
+}
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.codechef{
+    background-color: saddlebrown;
+ }
+.hackerrank{
+    background-color: #4CAF50;
+}
+.centre-button{
+    margin: auto;
+    display:block;
+}
+.container{
+    margin-top: 10vh;
+}
+.centre-form{
+    margin: 0 auto;
+}

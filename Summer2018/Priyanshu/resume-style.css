@@ -1,0 +1,179 @@
+body{
+    background-color: #fafafa;;
+}
+
+.content{
+    /*flex-wrap: nowrap;*/
+    margin-left:10%;
+    margin-right: 10%;
+    padding-right:10px;
+    padding-left: 10px;
+    max-width: 960px;
+    background-color:white;
+}
+
+.bio{
+    margin-top:3vh;
+    margin-right: 3%;
+    margin-left: 3%;
+    display:inline-block;
+    max-width: 300px;
+}
+.profile{
+    /*display:flex;*/
+    display:inline-block;
+    margin-top: 5vh;
+    margin-left:5%;
+    margin-right:5%;
+    /*padding:10px 10px;*/
+}
+
+.image-circular{
+    /*width:100%;*/
+    /*display:block;*/
+    margin:auto;
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    border: solid thick rgba(206,203,132,0.86);
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+}
+.color-box{
+    width:48px;
+    height:48px;
+    margin-left:5%;
+    display:inline-block;
+}
+.grey{
+    background-color: darkslategrey;
+}
+h1{
+    display: inline;
+    font-family: "Sitka Heading";
+}
+.contacts {
+    margin-top: 10vh;
+    /*float: right;*/
+    display: inline-block;
+    margin-left:10%;
+    min-width: 200px;
+    max-width:80%;
+}
+h6{
+    margin-left:2%;
+    display:inline;
+    text-align: center;
+}
+
+.logo{
+    display:inline;
+    height:20px;
+    width:20px;
+}
+/*li::before{*/
+    /*!*display:inline-block;*!*/
+    /*content: "• ";*/
+    /*color:red;*/
+/*}*/
+em{
+    color: rgba(141,142,101,0.86);
+    margin-top: 10px;
+}
+ul{
+    list-style-type: square;
+}
+.line{
+    width:100%;
+    height:4px;
+    background-color: red;
+}
+
+.det-content{
+    color: tomato;
+}
+.intro{
+    flex-wrap: nowrap;
+    display:flex;
+}
+.row{
+    display:table-row;
+}
+.cell{
+    display:table-cell;
+}
+.details{
+    margin-top:10vh;
+    display:flex;
+    flex-wrap: nowrap;
+
+}
+.details>h3{
+    margin-top:5vh;
+}
+
+.container{
+    margin-top: 8vh;
+}
+.line-breaker{
+    display: block;
+}
+.half-can{
+    display:inline-block;
+    min-width:25%;
+    margin-right: 3%;
+    margin-left:3%;
+    padding-top:8px;
+    max-width:33%;
+}
+p{
+    display:inline;
+}
+
+td{
+
+    padding:20px;
+}
+h3{
+    margin-bottom:5vh;
+
+    display:inline;
+}
+.ach>{
+    color: rgba(141,142,101,0.86)
+}
+@media (max-width:980px){
+    .content{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #breaker{
+        width:100%;
+    }
+}
+@media (max-width:771px) {
+    .profile {
+        display: block;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+}
+@media (max-width:600px){
+    .details{
+        display:block;
+        width:90%;
+    }
+    .details.half-can{
+        display:block;
+        min-width:90%;
+    }
+}
+a{
+    color:inherit
+}
+a:hover{
+   opacity:0.8;
+}
