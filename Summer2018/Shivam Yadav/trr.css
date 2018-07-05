@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    height: 1200px;
+    border: darkmagenta solid;
+
+
+
+}
+.jumbotron {
+
+    margin-top: 10px !important;
+}
+
+.card-img-overlay h1 {
+    font-size: 100px !important;
+    font-weight: bold;
+    font-family: "Arial ";
+}
+.card-img-overlay h2 {
+    font-size: 80px !important;
+    font-weight: bold;
+    font-family: "Arial ";
+}
+.jumbotron a{
+    background-color: dodgerblue;
+    border: none;
+}
