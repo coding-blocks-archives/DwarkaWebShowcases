@@ -1,0 +1,74 @@
+body{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#cover {
+    background: #222 url('https://imgur.com/Cp2SSnk.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+#cover-caption {
+    width: 100%;
+
+}
+.welcome{
+    margin-top: 30%;
+}
+
+.section-content {
+    padding: 5rem 0;
+}
+.container{
+    width: 100%;
+height: 700px;
+
+display: flex;
+flex-wrap: wrap;
+
+}
+li{
+    background: #C9FFBF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.change-color{
+    color:rgb(219, 211, 208);
+}
+.gf{
+    font-family: 'Shadows Into Light', cursive;
+
+}
+.box1{
+margin-bottom: 4%;
+    max-height: 240px !important;
+
+}
+.box2{
+padding-left: 17%;
+max-height: 240px   !important;
+}
+.info{
+    text-align: right;
+}
+.info-2{
+    margin-top: 2%;
+}
+.info-1{
+margin-top: 4%;
+margin-bottom: 2%;
+
+}
+@media screen and (max-width: 530px){
+    .gf{
+        padding-top: 4%;
+    }
+}
