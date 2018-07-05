@@ -97,3 +97,5 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+ - Nitin Gahlawat
+    - **[Portfolio](https://nitingahlawat.netlify.com/)**
