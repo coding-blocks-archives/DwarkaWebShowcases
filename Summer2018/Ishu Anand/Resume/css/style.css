@@ -1,0 +1,88 @@
+.bg-black {
+    background: #000;
+    color: #fff;
+}
+
+#main-header img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#main-header .port-item {
+    width: 25%;
+}
+
+#main-header .port-item .fa {
+    font-size: 2em;
+}
+
+#main-header .port-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (min-width: 1199px) {
+    .port-item {
+        padding: 3em !important;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a :hover {
+    color: white;
+
+}
+
+a i:hover {
+    color: white;
+    transform: scale(1.25);
+}
+
+
+.bg-primary {
+        background-color: #730B0B !important;
+    }
+
+.bg-success {
+        background-color: #11111D !important;
+    }
+.bg-warning {
+        background-color: #CCAE81 !important;
+    }
+.bg-danger {
+        background-color: #28794B !important;
+    }
+
+/*
+.bg-primary {
+    background-color: #BA5245 !important;
+}
+
+.bg-success {
+    background-color: #313D4C !important;
+}
+
+.bg-warning {
+    background-color: #D67C49 !important;
+}
+
+.bg-danger {
+    background-color: #7D7939 !important;
+}
+*/
+
+.lead{
+    font-size: 17px !important;
+}
+
+#education h4{
+    font-size: 18px !important;
+}
+#education h5{
+    font-size: 16px !important;
+}
