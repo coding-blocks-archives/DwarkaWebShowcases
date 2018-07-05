@@ -97,3 +97,5 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+- Puneet Shah
+    - **[Portfolio](http://http://portfoliopuneet.bitballoon.com/)**
