@@ -1,0 +1,83 @@
+.containerr {
+    position: relative;
+    margin: 2% 20%;
+    background-color: #faffd3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left, .middle {
+    padding-top: 20px;
+    width: 33%;
+}
+
+.info {
+    width: 20%;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Raleway: 700;
+}
+
+.icon {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+a, a:hover {
+    color: black;
+}
+
+.education, h5, h3, .middle {
+    font-family: Raleway;
+}
+
+.unorder {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list {
+    color: #919191
+}
+
+.subs {
+    position: relative;
+}
+
+.bars {
+    top = -250px;
+}
+
+.progress {
+    position: relative;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+@media screen and (max-width: 1428px) {
+    .info {
+        width: 100%;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .middle {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .info {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .middle {
+        width: 100%;
+    }
+}
