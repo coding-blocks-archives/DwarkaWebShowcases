@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <title> Trial </title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Supermercado+One" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div id='a'>
+    <div id='content'>
+      <div class="head">
+        <div id="h2">&nbsp; &nbsp;<span id="img"><img id="dho" src="lens.png"></span><span id="text"> Your Personal Finder</span> </div>
+      </div>
+      <div id ="input">
+        <select id="select" name='option'>
+          <option value='airport' selected> Airport </option>
+          <option value='atm'> ATM </option>
+          <option value='bank'> Bank </option>
+          <option value='cafe'> Cafe </option>
+          <option value='church'> Church </option>
+          <option value='department_store'> Supermarket </option>
+          <option value='doctor'> Clinic </option>
+          <option value='embassy'> Embassy </option>
+          <option value='hospital'> Hospital </option>
+          <option value='library'> Library </option>
+          <option value='park'> Park </option>
+          <option value='police'> Police Station </option>
+          <option value='restaurant'> Eatery </option>
+          <option value='school'> School </option>
+          <option value='shopping_mall'> Mall </option>
+        </select>
+        <button onclick='module.submit()'> Submit </button>
+      </div>
+      <br>
+      <div id='menu'>
+      </div>
+    </div>
+    <div id='map'>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.0.min.js"
+  integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
