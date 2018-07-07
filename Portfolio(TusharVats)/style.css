@@ -1,0 +1,356 @@
+
+
+.myImage {
+    box-sizing: border-box;
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    position: relative;
+    left: 49px;
+    top: 57px;
+}
+.sidebar{
+    position: relative;
+    left: 11px;
+    width: 250px;
+}
+.main{
+    width: 70%;
+    background-color: beige;
+}
+.outerBox{
+    width:100%;
+    height: 300px;
+}
+.upperSB{
+    background-color: lightcoral;
+    min-height: 250px;
+}
+.lowerSB{
+    background-color: black;
+    height: 1100px;
+}
+.namee{
+    position: relative;
+    top: 129px;
+    left: 30px;
+    height: 50px;
+    font-color: white;
+}
+.unorderedList{
+    list-style-type: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    position: relative;
+    left: -3px;
+}
+.headd{
+    padding-left: 37px;
+    font-size: 1rem;
+}
+.contact{
+    padding-top: 37px;
+    position: relative;
+    left:-13px;
+}
+.wrapperr{
+    display: flex;
+    margin-left:13%;
+    margin-right: 13%;
+    margin-top:2%;
+    margin-bottom:2%;
+    background-color: white;
+}
+.colorr{
+    color:white;
+    margin-left: 5px ;
+}
+.education{
+    position: relative;
+    left: -10px;
+    top: 35px;
+}
+.greyy{
+    color:#d3e4e5;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.interests{
+    position: relative;
+    top: 75px;
+    left: -9px;
+}
+.projects{
+    position: relative;
+    left: 49px;
+    top: 45px;
+}
+.pro {
+    color: lightcoral;
+    font-size: 1.5rem;
+}
+.proin{
+    max-width: 90%;
+    font-size: 0.98rem;
+    margin-top:15px;
+    line-height:1.7;
+}
+.headingg{
+    font-size: 1.1rem;
+    color:lightcoral;
+
+}
+section div div div:hover{
+    text-decoration: underline;
+    transition-duration:0.5s;
+    cursor:pointer;
+}
+.secondd{
+    top:122px;
+}
+.experience{
+    position: relative;
+    left:49px;
+    top:95px;
+}
+.invv{
+    background-color: lightcoral;
+    border-radius: 50%;
+    color: white;
+    height:35px;
+    width: 35px;
+}
+.invv2{
+    background-color: lightcoral;
+    border-radius: 50%;
+    color: white;
+    height:35px;
+    width: 35px;
+    text-align: center;
+}
+
+.fa-briefcase:before {
+    position: relative;
+    left: 6px;
+    top: 5px;
+}
+.fa{
+    position: relative;
+    top: -4px;
+}
+.exppp{
+    position: relative;
+    top: 13px;
+}
+.fa-files-o:before{
+    position: relative;
+    left: 4px;
+    top: 5px;
+}
+.unok{
+    position: relative;
+    left: -36px;
+    top: -9px;
+}
+.fa-android:before{
+    position: relative;
+    left: 8px;
+    top: 3px;
+}
+.flexi{
+    position: relative;
+    top: 14px;
+}
+.progressBars{
+    width: 65%;
+    position: relative;
+    top: -250px;
+    left: 168px;
+
+}
+.progress{
+    margin-bottom: 16px;
+}
+.bgg{
+    background-color: #a7283b ;
+}
+.achievements{
+    position: relative;
+    left: 52px;
+    top: -64px;
+}
+.fa-book:before{
+    position: relative;
+    top:4px;
+    left:7px;
+}
+.posss{
+    position: relative;
+    left: 11px;
+    top: 10px;
+}
+
+@media only screen and (max-width: 1250px) and (min-width:1207px) {
+    .lowerSB{
+        height: 1115px;
+    }
+}
+@media only screen and  (max-width: 1207px) and (min-width: 1098px){
+    .lowerSB{
+        height: 1140px;
+    }
+}
+@media only screen and  (max-width: 1098px) and (min-width: 1087px){
+    .lowerSB{
+        height: 1175px;
+    }
+}
+@media only screen and  (max-width: 1087px) and (min-width: 1059px){
+    .lowerSB{
+        height: 1202px;
+    }
+}
+@media only screen and  (max-width: 1059px) and (min-width: 1030px){
+    .lowerSB{
+        height: 1228px;
+    }
+}
+@media only screen and  (max-width: 1030px)and (min-width: 977px){
+    .namee{
+        left:10px;
+    }
+    .lowerSB{
+        height: 1254px;
+    }
+}
+@media only screen and  (max-width: 977px) and (min-width: 680px){
+    .sidebar{
+        order:1;
+        width:100%;
+        position: static;
+    }
+    .lowerSB{
+        height: 700px;
+    }
+    .namee{
+        left:10px;
+    }
+    .main{
+        order:2;
+        width:100%;
+    }
+    .wrapperr{
+        flex-wrap: wrap;
+    }
+    .outerBox{
+        transform: translateX(20%);
+    }
+    .widdd{
+        width:82%;
+    }
+}
+@media only screen and  (max-width: 680px) and (min-width: 530px){
+    .sidebar{
+        order:1;
+        width:100%;
+        position: static;
+    }
+    .lowerSB{
+        height: 700px;
+    }
+    .namee{
+        left:10px;
+    }
+    .main{
+        order:2;
+        width:100%;
+    }
+    .wrapperr{
+        flex-wrap: wrap;
+    }
+    .outerBox{
+        transform: translateX(15%);
+    }
+    .widdd{
+        width:82%;
+    }
+    .progressBars{
+        width: 60%;
+    }
+    .main{
+        position:relative;
+        left:-20px;
+    }
+}
+@media only screen and  (max-width: 530px) and (min-width: 400px) {
+    .sidebar{
+        order:1;
+        width:100%;
+        position: static;
+    }
+    .lowerSB{
+        height: 700px;
+    }
+    .namee{
+        left:-10px;
+    }
+    .main{
+        order:2;
+        width:100%;
+        position:relative;
+        left:-20px;
+    }
+    .myImage{
+        left:40px;
+    }
+    .wrapperr{
+        flex-wrap: wrap;
+    }
+    .outerBox{
+        transform: translateX(15%);
+    }
+    .widdd{
+        width:82%;
+    }
+    .progressBars{
+        width:40%;
+    }
+}
+@media only screen and  (max-width: 400px){
+    .sidebar{
+        order:1;
+        width:100%;
+        position: static;
+    }
+    .lowerSB{
+        height: 720px;
+    }
+    .namee{
+        left:10px;
+    }
+    .main{
+        order:2;
+        width:100%;
+        position:relative;
+        left:-25px;
+    }
+    .wrapperr{
+        flex-wrap: wrap;
+    }
+    .outerBox{
+        transform: translateX(10%);
+        left:10px;
+    }
+    .myImage{
+        left:20px;
+    }
+    .widdd{
+        width:82%;
+    }
+    .progressBars{
+        width: 35%;
+    }
+}

@@ -97,3 +97,5 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+- Tushar Vats
+    - **[Portfolio(TusharVats)](http://admiring-rosalind-000ea9.bitballoon.com/)**
