@@ -99,4 +99,8 @@
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
 - Devyendu Shekhar
+    - **[final project](https://github.com/dsc712/post-your-yelpcamp)**
     - **[Portfolio](https://dsc712.github.io)**
+    - **[ChatApp](https://github.com/dsc712/chatapp-socket.io)**
+    - **[TodoList](https://github.com/dsc712/CB-WADN/tree/master/nodelecture/todolist)**
+    
