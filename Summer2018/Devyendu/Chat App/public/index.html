@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div id="sidebar">
+        <h3>connected users </h3>
+        <ul id="users"></ul>
+    </div>
+    <div class="main">
+        <div id="page_top">
+            <h1> Chat App </h1>
+        </div>
+        <div id="message-bar">
+            <input type="text" id="inp" placeholder="type your message here .....  " required>
+            <button id="btn">Send Message</button>
+        </div>
+        <ul id="result"></ul>
+    </div>
+
+</div>
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    box-sizing: border-box;
+    margin : 0 ;
+    font-family: open sans;
+}
+html{
+
+
+}
+body {
+    background: #000 ;
+
+}
+li{
+    list-style-type: none;
+}
+.done{
+    text-decoration: line-through ;
+    color : #000 ;
+}
+#header{
+    padding : 20px ;
+    text-align: center ;
+    background : #666;
+    color : #fff ;
+}
+#header:hover{
+    background : #333 ;
+    color : #fff;
+    transition : 1s ;
+}
+.container {
+    display : flex ;
+    flex-wrap:  wrap ;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    padding : 100px ;
+    min-height: 100vh ;
+}
+
+#btn{
+    width : 40% ;
+    padding : 0.8% 3% ;
+    margin: 5px auto ;
+    background: #666 ;
+    color : #fff ;
+    font-weight: bold;
+    font-size: 1.2em ;
+    border : chartreuse;
+}
+
+#btn:hover{
+    background : #222 ;
+    color : #fff ;
+    font-size: 1.2em ;
+    transition : 1s ;
+}
+#btn:active , #btn:focus {
+    outline : none ;
+}
+
+button:hover{
+    cursor : pointer ;
+}
+
+li:hover {
+    cursor : pointer ;
+}
+
+li button:active , button:focus{
+    outline : none ;
+}
+li button {
+    margin-top: -7px ;
+    margin-right : 20px ;
+}
+h1{
+    margin : 0 auto ;
+    color : #fff ;
+}
+
+input[type='text']{
+    width : 40% ;
+    padding : 1% ;
+    margin : 10px auto;
+    text-align:center ;
+}
+
+input[type='text']:focus{
+    text-align:left;
+}
+
+/*input{*/
+    /**/
+/*}*/
+.todoItem{
+    width : 80% ;
+    background : #fff;
+    padding: 2% ;
+    color : #666 ;
+    margin : 0.3% auto ;
+}
+.todoItem:hover{
+    background : #222;
+    color : #fff;
+    /*transform: scale(1.1);*/
+    transition : 1s ;
+}
+.todoItem:hover button {
+    background : #222;
+    color : #fff;
+    transition : 1s ;
+}
+.todoItem button{
+    padding : 0.5% 3% 0.5% 1.5% ;
+    background: #fff;
+    border : #666 ;
+    color: #666666;
+    float: right ;
+    font-size: 1.2em ;
+}
+li{
+    font-weight: bold;
+}
