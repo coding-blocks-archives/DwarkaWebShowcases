@@ -1,0 +1,96 @@
+
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("https://pli.io/YwIB3.png") ;
+    /*background-image: url("https://images.pexels.com/photos/699782/pexels-photo-699782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
+    /*opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */*/
+    /* Full height */
+     width: 100%;
+    height: auto;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+     background-attachment: fixed;
+   /*  background-image: linear-gradient(0deg,rgba(0,0,0,0) 50%,rgba(0,0,0,.5) 100%),radial-gradient(50% 120%,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%);*/
+} 
+
+.bg1{
+     /* The image used */
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/21201051-e34b-42e5-be96-02283a6a5d7c/ff02629c-4014-4265-86ce-6039c280d8ab/IN-en-20180723-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    /*background-image: url("https://images.pexels.com/photos/699782/pexels-photo-699782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    /* Full height */
+     width: 100%;
+    height: auto;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.pirate{
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;  
+    height: 40vh; 
+    vertical-align: middle;
+} 
+
+.stream{
+	/* display: block;*/
+    margin-left: auto;
+    margin-right: auto; 
+ /*   background-color: #FFEB3B;*/
+
+} 
+
+mark { 
+    background-color: #FFF176;
+    font-family: 'Poppins', sans-serif;
+   /* color: black;*/
+} 
+
+.searchbox{
+	width: 50%;
+} 
+
+.result{
+    color: red;
+} 
+
+
+.high {
+    background-color: #B9F6CA; 
+    font-family: 'Poppins', sans-serif;
+} 
+
+.watch{ 
+    font-family: Helvetica;
+    background-color: #e50914; 
+    font-size: 24px; 
+    color: #fff;
+} 
+
+.back{ 
+    font-family: Helvetica;
+   /* background-color: #fff; */
+    font-size: 28px; 
+    color: #fff;
+} 
+
+.warn{
+      font-family: Helvetica;
+    background-color: #e50914; 
+   
+    color: #fff;
+} 
+}
