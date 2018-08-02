@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.chat-area {
+    height: 75vh;
+    width: 74%;
+    font-size: initial;
+    border-right: black dashed;
+    border-bottom: black dashed;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.connection-area {
+    height: 75vh;
+    width: 25%;
+    overflow-y: scroll;
+    font-size: initial;
+}
+
+.input-area {
+    height: 25vh;
+    width: 100%;
+    display: table-cell;
+    font-size: initial;
+    vertical-align: middle;
+}

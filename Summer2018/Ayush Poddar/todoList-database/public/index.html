@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoToday</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="delmul">
+    <button onclick="deleteMultiple()"><img src="https://cdn.rawgit.com/Mr-Magnificent/2aab55badc3bed98638aba4bdfa82c94/raw/208e6e149fe0872894031644c3caf4225e003f63/baseline-deletesweep.svg"></button>
+</div>
+<div class="body">
+    <div class="title">
+        <div>
+            <h1>Do-Today</h1>
+            <p>A simplistic ToDo List for everyday tasks</p>
+            <div>
+                <img id="tick" src="https://i.imgur.com/UVLPCO3.png">
+                <input id="inp" type="text" autofocus autocomplete="false" placeholder="Enter today's task">
+                <button id="btn" onclick="makeRequest()">Add</button>
+            </div>
+            <p></p>
+            <button onclick="deleteMultiple()"><img src="https://cdn.rawgit.com/Mr-Magnificent/2aab55badc3bed98638aba4bdfa82c94/raw/208e6e149fe0872894031644c3caf4225e003f63/baseline-deletesweep.svg"><span>&nbsp;&nbsp;Delete&nbsp;Selected</span></button>
+            <br />
+            <br />
+            <section>
+                <span>Your UserID is</span>&nbsp;&nbsp;<span id="userid"></span>
+            </section>
+        </div>
+    </div>
+    <div class="main">  
+        <ul id="list"></ul>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

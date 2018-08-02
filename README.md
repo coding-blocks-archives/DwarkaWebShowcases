@@ -97,3 +97,6 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+    - **[Socket.io (Chatisry)](https://chatistry.herokuapp.com/)**
+    - **[todo (with database)](https://dotodaytodo.herokuapp.com/)**
+    - **[Lyricist (spotify+lastFm+lyrics API)](https://lyricspot.herokuapp.com/)**

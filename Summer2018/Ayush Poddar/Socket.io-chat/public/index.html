@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sock-t</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="container">
+    <div class="chat-area">
+        <ul id="list"></ul>
+    </div>
+    <div class="connection-area">
+        <h3>People Connected</h3>
+        <ul id="connected"></ul>
+    </div>
+    <div class="input-area">
+        <input id="inp" type="text" autofocus placeholder="Type to send">
+        <button id="btn" type="button">Send!</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
