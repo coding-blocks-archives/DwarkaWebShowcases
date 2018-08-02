@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping cart</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="header">
+        <div id="subheader">
+            <div id="container">
+            <span class="para1" style="margin-left: 0px">India's Fastest Online Shopping Destination</span>
+
+
+            <span class="para2">Gift Cards</span>
+            <span class="para2">Help Center</span>
+            <span class="para2">Sell on dcart</span>
+            <span class="para2">call us</span>
+            <span class="para3"onclick="appshows()">download app</span>
+                <img class="para4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHMSURBVGhD7dq9LgRRAIbhpfAXohaJWsIFKCRaiZAQjRvQiGtQUGi0uAeNRpBIBOEOFGpRKYQGhZ/3292RzeTMzjk7s7vnjPmSJ9hdiTdZa3ZGpVy5crlvB7sYqX4V4IbqHwdwikcs6obQtof52qd/MT84whiC2T7eYYp5wTp64P0Uoh86KUauMQmvF4WYYs4Q3feBLfTByzWGpMXIPWbh3eIhkhbzhQOMwpuZQiQtRp6wAi+WFCI2MXKMcXR1zULENuYVG+hFV5YWIrYxcodpdHw2IeIS84lt6HEdm22IuMTIA+bQkbmEiGvMNw7R9sMc1xBxfZqtQuuvf2zLWgkRmxhFLEMbxg1OMKEb8l6rIaLjr6QYRSxB03ueK0T3vWETub5UZwkRU4wiFnQDU8QlTN97iynksqwhEo+ZqX1ajbiA6Xsiil5D5uURIo0x2iDOYXps3DMyv6qVIQ0K8dQqxC+7KSK6L5iX30L8QSzEIUohDhpdI7w8jHd9Onn5xsolwtu3urYRXp98sI3w+nSQTYT3J+jSIoI4ZZoWEcRJ7GYROq4K4rJCPCLICz1JEUFdeivMxVC9V9CiiGAvT0fTsVHQ/zBQrtz/W6XyC5ppfmKg0Vt0AAAAAElFTkSuQmCC">
+            <img class="para5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJOSURBVGhD7dlNiE1xGMfxOzFSMpTXUuM1RhorLCk1smJpLFBioQxRNmYzjfIWIWUhmoXFhPGyMDZelrLwUsrGTtI0k5iaCDF8f5ozczs9k+E855k5dX71abq3uec5/+4553//z79SpsxwlqIND9CuN4qWZbiNQfwachWFSjO+IBlA4jAKkz2o/hYSeq8BhcgafEN6EHIDhckjWIPowwIUIsthDaIf61GY7EV6EK+xGoXKPiQDeIkWTMaESS02Qid6dOjvWtSgOouxAQv/vBrJNGzDWVzDRezGfIRkNs7hI6ovl8RbnMAqWFmC89A9Yn3+KzRBNiK37MBoJ2B5jmPYiYO4ix+w/jdN88tlzIRrTsIqmLc3WAmXHIFVJEovViBTNmGsl0Oe7uG/Mwl65lsHjvICTUg/Df8purmtg0e5Aj3mM+cZrAIRbiLTt5BEE5lVIMInzIJLdsEqEuEM3HIaVpEIrr+Kb8EqEmEu3HIfVpEIM+CWh7CKRHBdNd6BVSTCZrjlAqwiES7BLWrfWEUiDMBtHqmHVSSKa/fxFawiUQ7AJcdhFYik+yXzKlEN55+wCkT6AK1QM+U6rINHU8MiU9TisQ4cSX1jl0myE1aBKGo/uWQeRutj5a0HdXDLeE2Q2+GeDljF8tKFXDIFT2AV9fYObj9TrMxB3k2Jz1iH3DMdj2GdRFbfsQVh0WXWCmuXVh117Q1uhZ7/U6FVn3q4+/EU6c/Ie2irYlyyCNpG0NJYN+chaOvhb9GO1Sl0Q/0Bfc51iVumTJkyEzWVym9KI9MsGamx5QAAAABJRU5ErkJggg==">
+
+            </div>
+        </div>
+
+<div id="main-header">
+    <div id="logo">
+
+     <span id="ist">Dcart</span><span id="iist">.com</span>
+   </div>
+    <div id="search">
+        <form action="">
+            <input class="searches" type ="text" name="text" placeholder="Search for products and Brand and More">
+            <input class="submit1" type="submit" name="submit" value="search">
+        </form>
+
+    </div>
+
+
+    <div id="main-menu">
+
+
+
+        <li>login</li>
+        <i  class="fa fa-shopping-cart" style="font-size:48px;color:red;margin-left:275px;margin-top: -10px "></i>
+        <li >Cart</li>
+
+
+    </div>
+</div><div id="navigation-bar">
+            <nav>
+        <a href="#">home</a>
+        <a href="#">new arrivals</a>
+            <a href="#">Deals</a>
+            <a href="#">Electronics</a>
+            <a href="#">Products</a>
+            <a href="#">order</a>
+            </nav>
+        </div>
+        <div id="slider">
+       <ul class="bxslider">
+           <li><img src="bg2a.jpg" style="height: 400px;width: 100%;"></li>
+           <li><img src="images.png" style="height:400px;width: 100%"></li>
+           <li><img src="images/img19.jpeg" style="height:400px;width: 100%"></li>
+           <li><img src="images/img18.jpeg" style="height:400px;width: 100%"></li>
+           <li><img src="images/img17.jpeg" style="height:400px;width: 100%"></li>
+       </ul>
+
+        </div>
+
+        <div class="container">
+            <div class="heading-block">
+                <h2>Category</h2>
+            </div>
+
+            <a href="#">
+            <div class="catbox">
+                <img src="images/img1.jpeg" alt="men-fashion">
+                <span>men-fashion</span>
+            </div>
+            </a>
+
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/img5.jpeg" alt="men-fashion">
+                    <span>women-shoes</span>
+                </div>
+            </a>
+
+
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/img2.jpeg" alt="men-fashion" style="height: 180px;margin-top: -10px;margin-left: 20px">
+                    <span>men-watch</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="catbox">
+                    <img src="images/img3.jpeg" alt="men-fashion" style="height: 170px;margin-left: 15px">
+                    <span>women-fashion</span>
+                </div>
+            </a>
+
+                <a href="#">
+                <div class="catbox">
+                    <img src="images/img4.jpeg" alt="men-fashion" style="height: 160px;margin-left: 50px">
+                    <span>Educational-Books</span>
+
+                </div>
+            </a>
+            <div class="heading-block">
+                <h2>Products</h2>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                   <img src="images/img6.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                        <p>Men's Jacket</p>
+                        <p>Price:₹1000</p>
+                    <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img8.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p> Shoulder Bag </p>
+                            <p>Price:₹1000</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img9.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Men's Shirt</p>
+                            <p>Price:₹1000</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img10.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Ethic wear</p>
+                            <p>Price:₹2000</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img11.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Men's Kurta</p>
+                            <p>Price:₹20000</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img7.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Gold Bangles</p>
+                            <p>Price:₹10000</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img12.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Javascript book</p>
+                            <p>Price:₹700</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img16.jpeg" style="height: 300px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Macbook Pro</p>
+                            <p>Price:₹80000</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-container">
+                <div class="prod-box">
+                    <img src="images/img14.jpeg" style="height: 300px;margin-left: 25px">
+                    <div class="prod-trans">
+                        <div class="prod-feature">
+                            <p>Iphone X</p>
+                            <p>Price:₹70000</p>
+                            <input type="button" value="Add to cart" name="add-cart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+           <div class="heading-block" style="height: 200px">
+               <h2 style="margin-top: 90px">Offers</h2>
+           </div>
+            <div class="offer">
+               <a href="#"><img src="images.png"></a>
+           </div>
+            <div class="offer">
+                <a href="#"><img src="images/img21.jpg" style="margin-left: 50px"></a>
+            </div>
+            <div class="offer">
+                <a href="#"><img src="images/img20.png" style="margin-left: 100px"></a>
+            </div>
+
+
+           </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer-sub">
+                <h4 style="text-align: center;margin-top: 20px;line-height: 50px">Back To Top</h4>
+            </div>
+            <div class="footer-sub_1">
+                <h3 style="font-weight: bold;color: white;margin-left: 10px">About Me</h3>
+                <p style="color: white;line-height: 1.2">This ecommerce website has developed by Mr. Deepak in july 2018.It has some issue but Deepak is now working in backend . Deepak is pursuing engineering from MSIT in CSE branch . We have believe that this ecommerce website will be trending one day.</p>
+
+            </div>
+
+            <div class="footer-sub_2">
+
+                    <h3 style="font-weight: bold;color: white;margin-left: 100px;float: left">Connect with me</h3>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Github</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Linkdin</a></p>
+            </div>
+
+                <div class="footer-sub_3">
+                    <h3 style="font-weight: bold;color: white;margin-left: 100px;float: left">Feedback/Inquiry</h3>
+                    <div > <textarea class="message" name="cd-textarea" cols="45" rows="08" id="cd-textarea" placeholder="textbox for inquiry/Feedback" required></textarea></div>
+                    <input class="submit" type="submit" value="submit" name="submit" style="margin-left: 400px;margin-top: 20px;">
+
+
+                </div>
+
+
+
+         </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
