@@ -1,0 +1,164 @@
+body {
+    margin: 0 auto;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    width: 100%;
+    height: 100vh;
+    margin:0 auto;
+}
+
+#delmul { 
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: none;
+}
+
+#delmul > button {
+    background-color: rgb(252, 29, 34);
+    border: 0;
+    border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    width: 40%;
+    font-size: initial;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(60, 60, 60);
+}
+
+.title  input {
+    width: 80%;
+    height: 30px;
+    border: none;
+    padding-left: 6%;
+    margin: 0;
+    background: transparent;
+}
+
+.title > div {
+    max-width: 90%;
+}
+
+.title > div > div {
+    background-color: white;
+    border-radius: 80px 80px 80px 80px;
+    position: relative;
+    top: 0;
+}
+
+#tick {
+    position: absolute;
+    left: 74%;
+    top: 21%;
+    visibility: hidden;
+    height: 19px;
+}
+
+.title > div > div > button {
+    height: 36px;
+    margin: 0 -1px 0 0;
+    width: 18%;
+    border: 0;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.title > div > button {
+    background-color: rgba(252, 29, 34, 0.58);
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title > div > button > * {
+    vertical-align: middle;
+}
+
+.title p {
+    margin-bottom: 30px;
+}
+
+.main {
+    width: 60%;
+    overflow-y: scroll;
+    height: 100vh;
+    font-size: initial;
+}
+
+#list {
+    margin-top: 30px;
+}
+
+#list > li {
+    padding-bottom: 15px;
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+.updDel {
+    float: right;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+.updDel > img {
+    height: 16px;
+}
+
+li:hover .updDel{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+#userid {
+    color: rgba(185, 255, 193, 0.92);
+}
+
+@media screen and (max-width: 636px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        overflow-y: scroll;
+        /*over*/
+        order: 1;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .title {
+        height: 40vh;
+        width: 100%;
+        order: 3;
+    }
+
+    .title p {
+        margin-bottom: 20px;
+    }
+
+    #delmul {
+        display: initial;
+    }
+
+    .title > div > button {
+        display: none;
+    }
+}
