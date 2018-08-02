@@ -1,4 +1,4 @@
-let todoList;
+let todoList = [{}];
 let delMul = [];
 let taskArr = [];
 let result = $('#list');
@@ -20,6 +20,7 @@ $(document).ready(function(){
                         $('#userid').text(`${data}`);
                         // userID = data;
                         Cookies.set('userID', `${data}`);
+                        document.location.reload(true);
                     }
                 })
             }
@@ -204,7 +205,7 @@ function deleteMultiple() {
             delMul.reverse();
             for (let i = 0; i < delMul.length; i++) {
                 $('#list').children().eq(delMul[i]).remove();
-                delete todoList[taskArr[i]];
+                delete todoList[0][taskArr[i]];
             }
             localStorage.setItem('todo', JSON.stringify(todoList));
             delMul = taskArr = [];

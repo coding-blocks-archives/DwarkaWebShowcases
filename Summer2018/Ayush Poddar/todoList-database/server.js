@@ -14,7 +14,7 @@ const cookieParser = require('cookie-parser');
 * */
 const db = require('./database');
 
-
+let PORT = process.env.PORT || 5000;
 
 // parse application/x-www-form-urlencoded
 app.use(cookieParser());
@@ -141,7 +141,7 @@ app.post ('/deleteMultiple', function (req, res) {
     res.sendStatus(200);
 });
 
-app.listen(5000, function() {
-   console.log("Server running on port 5000");
+app.listen(PORT, function() {
+   console.log("Server running on port ", PORT);
    db.connectDb();
 });

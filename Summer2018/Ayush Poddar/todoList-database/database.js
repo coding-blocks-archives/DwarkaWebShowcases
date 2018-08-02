@@ -1,7 +1,7 @@
 const mongodb = require('mongodb').MongoClient;
-let topUser = require('mongodb').ObjectID("5b63484919df04139569136e");
+let topUser = require('mongodb').ObjectID("5b637cfde7179a0733452cea");
 
-const uri = 'mongodb://localhost:27017';
+const uri = 'YOUR_DATABASE_URI';
 
 let database;
 let collection;
