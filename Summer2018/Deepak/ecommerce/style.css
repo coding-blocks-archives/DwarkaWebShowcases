@@ -1,0 +1,380 @@
+#wrapper
+{
+    font-family: tahoma;
+
+}
+#container
+{
+    width: 100%;
+    margin:0 auto;
+    max-width: 1280px;
+    height:70px ;
+
+}
+#subheader
+{
+    width:100%;
+    height:70px;
+    background:green;
+    margin-top: -15px;
+}
+.para1
+{
+    text-align-last: left;
+    font-size:small;
+    font-family: Roboto, Arial, sans-serif;
+     /*margin-top: 80px;*/
+    /*text-align: center;*/
+    /*line-height: 20px;*/
+    /*vertical-align: middle;*/
+  /*//  letter-spacing: 0;*/
+    line-height: 50px;
+    margin-top: 10px;
+    margin-left: -55px;
+}
+.para2
+{
+
+    float:right;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.para3
+{
+    float:right;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    /*margin-left: 30px;*/
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.para4
+{
+    float:right;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    /*margin-left: 30px;*/
+    cursor: pointer;
+    margin-top: 10px;
+}
+.para5
+{
+    float:right;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    /*margin-left: 30px;*/
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*.container p1*/
+/*{*/
+    /*display: none;*/
+/*}*/
+/*.para4:hover p1*/
+/*{*/
+    /*display: block;*/
+    /*color: red;*/
+    /*font-weight: bold;*/
+/*}*/
+#main-header
+{
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    text-decoration: none;
+    margin-top: -15px;
+}
+#logo {
+
+    /*!*display: table-cell;*!*/
+    height:100px;
+    /*!*change this and the width*!*!*/
+/*for the size of your initial circle*!*/
+    width: 400px;
+    float:left;
+    /*margin-top: 10px;*/
+    /*text-align-last: left;*/
+
+    /*vertical-align: middle;*/
+    /*border-radius: 50%;*/
+    /*make it pretty*/
+    background:blue;
+    margin-top: 0px;
+    /*!*color:white;*!*/
+    /*font: 50px "josefin sans", arial;*/
+    /*font-family: FreeMono;*/
+    /*change this
+for font-size and font-family*/
+}
+#ist
+{
+    font-style:oblique;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;
+
+}
+#iist
+{
+    font-style:oblique;
+    font-size:20px;
+    font-weight: bold;
+    /*margin-left: 10px;*/
+    color: black;
+}
+#search {
+    /*width: auto;*/
+    width: 750px;
+    margin-left: 0px;
+    padding: 25px;
+
+}
+.searches
+{
+    width:300px;
+}
+.submit1
+{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    height: 28px;
+    margin-left: -20px;
+}
+#main-menu
+{
+    float: right;
+    width: 500px;
+    margin-top: -50px;
+}
+#main-menu li{
+    float: right;
+    width: 90px;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    /*padding: 30px;*/
+}
+#main-menu li:hover
+{
+    font-size: 30px;
+    transition: all .3s ease ;
+}
+#navigation-bar
+{
+    width: 100%;
+    height: 30px;
+    background: white;
+    font-family: bold;
+    float: left;
+}
+nav
+{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+nav a
+{   float: left;
+    margin-left: 35px;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color:blue;
+    transition: all .7s ease;
+}
+#slider
+{
+    border:0px;
+    box-shadow:none;
+    /*margin-left:-10px;*/
+    width:100%;
+    /*max-width: 100%;*/
+    float: left;
+
+}
+.bx-wrapper .bx-pager.bx-default-pager a
+{
+    margin-top: -70px;
+}
+.heading-block
+{
+    width:100%;
+    height: auto;
+    float: left;
+    color:green;
+    font-size: 15px;
+    margin-top: -50px;
+
+}
+.heading-block h2
+{
+    line-height: 20px;
+    border-left: 10px solid black;
+    padding-left: 05px;
+}
+.catbox
+{
+    float: left;
+    width:250px;
+    height: 250px;
+    overflow: hidden;
+   position: relative;
+}
+.catbox span
+{
+    display: block;
+    background:black;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    bottom: 80px;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    margin-left: 40px;
+}
+.catbox:hover span{
+    color:gold;
+
+
+}
+.catbox img
+{
+    max-width: 100%;
+    transition: all .5s ease;
+}
+.catbox img:hover {
+    transition: all .5s ease;
+     transform: scale(1.3,1.3);
+}
+
+.prod-box
+{
+    width: 235px;
+    height: 300px;
+    margin: 10px 23px 10px 0px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.prod-box>img
+{
+   max-width: 100%;
+}
+.prod-trans
+{
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width:100%;
+    position: absolute;
+    opacity: 0;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*margin-top: -70px;*/
+    transition: all .5s ease;
+}
+.prod-box:hover .prod-trans
+{
+    opacity: 1;
+    transition: all .5s ease;
+
+}
+.prod-feature
+{
+    text-align: center;
+    margin-top: -150px;
+    transition: all .5s ease;
+}
+.prod-feature p
+{
+    color: gold;
+    font-weight:bold;
+}
+.prod-box :hover .prod-feature
+{
+    margin-top: 150px;
+    transition: all .5s ease;
+}
+.offer
+{   margin-top: -50px;
+    float: left;
+    width: 400px;
+
+}
+.offer img
+{
+    width: 100%;
+}
+#footer
+{   margin-top: 70px;
+    width: 100%;
+    height: 300px;
+    background:#232f3e;
+    float: left;
+}
+.footer-sub
+{   margin-top: -20px;
+    width: 100%;
+    background:#1116 ;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+}
+.footer-sub_1
+{
+    width: 33.3%;
+   float: left;
+}
+.footer-sub_2
+{
+    width: 20%;
+    float: left;
+
+}
+/*.footer-sub_2 ul li{*/
+    /*list-style:none;*/
+    /*margin: 0 0 10px;*/
+    /*!*margin-left: -50px;*!*/
+/*}*/
+.footer-sub_2 p a{
+    margin-left: 140px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer-sub_3
+{
+    width: 30%;
+    height: 200px;
+    float: left;
+
+}
+#cd-textarea
+{
+   margin-left: 70px;
+     /*margin-left: 30px;*/
+}
+.submit
+{
+    background-color:lightslategrey;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.submit:hover
+{
+    font-size: large;
+}
