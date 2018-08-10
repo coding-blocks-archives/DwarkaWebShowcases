@@ -97,3 +97,5 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+- Roopal Dumka
+    - **[Portfolio](http://clever-brahmagupta-80b72a.bitballoon.com/)**
