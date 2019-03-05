@@ -97,3 +97,10 @@
 
 - Ayush Poddar
     - **[Portfolio](https://mr-magnificent.github.io/)**
+    
+### fall 2018
+ - Ankit Ojha
+	- **[Portfolio](https://festive-cori-c666b3.netlify.com)**
+	- **[WeatherApp](https://focused-curie-63467c.netlify.com)**
+	- **[TodoApp](https://mighty-journey-16668.herokuapp.com/)**
+	- **[Saarthi(final project)](https://safe-spire-45434.herokuapp.com/)**
