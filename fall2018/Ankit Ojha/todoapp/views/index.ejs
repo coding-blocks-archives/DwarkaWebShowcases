@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= pagetitle%></title>
+	<link rel="stylesheet" href="../public/css/main.css" type="text/css">
+</head>
+<body>
+
+	<div id="myDIV" class="header">
+		<h2>To-Do List</h2>
+		<input type="text" id="myInput" placeholder="Enter Task..." required>
+		<span onclick="newElement()" class="addBtn">Add</span>
+	</div>
+
+	<ul id="myUL">
+		<% for(let i=0;i<todo.length;i++) { %>
+			<% if(todo[i].done) { %>
+				<li class="checked"><%= todo[i].work %></li>
+			<% } else { %>
+				<li><%= todo[i].work %></li>
+			<% } %>
+        <% } %> 
+	</ul>
+    <script src="../public/js/main.js" type="text/javascript"></script>
+</body>
+</html>
+
+<!-- use class="checked" to mark a task as true or false-->
