@@ -1,0 +1,131 @@
+<% include ./partials/messages %>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarthi || Writer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--linkimg Font-Awesome styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+    <!--linking writer nav-bar.css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../public/css/nav-bar.css">
+
+    <!--linking writer profile.css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../public/css/profile.css">
+
+    <!--linking sarthi-form.css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../public/css/sarthi-form.css">
+
+    <!--linking of grid-list.css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../public/css/grid-list.css">
+
+
+    <!--linking of footer.css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../public/css/footer.css">
+
+</head>
+
+<body>
+
+    <!-- SARTHI NAV BAR -->
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="/"><img src="../../../public/images/sarthi-nav-logo.png" alt="nav-logo" class="nav-logo"></a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <% if(!user) {%>
+                <a href="/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <% if(user) {%>
+                <a href="/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <a href="#2" target="_blank"><i class="fas fa-users"></i> AboutUs</a>
+            <% if(!user){ %>
+                <a href="/users/login"><i class="far fa-address-book"></i> Login</a>
+                <a href="/users/register"><i class="far fa-address-card"></i> SignUp</a>
+             <%  } %> 
+            <% if(user){ %>
+                <a href="/technicalUsers/logout"><i class="fas fa-door-open"></i> LogOut</a>
+            <%  } %> 
+        </div>
+    </div>
+    <!--END OF NAV-BAR -->
+
+        <h1><%= title%></h1>
+        
+        <div id="edit-section">
+            <div class="sarthi-form">
+            <form method="POST" action="/technicalUsers/technicalindex/edit/<%= article._id%>">
+                    <label for="title">Article Title</label>
+                    <input type="text" class="input-item" name="title" id="title" value="<%= article.title %>">
+                
+                    <label for="category">Article category</label>
+                    <input type="text" class="input-item" name="category" id="category" value="<%= article.Category %>">
+                    
+                    <h3><b>Article Steps<b></h3>
+                    <div class="step-form">
+                        <div class="optionBox">
+                            <div class="block">
+                                <label for="steptitle">Step Title</label>
+                                <input type="text"class="input-item" name="steptitle" id="steptitle">
+                                <label for="step">Step Description</label>
+                                <textarea name="step" id="" cols="30" rows="10" class="input-item" id="step"></textarea><span class="secondary-btn remove">Remove Step</span>
+                            </div>
+
+                            <div class="block">
+                                <span class="secondary-btn add">Add Step</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="primary-btn<">Submit</button>
+                </form>
+            </div>
+        </div>
+       
+
+    <!--strating of footer-->
+    <div id="footer">
+        <div class="footer-container">
+            <div class="social-footer">
+                <div class="social-icon">
+                    <a href=""><i class="fas fa-envelope fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <h4>&copy;2019 SARTHI || made with <span style="color:red;"><i class="fas fa-heart"></i></span> for INDIANS
+            </h4>
+        </div>
+    </div>
+    <!--end of footer-->
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+    <script src="../../../public/js/add_article/edit_article.js"></script>
+    <script src="../public/js/my_profile.js"></script>
+

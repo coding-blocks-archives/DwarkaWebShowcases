@@ -1,0 +1,37 @@
+<div id="footer">
+        <div class="footer-container">
+            <div class="social-footer">
+                <div class="social-icon">
+                    <a href="#"><i class="fas fa-envelope fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href="https://github.com/kartikdutta28/Saarthi"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <h4>&copy;2019 SARTHI || made with <span style="color:red;"><i class="fas fa-heart"></i></span> for INDIANS
+            </h4>
+        </div>
+    </div>
+
+
+    <!--linking of js file-->
+    <script src="../public/js/banner-slider.js"></script>
+    <script src="../public/js/trending-slider.js"></script>
+    <script src="../public/js/fresh-slider.js"></script>
+    <script src="../public/js/language-selector.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var dd = new DropDown($('#dd'));
+            $(document).click(function () {
+                // all dropdowns
+                $('.wrapper-dropdown-1').removeClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

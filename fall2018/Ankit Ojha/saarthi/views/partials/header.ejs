@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SARTHI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--linking style sheets-->
+    <!--linkimg nav-bar style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/nav-bar.css" />
+
+    <!--linkimg Font-Awesome styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+    <!--linking BANNER SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/banner-slider.css">
+
+    <!--linking home-layout style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sarthi-home.css">
+
+    <!--linking Trending SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/trending-slider.css">
+
+    <!--linking FRESH SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/fresh-slider.css">
+
+    <!--linking language-selector style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/language-selector.css">
+
+    <!--linking FOOTER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/footer.css">
+
+    <script src="../public/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- SARTHI NAV BAR -->
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="/users/welcome"><img src="../public/images/sarthi-nav-logo.png" alt="nav-logo" class="nav-logo"></a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <form action="/search_articles" method="GET">
+                <div class="search">
+                    <input type="text" name ="search" class="searchTerm" placeholder="What are you looking for">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <% if(!user) {%>
+                <a href="/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <% if(user) {%>
+                <a href="/users/welcome/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <a href="#2"><i class="fas fa-users"></i> AboutUs</a>
+            <% if(!user){ %>
+                <a href="/users/login"><i class="far fa-address-book"></i> Login</a>
+                <a href="/users/register"><i class="far fa-address-card"></i> SignUp</a>
+             <%  } %> 
+            <% if(user){ %>
+                <a href="/users/user_profile"><i class="fas fa-user-alt"></i> My Profile</a>
+                <a href="/users/logout"><i class="fas fa-door-open"></i> LogOut</a>
+            <%  } %>   
+        </div>
+    </div>
+    <!--END OF NAV-BAR -->

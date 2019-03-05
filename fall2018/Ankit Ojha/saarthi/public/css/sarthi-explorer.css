@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400i,900|Roboto");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color:#fff;
+}
+
+.clearfix {
+    content: " ";
+    clear: both;
+}
+
+#explorer-layout {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 98%;
+    margin: auto;
+    margin: 20px;
+}
+
+#category-section {
+    background-color:#cbdfe2;
+    margin: 10px 0px;
+}
+
+#trending-section {
+    background-color:#cbdfe2;
+    margin: 10px 0px;
+}
+
+#fresh-section {
+    background-color:#cbdfe2;
+    margin: 10px 0px;
+}
+
+#request-section {
+    width: 45%;
+    background-color:#cbdfe2;
+    margin: 10px 0px;
+    float: left;
+    overflow: auto;
+}
+
+#donate-section {
+    width: 45%;
+    background-color:#cbdfe2;
+    margin: 10px 0px;
+    float: right;
+    overflow: auto;
+}
+
+/*for setting the width of slider in explorer page*/
+.slider-wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+
+/******/
+
+
+/*for heading of each sectiom*/
+.section-heading1 {
+    font-size: 1.5rem !important;
+    line-height: 2.25rem !important;
+    letter-spacing: .6em;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    border-bottom: 4px solid #fff;
+    color:#000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-subheading 
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem !important;
+    font-weight: 100;
+    line-height: .9em;
+    display: block;
+    letter-spacing: normal;
+    margin-top: 5px;
+}
+/******************/
+.donate-container{
+    width: 210px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+
+}
+.donate-container .donate-logo{
+    padding: 20px 25px;
+    display: inline;
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.donate-container .donate-button{
+    display: inline-block;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+    background-color:#046880;
+    padding: 20px 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.donate-container .donate-button:hover{
+    background-color: #fff;
+    border: 2px solid #046880;
+    color:#046880;
+}
+
+.donate-container .donate-button:focus{
+    border:none;
+}
+
+
+/***below css form grid layout present in category section trending section freh section***/
+/*moved to grid list .css*/
+/********/
+
+@media screen and (max-width:900px) {
+    #request-section{
+        width:100%; 
+        float: none;  
+    }
+    #donate-section{
+        width:100%; 
+        float: none;  
+    }
+
+    .slider-wrapper {
+        max-width: 100%;
+        margin: 5px;
+    }
+}

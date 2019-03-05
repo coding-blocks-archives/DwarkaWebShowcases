@@ -1,0 +1,219 @@
+<% include ./partials/header %>
+    <!-- SARTHI Banner SLIDER -->
+
+    <div class="main-slider">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-6.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plus_M_Slides(-1)">&#10094;</a>
+            <a class="next" onclick="plus_M_Slides(1)">&#10095;</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="current_M_Slide(1)"></span>
+            <span class="dot" onclick="current_M_Slide(2)"></span>
+            <span class="dot" onclick="current_M_Slide(3)"></span>
+            <span class="dot" onclick="current_M_Slide(4)"></span>
+            <span class="dot" onclick="current_M_Slide(5)"></span>
+            <span class="dot" onclick="current_M_Slide(6)"></span>
+        </div>
+    </div>
+    <!--END OF SLIDER-->
+
+    <!--HOME PAGE LAYOUT-->
+    <div id="home-layout">
+
+
+        <!--main-section-->
+        <div id="main-section">
+
+
+            <!--trending section layout/slider-->
+            <div class="trending-section">
+                <h2 class="section-heading">THE TRENDING</h2>
+
+                <!--trending slider-->
+                <div class="trending-slider">
+                    <div class="slideshow-container">
+                        <div class="trending-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/category-educational.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>TRENDING ARTICLE-1</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/category-jugaad.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>TRENDING ARTICLE-2</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trending-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/category-tech.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>TRENDING ARTICLE-3</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="prev" onclick="plus_T_Slides(-1)">&#10094;</a>
+                        <a class="next" onclick="plus_T_Slides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!--end of trensing slider-->
+            </div>
+            <!--end of trending section layout/slider-->
+
+            <!--new section layout/slider-->
+            <div class="recent-section">
+                <h2 class="section-heading">FRESH ARTICLES</h2>
+
+                <!--fresh slider-->
+                <div class="fresh-slider">
+                    <div class="slideshow-container">
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/banner-image.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>NEW ARTICLE-1</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/banner-image.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>NEW ARTICLE-2</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/banner-image.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>NEW ARTICLE-3</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="prev" onclick="plus_F_Slides(-1)">&#10094;</a>
+                        <a class="next" onclick="plus_F_Slides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!--end of fresh slider-->
+
+
+            </div>
+            <!--end of new section layout/slider-->
+
+        </div>
+        <!--end of main section-->
+
+        <!--side section-->
+        <div id="side-section">
+
+            <!--category section-->
+            <div id="category-section">
+                <h2 class="section-heading">Category</h2>
+                <div id="category-list">
+                    <div class="category">
+                        <img src="../public/images/category-tech.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-educational.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-jugaad.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-lifestyle.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-online.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-travel.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of category section--->
+
+            <!--language section-->
+            <div id="language-section">
+                <h2 class="section-heading">Switch Language</h2>
+                <div id="dd" class="wrapper-dropdown-1" tabindex="1">
+                    <span>Language</span>
+                    <ul class="dropdown" tabindex="1">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Hindi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--end of language section-->
+
+        </div>
+        <!--end of side section-->
+    </div>
+    <!---LAYOUT ENDS-->
+
+ <% include ./partials/footer %>

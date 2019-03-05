@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SARTHI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--linking style sheets-->
+    <!--linkimg nav-bar style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/nav-bar.css" />
+
+    <!--linkimg Font-Awesome styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+    <!--linking BANNER SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/banner-slider.css">
+
+    <!--linking home-layout style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sarthi-home.css">
+
+    <!--linking Trending SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/trending-slider.css">
+
+    <!--linking FRESH SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/fresh-slider.css">
+
+    <!--linking language-selector style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/language-selector.css">
+
+    <!--linking FOOTER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/footer.css">
+
+    <script src="../public/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- SARTHI NAV BAR -->
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="/users/welcome"><img src="../public/images/sarthi-nav-logo.png" alt="nav-logo" class="nav-logo"></a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <a href="#1" target="_blank"><i class="fas fa-globe"></i> Explore</a>
+            <a href="#2" target="_blank"><i class="fas fa-users"></i> AboutUs</a>
+            <% if(!user){ %>
+                <a href="/users/login"><i class="far fa-address-book"></i> Login</a>
+                <a href="/users/register"><i class="far fa-address-card"></i> SignUp</a>
+             <%  } %> 
+            <% if(user){ %>
+                <a href="#6" target="_blank"><i class="fas fa-user-alt"></i> My Profile</a>
+                <a href="/users/logout" target="_blank"><i class="fas fa-door-open"></i> LogOut</a>
+            <%  } %>   
+        </div>
+    </div>
+    <!--END OF NAV-BAR -->
+
+    <!-- SARTHI Banner SLIDER -->
+    <p class="lead mb-3">Welcome <%= name %></p>
+    <div class="main-slider">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../public/images/homepage-banner-6.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plus_M_Slides(-1)">&#10094;</a>
+            <a class="next" onclick="plus_M_Slides(1)">&#10095;</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="current_M_Slide(1)"></span>
+            <span class="dot" onclick="current_M_Slide(2)"></span>
+            <span class="dot" onclick="current_M_Slide(3)"></span>
+            <span class="dot" onclick="current_M_Slide(4)"></span>
+            <span class="dot" onclick="current_M_Slide(5)"></span>
+            <span class="dot" onclick="current_M_Slide(6)"></span>
+        </div>
+    </div>
+    <!--END OF SLIDER-->
+
+    <!--HOME PAGE LAYOUT-->
+    <div id="home-layout">
+
+
+        <!--main-section-->
+        <div id="main-section">
+
+
+            <!--trending section layout/slider-->
+            <div class="trending-section">
+                <h2 class="section-heading">THE TRENDING</h2>
+
+                <!--trending slider-->
+                <div class="trending-slider">
+                    <div class="slideshow-container">
+                        <div class="trending-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/category-educational.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>TRENDING ARTICLE-1</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/category-jugaad.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>TRENDING ARTICLE-2</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trending-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/category-tech.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>TRENDING ARTICLE-3</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="prev" onclick="plus_T_Slides(-1)">&#10094;</a>
+                        <a class="next" onclick="plus_T_Slides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!--end of trensing slider-->
+            </div>
+            <!--end of trending section layout/slider-->
+
+            <!--new section layout/slider-->
+            <div class="recent-section">
+                <h2 class="section-heading">FRESH ARTICLES</h2>
+
+                <!--fresh slider-->
+                <div class="fresh-slider">
+                    <div class="slideshow-container">
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/banner-image.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>NEW ARTICLE-1</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/banner-image.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>NEW ARTICLE-2</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/banner-image.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h2>NEW ARTICLE-3</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="prev" onclick="plus_F_Slides(-1)">&#10094;</a>
+                        <a class="next" onclick="plus_F_Slides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!--end of fresh slider-->
+
+
+            </div>
+            <!--end of new section layout/slider-->
+
+        </div>
+        <!--end of main section-->
+
+        <!--side section-->
+        <div id="side-section">
+
+            <!--category section-->
+            <div id="category-section">
+                <h2 class="section-heading">Category</h2>
+                <div id="category-list">
+                    <div class="category">
+                        <img src="../public/images/category-tech.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-educational.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-jugaad.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-lifestyle.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-online.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="../public/images/category-travel.jpg" alt="">
+                        <div class="img-caption">
+                            <a>Go To Category</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of category section--->
+
+            <!--language section-->
+            <div id="language-section">
+                <h2 class="section-heading">Switch Language</h2>
+                <div id="dd" class="wrapper-dropdown-1" tabindex="1">
+                    <span>Language</span>
+                    <ul class="dropdown" tabindex="1">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Hindi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--end of language section-->
+
+        </div>
+        <!--end of side section-->
+    </div>
+    <!---LAYOUT ENDS-->
+    <div id="footer">
+        <div class="footer-container">
+            <div class="social-footer">
+                <div class="social-icon">
+                    <a href="#"><i class="fas fa-envelope fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <h4>&copy;2019 SARTHI || made with <span style="color:red;"><i class="fas fa-heart"></i></span> for INDIANS
+            </h4>
+        </div>
+    </div>
+
+
+    <!--linking of js file-->
+    <script src="../public/js/banner-slider.js"></script>
+    <script src="../public/js/trending-slider.js"></script>
+    <script src="../public/js/fresh-slider.js"></script>
+    <script src="../public/js/language-selector.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var dd = new DropDown($('#dd'));
+            $(document).click(function () {
+                // all dropdowns
+                $('.wrapper-dropdown-1').removeClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

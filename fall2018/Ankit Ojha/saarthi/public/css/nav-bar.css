@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+  height: 52px;
+  width: 100%;
+  background-color: #046880;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline-block;
+}
+
+
+.nav .nav-header .nav-title a>.nav-logo{
+  display: inline-block;
+  width:180px;
+  height:50px;
+  cursor: pointer;
+  margin-left:10px ;
+} 
+
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  background-color: #046880;
+  font-size: 20px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.nav .nav-links form{
+display: inline;
+}
+.nav > .nav-links .search {
+  display:inline-block;
+  margin-top:5px;
+  margin-left:5px;
+}
+
+.nav > .nav-links .search .searchTerm {
+  float:left;
+  border:3px solid #00B4CC;
+  width: 250px;
+  padding:10px;
+  border-radius:30px;
+  outline:none;
+  color:#000;
+}
+
+.nav > .nav-links .search .searchTerm:focus{
+  color: #00B4CC;
+}
+
+.nav > .nav-links .search .searchButton {
+  width:40px;
+  height:40px;
+  border:1px solid #00B4CC;
+  background-color:#00b4CC;
+  text-align:center;
+  color:#fff;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:20px;
+}
+
+
+@media (max-width:900px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color:#046880;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 2 !important;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(80vh - 50px);
+    overflow-y: auto;
+  }
+}

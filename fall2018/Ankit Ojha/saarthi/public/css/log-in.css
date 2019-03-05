@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Anton');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #ffffff;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+#header{
+    display: flex;
+    flex-direction:row;    
+}
+
+#left-header{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: auto;
+}
+#left-header h1{
+    font-family: 'Anton';
+    color: #16406d;
+}
+#right-header h1{
+    font-family: 'Anton';
+    color: #16406d;
+}
+#right-header{
+    flex: 1;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction:row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+}
+
+#right {
+    flex: 1;
+}
+
+/* Sign In */
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form {
+    width: 60%;
+    padding-bottom: 3rem;
+}
+
+#signin .logo {
+    margin-bottom: 0vh;
+}
+
+#signin .logo img {
+    width: 160px;
+}
+
+#signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    border-radius: 2px;
+    background: #ffffff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+#signin .primary-btn {
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+#signin .secondary-btn,
+.or,
+.links {
+    width: 100%;
+}
+
+#signin .links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+#signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+#signin .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+
+/* Showcase */
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/Sarthi-signin-side.jpg') no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+
+#showcase .secondary-btn {
+    width: 100%;
+    margin-top: 16rem;
+    margin-left: 1rem;
+}
+#showcase .secondary-btn:hover {
+    border-color: #fff;
+    background-color: #ffffff;
+    color: #000000;
+}
+/* Footer */
+
+
+/* Button */
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #d05c69;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.primary-btn:hover {
+    background: #ffffff;
+    border: 1px solid #d05c69;
+    color:#d05c69;
+}
+
+.secondary-btn {
+    padding: 0.7rem 0.5rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+    border-color: #d05c69;
+    color: #d05c69;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    #left {
+        flex: 6;
+    }
+
+    #right {
+        flex: 4;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        overflow: auto;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+
+    #signin .logo {
+        margin-bottom: 2vh;
+    }
+
+    #signin .text-input {
+        margin-bottom: 0.7rem;
+    }
+
+}

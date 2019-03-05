@@ -1,0 +1,132 @@
+.fresh-slider{
+    font-family: Verdana, sans-serif;
+    margin-top: 10px;
+    box-sizing: border-box
+}
+
+.fresh-slider .fresh-slides {
+    display: none;
+}
+
+.fresh-slider img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.fresh-slider .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.fresh-slider .slideshow-container .prev,
+.fresh-slider .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.fresh-slider .slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.fresh-slider .slideshow-container .prev:hover,
+.fresh-slider .slideshow-container .next:hover {
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    color:#fff;
+}
+
+/*article bammer*/
+.article-banner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #046880;
+}
+
+/*article content*/
+.article-banner-content h3{
+    font-size: 2.1em !important;
+    border-bottom: 2px solid #fff;
+    line-height: 1.15385;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: 'Noto Serif SC', serif;
+    font-weight:bold;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    text-rendering: optimizeLegibility;
+}
+.article-banner-content p{
+    padding: 5px;
+    color: ghostwhite;
+    font-family:europa;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.4em;
+    letter-spacing: 0em;
+    line-height: 1.15385em;
+    text-decoration: none;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+}
+
+/*article image*/
+.article-banner-img > img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 500px) {
+
+    .fresh-slider .slideshow-container .prev,
+    .fresh-slider .slideshow-container .next,
+    .fresh-slider .slideshow-container .text {
+        font-size: 11px
+    }
+
+    .article-banner-content h3{
+        font-size: 1.1em !important;
+        border-bottom: 1px solid #fff;
+        line-height: 1.15385;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-family: 'Noto Serif SC', serif;
+        font-weight: normal;
+        font-style: normal;
+        text-transform: uppercase;
+        color: white;
+        text-rendering: optimizeLegibility;
+    }
+    .article-banner-content p{
+        padding: 2px;
+        color: ghostwhite;
+        font-family:europa;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1em;
+        letter-spacing: 0em;
+        line-height: 1.15385em;
+        text-decoration: none;
+        text-transform: none;
+        text-rendering: optimizeLegibility;
+    }
+}
