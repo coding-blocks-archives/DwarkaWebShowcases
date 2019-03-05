@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <div id="bannerimg">
+                <img src="/home/ankit/cb/weatherapp/static/bg1.jpg" alt="weathernbanner">
+            </div>
+            <p>Weather App</p>
+        </div>
+        <div class="search">
+            <p id="searchfield">
+                <label for="city">Enter City name</label>
+                <input type="text" id="city"></input>
+            </p>
+            <p id="searchbutton">
+                <button type="submit" id="btn">Find Weather</button>
+            </p>
+        </div>
+        <div id="cssloader">
+            <div class="lds-ripple">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="icondiv">
+                <img src="" alt="weathericon" id="icon">
+                <p id="weathericondesc"></p>
+            </div>
+            <div id="coods" >
+                <!-- <p></p> -->
+            </div>
+            <div id="humidity">
+                <!-- <p></p> -->
+            </div>
+            <div id="mintemp" >
+                <!-- <p></p> -->
+            </div>
+            <div id="maxtemp">
+                <!-- <p></p> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</body>
+
+</html>
