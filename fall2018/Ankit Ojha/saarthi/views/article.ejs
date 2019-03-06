@@ -1,0 +1,16 @@
+<h1>
+    <%= article.title %>
+</h1>
+<ul class="list-group">
+    <li class="list-group-item">Written By: <%= article.Author%></li>
+    <li class="list-group-item">Category of Article: <%= article.Category%></li>
+    <li class="list-group-item">Content: <%= article.Body%></li>
+</ul>
+<hr>
+<a class="btn btn-primary" href="/technicalUsers/technicalindex/edit/<%= article._id %>">Edit</a>
+<a class="btn btn-primary" href="/technicalUsers/technicalindex/delete/<%= article._id %>">Delete</a>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="../../public/js/add_article/add_article.js"></script>

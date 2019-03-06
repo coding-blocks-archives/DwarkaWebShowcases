@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400i,900|Roboto");
+
+/*NEW FORM CSS*/
+/*form div*/
+.sarthi-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #ffffff;
+    color: #000;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/******/
+
+/*heading tag font weight*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+/******/
+
+/*form layout*/
+.sarthi-form form {
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+/*******/
+
+/*.srathi-form label style*/
+.sarthi-form label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+/******/
+
+/*.sarthi-form all input type stle input type="text,email,password,text-area */
+.sarthi-form .input-item {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 0.5rem 0rem;
+    line-height: 1.3rem;
+    outline: 0;
+}
+
+
+.sarthi-form .number-item {
+    margin-bottom: 1.3rem;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 0.5rem 0rem;
+    line-height: 1.3rem;
+    outline: 0;
+}
+
+
+/*********/
+
+
+/*.sarthi-form button style*/
+.sarthi-form .primary-btn {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    border-radius: 2px;
+}
+
+.sarthi-form .primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: inline-block;
+    border: 0;
+    font-weight: 500;
+    background: #046880;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.primary-btn:hover {
+    background: #ffffff;
+    border: 1px solid #046880;
+    color: #046880;
+}
+
+/****************/
+
+
+.sarthi-form .secondary-btn {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+    border: 0;
+    font-weight: 500;
+    background: #d05c69;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+    background: #ffffff;
+    border: 1px solid #d05c69;
+    color:#d05c69;
+}
+/*styling of check boxes*/
+/*check-box container*/
+.check-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked~.checkmark {
+    background-color: #046880;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*end of styling of check boxes*/
+
+
+
+/****styling of radio button*********/
+
+/* The container */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/************************/

@@ -1,0 +1,30 @@
+<%= title %>
+
+<form method="POST" action="/technicalUsers/technicalindex/add_articles">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="title">Title</label>
+            <input type="text" class="form-control" name="title" id="title">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="category">Category</label>
+            <input type="text" class="form-control" name="category" id="category">
+        </div>
+        <div id="steps">
+            <div class="optionBox">
+            <label class="control-label col-sm-2" for="category">Steps</label>
+                <div class="block">
+                    <label class="control-label col-sm-2" for="steptitle">Step Title</label>
+                    <input type="text" class="form-control" name="steptitle" id="steptitle">
+                    <textarea class="form-control" name="step"  cols="5" rows="3"></textarea><span class="remove">Delete Step</span>
+                </div>
+                <div class="block">
+                    <span class="add">Add Step</span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="author" name="author" value="<%= user._id %>">
+        <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../../public/js/add_article/add_article.js"></script>

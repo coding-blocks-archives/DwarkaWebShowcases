@@ -1,0 +1,230 @@
+<% include ./partials/messages %>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarthi || Writer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--linkimg Font-Awesome styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+    <!--linking writer nav-bar.css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/nav-bar.css">
+
+    <!--linking writer profile.css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/profile.css">
+
+    <!--linking sarthi-form.css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sarthi-form.css">
+
+    <!--linking of grid-list.css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/grid-list.css">
+
+
+    <!--linking of footer.css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/footer.css">
+
+</head>
+
+<body>
+
+    <!-- SARTHI NAV BAR -->
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="/"><img src="../public/images/sarthi-nav-logo.png" alt="nav-logo" class="nav-logo"></a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <% if(!user) {%>
+                <a href="/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <% if(user) {%>
+                <a href="/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <a href="#2" target="_blank"><i class="fas fa-users"></i> AboutUs</a>
+            <% if(!user){ %>
+                <a href="/users/login"><i class="far fa-address-book"></i> Login</a>
+                <a href="/users/register"><i class="far fa-address-card"></i> SignUp</a>
+             <%  } %> 
+            <% if(user){ %>
+                <a href="/technicalUsers/logout"><i class="fas fa-door-open"></i> LogOut</a>
+            <%  } %> 
+        </div>
+    </div>
+    <!--END OF NAV-BAR -->
+
+    <h1 class="page-heading">MY PROFILE</h1>
+    <!--starting of profile container-->
+    <div class="profile-container">
+        <!--starting of profile card-->
+        <div class="profile-card">
+
+            <!--the starting of card-->
+            <div class="card">
+                <img src="../public/images/jhon_doe.jpg" alt="John" class="resp-img">
+                <h2 class="user-name"><%= user.name %></h2>
+                <p class="user-type">Sarthi Writer</p>
+
+                <!--starting of profile links-->
+                <ul class="profile-links">
+                    <li>
+                        <a onclick="on_myprofile()" class="link">My Profile</a>
+                    </li>
+                    <li>
+                        <a onclick="on_editprofile()" class="link">Edit Profile</a>
+                    </li>
+                    <li>
+                        <a onclick="on_myarticles()" class="link">My Articles</a>
+                    </li>
+                    <li>
+                        <a onclick="on_addarticle()" class="link">Add Articles</a>
+                    </li>
+                    <li>
+                        <a href="/technicalUsers/technicalindex/add_pictures" class="link">Add Pictures</a>
+                    </li>
+                </ul>
+                <!--ending of profile links-->
+
+            </div>
+            <!--ending of the card-->
+
+        </div>
+        <!--ending of profile card-->
+
+        <!--starting of description card-->
+        <div class="desc-card">
+
+            <!--my profile div-->
+            <div id="my-profile">
+                <div>
+                    <p class="label">Name:</p>
+                    <h3 class="l-text"> <%= user.name %> </h3>
+                </div>
+                <div>
+                    <p class="label">Email Id:</p>
+                    <h3 class="l-text"><%= user.email %></h3>
+                </div>
+            </div>
+            <!--end of my profile div-->
+
+            <!--starting of my edit my profile-->
+            <div id="edit-profile">
+                <div class="sarthi-form">
+                    <form method="POST" action="/technicalUsers/technicalindex/updateprofile">
+                        <label>Name</label>
+                        <input type="text" name="name" class="input-item" placeholder="<%= user.name%>">
+                        <label>Email Id:</label>
+                        <input type="email" name="email" class="input-item"  placeholder="<%= user.email%>">
+                        <input type="hidden" id="author" name="author" value="<%= user.id %>">
+                        <button type="submit" class="primary-btn">Update Profile</button>
+                    </form>
+                </div>
+            </div>
+            <!--ending of edit my profile-->
+
+            <!--starting of my-articles-->
+            <div id="my-articles">
+                <% articles.forEach((article,index)=>{ %>
+                        <% if(article.Author == user.name){ console.log('insidemyarticles'+ user.name) %>
+                        <div class="article-card">
+                            <h3><a><%let j = index+1 %>Article No -<%= j %> <a href="/explore/<%= article._id %>"><%= article.title %></a></a></h3>
+                            <button type="submit" class="secondary-btn"><a href="/technicalUsers/technicalindex/edit/<%= article._id %>">Edit Article</a></button>
+                            <button type="submit" class="secondary-btn"><a href="/technicalUsers/technicalindex/delete/<%= article._id %>">Delete Article</a></button>
+                        </div>
+                        <% }%>
+                <% }); %>
+            </div>
+            
+            <!-- starting of my-articles-->
+            
+
+
+
+            <!--Add Articles-->
+            <form method="POST" action="/technicalUsers/technicalindex/add_articles">
+            <div id="add-articles">
+                <div class="sarthi-form">
+                    <label for="title">Article Title</label>
+                    <input type="text" name="title" class="input-item" id="title">
+
+                    <label for="category">Article category</label>
+                    <input type="text" name="category" class="input-item" id="category">
+
+                    <!--starting of steps-->
+                    <h3><b>Article Steps<b></h3>
+                    <div class="step-form">
+                        <div class="optionBox">
+                            <div class="block">
+                                <label for="steptitle">Step Title</label>
+                                <input type="text" name="steptitle" class="input-item" id="steptitle">
+
+                                <label for="step">Step Description</label>
+                                <textarea name="step" id="" cols="30" rows="10" class="input-item" id="step"></textarea><span class="secondary-btn remove">Remove Step</span>
+                            </div>
+
+                            <div class="block">
+                                <span class="secondary-btn add">Add Step</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ending of steps-->
+                    <input type="hidden" id="author" name="author" value="<%= user.id %>">
+                    <% console.log(user.id)%>
+                    <button type="submit" class="primary-btn" id="btn">Add</button>
+                </div>
+
+            </div>
+            </form>
+            <!--End of Add Articles-->
+
+        </div>
+        <!--ending of description card-->
+    </div>
+    <!--endig of profile cotainer-->
+
+
+    <!--strating of footer-->
+    <div id="footer">
+        <div class="footer-container">
+            <div class="social-footer">
+                <div class="social-icon">
+                    <a href=""><i class="fas fa-envelope fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <h4>&copy;2019 SARTHI || made with <span style="color:red;"><i class="fas fa-heart"></i></span> for INDIANS
+            </h4>
+        </div>
+    </div>
+    <!--end of footer-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../../public/js/add_article/add_article.js"></script>
+    <script src="../public/js/my_profile.js"></script>
+</body>
+
+</html>

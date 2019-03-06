@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarthi | Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--linking style sheets-->
+
+    <!--linkimg Font-Awesome styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+    <!--linkimg nav-bar style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/nav-bar.css" />
+
+    <!--linkimg nav-bar style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sarthi-explorer.css" />
+
+    <!--linking grid-list style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/grid-list.css">
+
+    <!--linking Trending SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/trending-slider.css">
+
+    <!--linking FRESH SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/fresh-slider.css">
+
+    <!--linking sarthi-form style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sarthi-form.css">
+
+    <!--linking FOOTER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/footer.css">
+
+</head>
+
+<body>
+
+  
+ <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+         <div class="col-md-12">
+             <% if(noMatch !== null) { %>
+             <h3><%= noMatch %></h3>
+             <p>
+            	<form action="/search_articles" method="GET">
+                    <div class="search">
+                        <input type="text" name ="search" class="searchTerm" placeholder="What are you looking for">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </p>
+             <% } %>
+         </div>
+        <% allarticles.forEach((article)=>{ %>
+        <div class="article-banner">
+                <div class="article-banner-img">
+                    <img src="../public/uploads/<%=article.id+1%>.jpg" alt="">
+                </div>
+                <div class="article-banner-content">
+                    <h3> <a href="/explore/<%= article._id %>" > <%= article.title %> </a> </h3>
+                </div>
+        </div>
+        <% }); %>
+    </div>
+
+
+    <script src="../public/js/trending-slider.js"></script>
+    <script src="../public/js/fresh-slider.js"></script>
+
+    </body>
+    </html>

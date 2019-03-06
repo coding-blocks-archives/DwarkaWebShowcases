@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarthi | Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--linking style sheets-->
+
+    <!--linkimg Font-Awesome styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+    <!--linkimg nav-bar style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/nav-bar.css" />
+
+    <!--linkimg nav-bar style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sarthi-explorer.css" />
+
+    <!--linking grid-list style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/grid-list.css">
+
+    <!--linking Trending SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/trending-slider.css">
+
+    <!--linking FRESH SLIDER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/fresh-slider.css">
+
+    <!--linking sarthi-form style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sarthi-form.css">
+
+    <!--linking FOOTER style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/footer.css">
+
+</head>
+
+<body>
+
+    <!--starting of nav bar-->
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="/"><img src="../public/images/sarthi-nav-logo.png" alt="nav-logo" class="nav-logo"></a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <a href="#2" target="_blank"><i class="fas fa-users"></i> AboutUs</a>
+            <% if(!user){ %>
+                <a href="/users/login"><i class="far fa-address-book"></i> Login</a>
+                <a href="/users/register"><i class="far fa-address-card"></i> SignUp</a>
+             <%  } %> 
+            <% if(user){ %>
+                <a href="#6"><i class="fas fa-user-alt"></i> My Profile</a>
+                <a href="/users/logout"><i class="fas fa-door-open"></i> LogOut</a>
+            <%  } %>  
+        </div>
+    </div>
+    <!--ending of nav bar-->
+
+    <!---starting of explorer layout-->
+    <div id="explorer-layout">
+
+        <!--starting of category section-->
+        <div id="category-section">
+            <h2 class="section-heading1">Category</h2>
+
+            <!--starting of category grid-list-->
+            <div class="grid-list">
+                <div class="grid-item">
+                    <img src="../public/images/category-educational.jpg" alt="">
+                    <div class="img-caption">
+                        <a>Go To Category</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/category-jugaad.jpg" alt="">
+                    <div class="img-caption">
+                        <a>Go To Category</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/category-lifestyle.jpg" alt="">
+                    <div class="img-caption">
+                        <a>Go To Category</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/category-online.jpg" alt="">
+                    <div class="img-caption">
+                        <a>Go To Category</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/category-tech.jpg" alt="">
+                    <div class="img-caption">
+                        <a>Go To Category</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/category-travel.jpg" alt="">
+                    <div class="img-caption">
+                        <a>Go To Category</a>
+                    </div>
+                </div>
+            </div>
+            <!--ending of category grid-list-->
+
+        </div>
+        <!--ending of category section-->
+
+        <!--starting 0f trending section-->
+        <div id="trending-section">
+            <h2 class="section-heading1">THE TRENDING</h2>
+            <div class="slider-wrapper">
+
+                <% for(let article of articles) {%>
+                    <div class="article-banner">
+                        <div class="article-banner-img">
+                            <img src="../public/uploads/<%=article.id+1%>.jpg" alt="">
+                        </div>
+                        <div class="article-banner-content">
+                            <h3> <a href="/explore/<%= article._id %>" > <%= article.title %> </a> </h3>
+                        </div>
+                    </div>
+                 <% } %>              
+        </div>
+            <!---end of slider-wrapper-->
+
+            <!--trending article grid-list-->
+            <div class="grid-list">
+                <div class="grid-item">
+                    <img src="../public/images/trending-fir.jpg" alt="">
+                    <div class="img-caption">
+                        <a>READ THE ARTICLE</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/trending-metro.jpg" alt="">
+                    <div class="img-caption">
+                        <a>READ THE ARTICLE</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/trending-tax.jpg" alt="">
+                    <div class="img-caption">
+                        <a>READ THE ARTICLE</a>
+                    </div>
+                </div>
+            </div>
+            <!--trending article grid-list end-->
+        </div>
+        <!--end of trending section-->
+
+        <!--fresh article section-->
+        <div id="fresh-section">
+            <h2 class="section-heading1">FRESH ARTICLES</h2>
+            <div class="slider-wrapper">
+                <!--starting of fresh slider-->
+                <div class="fresh-slider">
+                    <div class="slideshow-container">
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/fresh-pan.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h3>HOW TO APPLY FOR PAN CARD ONLINE</h3>
+                                    <p>Illustrative step-by-step procedure To Apply For PAN CARD</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/fresh-paymeny.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h3>HOW TO OPERATE PAYMENT GATEWAY</h3>
+                                    <p>Illustrative step-by-step procedure To Operate Payment GATEWAY FIRST TIME</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fresh-slides">
+                            <div class="article-banner">
+                                <div class="article-banner-img">
+                                    <img src="../public/images/fresh-demat.jpg" alt="">
+                                </div>
+                                <div class="article-banner-content">
+                                    <h3>HOW TO OPEN YOUR DEMAT ACCOUNT ONLINE</h3>
+                                    <p>Illustrative step-by-step procedure To Open YOUR DEMAT ACCOUNT ONLINE</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="prev" onclick="plus_F_Slides(-1)">&#10094;</a>
+                        <a class="next" onclick="plus_F_Slides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!--ending of fresh slider-->
+            </div>
+
+            <!--fresh article grid-list -->
+            <div class="grid-list">
+                <div class="grid-item">
+                    <img src="../public/images/fresh-demat.jpg" alt="">
+                    <div class="img-caption">
+                        <a>READ THE ARTICLE</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/fresh-pan.jpg" alt="">
+                    <div class="img-caption">
+                        <a>READ THE ARTICLE</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../public/images/fresh-paymeny.jpg" alt="">
+                    <div class="img-caption">
+                        <a>READ THE ARTICLE</a>
+                    </div>
+                </div>
+            </div>
+            <!--ending of fresh grid-list-->
+        </div>
+        <!--end of fresh article section-->
+
+        <!--request section-->
+        <div id="request-section">
+            <h2 class="section-heading1">Can't Find The Article
+                <small class="section-subheading">Request An Article</small>
+            </h2>
+            <div class="sarthi-form">
+                <form action="/explore" method="post">
+                    <label>Email</label>
+                    <input type="email" name="RequestEmail" placeholder="YOUR EMAIL" class="input-item" required>
+                    <label>Title Name</label>
+                    <textarea name="RequestTitle" id="" cols="30" rows="5" placeholder="ARTICLE DESCRIPTION" class="input-item"
+                        required></textarea>
+                    <button type="submit" class="primary-btn">REQUEST IT</button>
+                </form>
+            </div>
+        </div>
+        <!--end of request section-->
+
+        <!--starting of donate section-->
+        <div id="donate-section">
+            <h2 class="section-heading1">Love OUR COMMUNITY?
+                <small class="section-subheading">Support By Donating Us</small>
+            </h2>
+            <div class="donate-container">
+                <h3 class="donate-logo"><i class="fas fa-rupee-sign"></i></h3><button type="submit" class="donate-button">DONATE</button>
+            </div>
+        </div>
+        <!--end of donate section-->
+        <div class="clearfix"></div>
+
+    </div>
+    <!--end of explorer layout-->
+
+    <!--strating of footer-->
+    <div id="footer">
+        <div class="footer-container">
+            <div class="social-footer">
+                <div class="social-icon">
+                    <a href=""><i class="fas fa-envelope fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <h4>&copy;2019 SARTHI || made with <span style="color:red;"><i class="fas fa-heart"></i></span> for INDIANS
+            </h4>
+        </div>
+    </div>
+    <!--end of footer-->
+
+    <script src="../public/js/trending-slider.js"></script>
+    <script src="../public/js/fresh-slider.js"></script>
+</body>
+
+</html>

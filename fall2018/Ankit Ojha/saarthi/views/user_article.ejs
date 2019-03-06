@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SARTHI | ARTICLES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--linkimg Font-Awesome styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <!--linking of navbar css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../public/css/nav-bar.css">
+    <!--linking of article css page-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../public/css/sarthi-article.css">
+    <!--linking of rating procedure css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../public/css/rating.css">
+    <!--linking of form css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../public/css/sarthi-form.css">
+    <!--linking of footer css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../public/css/footer.css">
+</head>
+
+<body>
+
+
+    <!--STARTING OF NAV-BAR --->
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="/"><img src="../public/images/sarthi-nav-logo.png" alt="nav-logo" class="nav-logo"></a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <% if(!user) {%>
+                <a href="/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <% if(user) {%>
+                <a href="/explore"><i class="fas fa-globe"></i> Explore</a>
+            <% } %>
+            <a href="#2" target="_blank"><i class="fas fa-users"></i> AboutUs</a>
+            <% if(!user){ %>
+                <a href="/users/login"><i class="far fa-address-book"></i> Login</a>
+                <a href="/users/register"><i class="far fa-address-card"></i> SignUp</a>
+             <%  } %> 
+            <% if(user){ %>
+                <a href="/technicalUsers/logout"><i class="fas fa-door-open"></i> LogOut</a>
+            <%  } %> 
+        </div>
+    </div>
+    <!--ENDING OF NAV BAR-->
+
+    <!--starting of container-->
+    <h1 class="page-heading">THE ARCTICLE</h1>
+    <div id="container">
+        <!--starting of article section-->
+        <div id="article-section">
+            <h1 class="article-title"><%= article.title%></h1>
+            <h3 class="article-author">Author <%= article.Author%></h3>
+            <h3 class="article-category">article-categoty: <%=  article.Category %></h3>
+            <!--starting of step-->
+
+            
+            <% for(let i = 0 ; i < article.Body.length ; i++){  %>   
+                <div class="step">
+                    <div class="step-title">
+                        <h2>
+                            <div class="step-no">
+                                <label>STEP</label>
+                                <span> <% let j = i+1 %><%= j %> </span>
+                            </div>
+                            <span><%= article.steptitiles[i] %></span>
+                        </h2>
+                    </div>
+                    <div class="step-img">
+                        <img class="aimg-resp" src="../public/uploads/<%=article.id+j%>.jpg" alt="">
+                    </div>
+                    <div class="step-description">
+                        <b><%= article.Body[i] %></b>
+                    </div>
+                </div>
+             <% } %>
+
+            <!--ending of step-->
+
+
+        </div>
+        <!--ending of article section-->
+
+        <!--starting of side section-->
+        <div id="side-section">
+
+            <!--starting of rating section-->
+            <div id="rating-container">
+                <h2 class="sub-title">rate this article</h2>
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label class="full" for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label class="full" for="star4" title=></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label class="full" for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label class="full" for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label class="full" for="star1"></label>
+                </fieldset>
+                <div class="clearfix"></div>
+                <div class="current-rating">
+                    <h3>Article Rating <span class="cr-box">4.6</span></h3>
+                </div>
+            </div>
+            <!--end of rating container-->
+
+            <!--starting of change language container-->
+            <!--end of change languge container-->
+
+            <!--starting of request-container-->
+            <!--end of request container-->
+        </div>
+        <!--end of side section--->
+        <div class="clearfix"></div>
+    </div>
+    <!---end of container-->
+    <!--strating of footer-->
+    <div id="footer">
+        <div class="footer-container">
+            <div class="social-footer">
+                <div class="social-icon">
+                    <a href=""><i class="fas fa-envelope fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <h4>&copy;2019 SARTHI || made with <span style="color:red;"><i class="fas fa-heart"></i></span> for INDIANS
+            </h4>
+        </div>
+    </div>
+    <!--end of footer-->
+
+</body>
+
+</html>

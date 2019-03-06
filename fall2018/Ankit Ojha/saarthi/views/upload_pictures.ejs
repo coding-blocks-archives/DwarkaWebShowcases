@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Upload Pictures</title>
+</head>
+<body>
+    <div class="container">
+        <h1>File Upload</h1>
+        <%= typeof msg != 'undefined' ? msg : '' %>
+        <form action="/technicalUsers/technicalindex/add_pictures" method="POST" enctype="multipart/form-data">
+          <div class="file-field input-field">
+            <div class="btn grey">
+              <span>File</span>
+              <input name="myImage" type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <br>
+        <a href="/technicalUsers/technicalindex">Go To Technical Home Page</a>
+     </div>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+</body>
+</html>

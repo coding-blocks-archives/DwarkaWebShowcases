@@ -1,0 +1,90 @@
+<% include ./partials/messages %>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SARTHI || Sign-Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sign-up.css" />
+    <script src="../public/js/main.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="left-header">
+            <h1>SIGN</h1>
+        </div>
+        <div id="right-header">
+            <h1>-UP</h1>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="left">
+            <div id="signup">
+                <div class="logo">
+                    <img src="../public/images/sarthi-logo.png" alt="SARTHI_LOGO" />
+                </div>
+                <form action="/users/register" method="POST">
+                    <div>
+                        <label>Name</label>
+                        <input
+                          type="name"
+                          id="name"
+                          name="name"
+                          class="text-input"
+                          placeholder="Enter Name"
+                          value="<%= typeof name != 'undefined' ? name : '' %>"
+                         />
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          class="text-input"
+                          placeholder="Enter Email"
+                          value="<%= typeof email != 'undefined' ? email : '' %>"
+                        />
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input
+                          type="password"
+                          id="password"
+                          name="password"
+                          class="text-input"
+                          placeholder="Create Password"
+                          value="<%= typeof password != 'undefined' ? password : '' %>"
+                        />
+                    </div>
+                    <div>
+                        <label>Confirm Password</label>
+                        <input
+                          type="password"
+                          id="password2"
+                          name="password2"
+                          class="text-input"
+                          placeholder="Confirm Password"
+                          value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+                        />
+                    </div>
+                    <button type="submit" class="primary-btn">Register</button>
+
+                    <a href="./login" class="secondary-btn">Already have an account</a>
+                </form>
+            </div>
+        </div>
+        <div id="right">
+            <div id="showcase">
+                <div class="showcase-content">
+                    <a href="./welcome" class="secondary-btn">Go To Homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

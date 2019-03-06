@@ -1,0 +1,30 @@
+#footer{
+    max-width: 100%;
+    background-color: #046880;
+    padding: 0px 20px;
+}
+
+#footer .footer-container{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding:20px;
+}
+
+#footer .footer-container .social-footer{
+    margin: auto;
+    display: inline-block; 
+}
+
+#footer .footer-container .social-footer .social-icon{
+    float: left;
+    margin: 10px;
+}
+
+#footer .footer-container .social-footer .social-icon a{
+    color: white;
+}
+#footer .footer-container .social-footer .social-icon a:hover{
+    color:#00B4CC;
+}

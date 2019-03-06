@@ -1,0 +1,64 @@
+<% include ./partials/messages %>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SARTHI || Log-In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/log-in.css" />
+    <script src="../public/js/main.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="left-header">
+            <h1>LOG</h1>
+        </div>
+        <div id="right-header">
+            <h1>-IN</h1>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="left">
+            <div id="signin">
+                <div class="logo">
+                    <img src="../public/images/sarthi-logo.png" alt="SARTHI_LOGO" />
+                </div>
+                <form action="/technicalUsers/login" method="POST">
+                    <div>
+                            <label>Email</label>
+                            <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="text-input"
+                            placeholder="Enter Email"
+                             />
+                        </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password"
+                        id="password"
+                        name="password"
+                        class="text-input"
+                        placeholder="Enter Password" 
+                        />
+                    </div>
+                    <button type="submit" class="primary-btn">Log In</button>
+                    <a href="/users/register" class="secondary-btn">Create an account</a>
+                </form>
+            </div>
+        </div>
+        <div id="right">
+            <div id="showcase">
+                <div class="showcase-content">
+                    <a href="/users/welcome" class="secondary-btn">Go To Homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
