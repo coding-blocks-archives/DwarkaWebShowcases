@@ -1,2 +1,4 @@
 variables.env
 node_modules
+public/dist
+public/images
