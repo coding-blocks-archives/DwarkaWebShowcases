@@ -1,0 +1,3 @@
+[submodule "Local-Store-Management"]
+	path = Local-Store-Management
+	url = https://github.com/kohli6010/Local-Store-Management.git
