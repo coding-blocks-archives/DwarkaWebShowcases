@@ -1,0 +1,103 @@
+/*=============================================
+			Theme Color One
+=============================================*/
+/*=============================================
+			Theme Color
+=============================================*/
+a,
+p a,
+p a:hover,
+a:hover,
+a:focus,
+a:active,
+.tg-navigation > ul > li:hover > a,
+.tg-nav > ul > li > a.current,
+.tg-eventcounter span:first-child,
+.tg-package .tg-packagedetail h4 span,
+.tg-article:hover .tg-title h2 a,
+.tg-article:hover .tg-btnreadmore,
+.tg-btndownload:hover i,
+.tg-btnfarword i,
+.tg-btnopenclose i,
+.tg-close,
+.tg-headervtwo .tg-nav ul li:hover > a,
+.tg-headervtwo .tg-nav ul li > a.current,
+.tg-headervtwo .tg-navigation > ul > li > .sub-menu > li:hover > a,
+.tg-bannerregister .tg-heading h2{color: #08911f;}
+/*=============================================
+			Theme Background Color
+=============================================*/
+.tg-theme-tag,
+.tg-btn:before,
+.tg-article:hover .tg-btnreadmore:before,
+.tg-eventschedulenav li.active a,
+.tg-eventschedulenav li:hover a,
+.tg-btnfarword:hover,
+.tg-btnopenclose:hover,
+.tg-bannerregister .tg-heading:before,
+.tg-btnvisitwebsite,
+body.tg-fixedme .tg-headervtwo{background:#08911f;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.navbar-toggle .icon-bar{background:#08911f !important;}
+/*=============================================
+			Theme Border Color
+=============================================*/
+.tg-theme-tag:after,
+.tg-theme-tag:before,
+input:focus,
+.select select:focus,
+.form-control:focus,
+.tg-footer,
+.tg-btndownload:hover,
+.tg-eventschedulenav li.active a,
+.tg-eventschedulenav li:hover a,
+.tg-eventschedulenav,
+.tg-eventvenuetabs li.active a,
+.tg-eventvenuetabs li:hover a,
+.tg-btnfarword:hover,
+.tg-btnopenclose:hover,
+.tg-eventschedulecontent,
+.sub-menu{border-color: #08911f;}
+.navbar-toggle{border-color: #08911f !important;}
+/*=============================================
+			Theme Color Two
+=============================================*/
+/*=============================================
+			Theme Color
+=============================================*/
+{color: #574586;}
+/*=============================================
+			Theme Background Color
+=============================================*/
+.tg-sectionheading:before{background: #574586;}
+/*=============================================
+			Theme Border Color
+=============================================*/
+{border-color: #574586;}
+
+
+/*=============================================
+			Theme Opacity Color
+=============================================*/
+.tg-appbg:before,
+.tg-hallimg:before,
+.tg-bgsignup:before,
+.tg-askquestions:after,
+.tg-bgcontactus:before,
+.tg-themepostimg:before,
+.tg-registerholder:before,
+.tg-bgtestimonials:before{
+	background:
+		-moz-linear-gradient(-45deg,
+		rgba(87,69,134,0.7) 0%,
+		rgba(87,69,134,0.7) 100%);
+	background:
+		-webkit-linear-gradient(-45deg,
+		rgba(87,69,134,0.7) 0%,
+		rgba(87,69,134,0.7) 100%);
+	background:
+		linear-gradient(135deg,
+		rgba(87,69,134,0.7) 0%,
+		rgba(87,69,134,0.7) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3574586', endColorstr='#b3574586',GradientType=1 );
+}
