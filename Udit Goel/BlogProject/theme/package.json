@@ -1,0 +1,80 @@
+{
+  "_from": "startbootstrap-clean-blog",
+  "_id": "startbootstrap-clean-blog@5.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-Gcu3L7Uw77JrcWddyprOGnzVn0xQefXh74TBmyzo2anSkDpRxl12gX2wUvtlTeGaKqJSBg1AzJWQZLFaRiUEVA==",
+  "_location": "/startbootstrap-clean-blog",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "startbootstrap-clean-blog",
+    "name": "startbootstrap-clean-blog",
+    "escapedName": "startbootstrap-clean-blog",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/startbootstrap-clean-blog/-/startbootstrap-clean-blog-5.0.4.tgz",
+  "_shasum": "535870421aba0401a565e3549aa438d4601c9a02",
+  "_spec": "startbootstrap-clean-blog",
+  "_where": "/home/buddies/Desktop/CodingBlocksFiles/FINAL BLOG PROJECT",
+  "author": {
+    "name": "Start Bootstrap"
+  },
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues",
+    "email": "feedback@startbootstrap.com"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "David Miller",
+      "url": "http://davidmiller.io/"
+    }
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.7.2",
+    "bootstrap": "4.3.1",
+    "jquery": "3.3.1"
+  },
+  "deprecated": false,
+  "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
+  "devDependencies": {
+    "browser-sync": "2.26.3",
+    "del": "^3.0.0",
+    "gulp": "4.0.0",
+    "gulp-autoprefixer": "6.0.0",
+    "gulp-clean-css": "4.0.0",
+    "gulp-header": "2.0.7",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-uglify": "3.0.1",
+    "merge-stream": "^1.0.1"
+  },
+  "homepage": "https://startbootstrap.com/template-overviews/clean-blog",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "license": "MIT",
+  "name": "startbootstrap-clean-blog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
+  },
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "title": "Clean Blog",
+  "version": "5.0.4"
+}
